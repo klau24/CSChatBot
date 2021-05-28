@@ -67,3 +67,4 @@ if __name__ == "__main__":
         print("----------------------------")
         for i in range(5):
             print("{}\t\t{}\t\t{}".format(answers.index[i], answers.values[i], df["responses"].iloc[answers.index[i]]))
+        q = input("Q> ")
