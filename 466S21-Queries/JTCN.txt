@@ -1,0 +1,146 @@
+﻿Jarod Morris
+Tyler England
+Caleb Watts
+Nick Schnorr
+JTCN|"When is [CSSE-Faculty] teaching [Class-Number]?"|List of [Day]
+JTCN|"When is [Statistics-Faculty] teaching [Class-Number]?"|List of [Day]
+JTCN|"What times is the course [Class-Number] being offered on [Day]?"|[Start-Time] for [Class-Number]
+JTCN|"What is [CSSE-Faculty] [PhoneN]?"|[PhoneN]
+JTCN|"Where is [Class-Number] being taught?"|List of [RoomN]
+JTCN|"What day(s) of the week is [CSSE-Faculty] not teaching on?"|List of [Day]
+JTCN|"What day(s) of the week is [Statistics-Faculty] not teaching on?"|List of [Day]
+JTCN|"In what building is [Class-Number] being offered?"|[Location]
+JTCN|"When is [CSSE-Faculty] done teaching on [Day]?"|[End-Time]
+JTCN|"When is [Statistics-Faculty] done teaching on [Day]?"|[End-Time]
+JTCN|"Tell me [CSSE-Faculty] office location?"|[Location]
+JTCN|"Do you know [Statistics-Faculty] office location?"|[Location]
+JTCN|"Where can I find [CSSE-Faculty] in between classes? "|[Location]
+JTCN|"Can you tell me the location of [CSSE-Faculty]’s office? "|[Location]
+JTCN|"What is [CSSE-Faculty] earliest lecture?"|[Start-Time]
+JTCN|"Do you know [CSSE-Faculty] first lecture?"|[Start-Time]
+JTCN|"What is [CSSE-Faculty] latest lecture?"|[End-Time]
+JTCN|"Do you know [CSSE-Faculty] last lecture on [Day]?"|[End-Time]
+JTCN|"Do you know [Statistics-Faculty] last lecture on [Day]?"|[End-Time]
+JTCN|"How many sections of [Class-Number] are being taught this quarter?"|Number of Classes
+JTCN|"How many sections of [Class-Number] are being taught this quarter by [CSSE-Faculty]?"|Number of Classes
+JTCN|"How many sections of [Class-Number] are being taught this quarter on [Day]?"|Number of Classes
+JTCN|"How many sections of [Class-Number] are being taught this quarter in [RoomN]?"|Number of Classes
+JTCN|"How long is the average class in the Statistics department?"|AVG([Start_Time] - [End-Time])
+JTCN|"How long is the average class in the CSSE department?"|AVG([Start_Time] - [End-Time])
+JTCN|"What [Class-Number] has the least amount of hours per week in the CSSE department?"|MIN([Start_Time] - [End-Time])
+JTCN|"What [Class-Number] has the most amount of hours per week in the CSSE department?"|MAX([Start_Time] - [End-Time])
+JTCN|"What is the title of [CSSE-Faculty] in the CSSE department?"|[Title]
+JTCN|"What is the title of [Statistics-Faculty] in the Statistics department?"|[Title]
+JTCN|"How many upper division classes is [Statistics-Faculty] teaching?"|Number of classes
+JTCN|"How many upper division classes is [CSSE-Faculty] teaching?"|Number of classes
+JTCN|"How many lower division classes is [Statistics-Faculty] teaching?"|Number of classes
+JTCN|"How many lower division classes is [CSSE-Faculty] teaching?"|Number of classes
+JTCN|"What is the number of professors teaching [Class-Number] ?"|Number of professors
+JTCN|"What is the number of professors teaching in the CSSE department?"|Number of professors
+JTCN|"What is the number of professors teaching in the Statistics department?"|Number of professors
+JTCN|"Does the [Location] have a class in session?"|[Yes|No]
+JTCN|"What time is [CSSE-Faculty] teaching [Class-Number]?"|[Start-Time]
+JTCN|"Tell me when [CSSE-Faculty] is teaching [Class-Number]"|List of [Day]
+JTCN|"When is the course [Class-Number] being offered on [Day]?"|[Start-Time]
+JTCN|"What time is [Class-Number] being offered on [Day]?"|[Start-Time]
+JTCN|"Can you tell me [CSSE-Faculty]’s [PhoneN]?"|[PhoneN]
+JTCN|"Do you know [CSSE-Faculty]’s [PhoneN]?"|[PhoneN]
+JTCN|"In what room is [Class-Number] being taught?"|[Location]
+JTCN|"Where on campus is [Class-Number] being taught?"|[Location]
+JTCN|"For what days is [CSSE-Faculty] not teaching?"|[Day]
+JTCN|"Can you tell me the days that [CSSE-Faculty] is not teaching?"|[Day]
+JTCN|"What building is [Class-Number] in?"|[Location]
+JTCN|"What is the building of [Class-Number]?"|[Location]
+JTCN|"What time is [CSSE-Faculty] done teaching on [Day]?"|[End-Time]
+JTCN|"On [Day] what time is [CSSE-Faculty] done teaching?"|[End-Time]
+JTCN|"Where is the office of [CSSE-Faculty]?"|[Location]
+JTCN|"Where is [CSSE-Faculty]’s office?"|[Location]
+JTCN|"What is the room number of [CSSE-Faculty]’s office?"|[Location]
+JTCN|"What time does [CSSE-Faculty] start teaching?"|[Start-Time]
+JTCN|"What time does [CSSE-Faculty] finish teaching?"|[End-Time]
+JTCN|"How many sections of [Class-Number] are there this quarter?"|Number of sections
+JTCN|"What is the number of sections of [Class-Number] this quarter?"|Number of sections
+JTCN|"Tell me the number of sections of [Class-Number] this quarter"|Number of sections
+JTCN|"What is the number of sections of [Class-Number] being taught this quarter by [CSSE-Faculty]?"|Number of sections
+JTCN|"Tell me the number of sections of [Class-Number] being taught this quarter on [Day]"|Number of sections
+JTCN|"What is the number of sections of [Class-Number] being taught this quarter in [RoomN]?"|Number of sections
+JTCN|”Can I take [Class-Number] and [Class-Number2] together?”|Yes or No
+JTCN|”What days of the week is [Class-Number] scheduled for?”|List of [DayOfWeek]
+JTCN|”How many sections of [Class-Code] have openings?”|Number
+JTCN|”Is [Class-Code] being taught in [Year-Term]?”|Yes or No
+JTCN|”Is [Class-Code] usually taught in the [Term] quarter?”|Yes or No
+JTCN|”What terms is [Class-Code] scheduled for?”|List of [Year-Term]
+JTCN|”Who is teaching [Class-Code] this quarter?”|List of [CSSE-Faculty]
+JTCN|”Will [CSSE-Faculty] be teaching [Class-Code] this quarter?”|Yes or No
+JTCN|”Where will [CSSE-Faculty] be at [Time] on [Day]?”|[RoomN]
+JTCN|”Will [CSSE-Faculty] be available for [Duration] on [Day]?”|Yes or No
+JTCN|”Will [CSSE-Faculty] be available at [Time] on [Day]?”|Yes or No
+JTCN|”How many classes are being offered in [Year-Term]?”|Number
+JTCN|”How many faculty are teaching [Class-Code]?”|Number
+JTCN|”How many sections of [Class-Code] have class on [Day]?”|Number
+JTCN|”How many available seats are there in [Class-Number]?”|Number
+JTCN|”What type of class is [Class-Number]?”|[Class-Level]
+JTCN|”Is [CSSE-Faculty] teaching in [Year-Term]?”|Yes or No
+JTCN|”What are the prerequisites for [Class-Code]?”|List of [Class-Code]
+JTCN|”What are the corequisites for [Class-Code]?”|List of [Class-Code]
+JTCN|”Does [Class-Code] have any prerequisites?”|Yes or No
+JTCN|”Does [Class-Code] have any corequisites?”|Yes or No
+JTCN|”Is [Class-Code] offered in the [TimeOfDay]?”|Yes or No
+JTCN|”What classes are offered in the [TimeOfDay]?”|List of [Class-Code]
+JTCN|”What [TimeOfDay] classes are there?”|List of [Class-Number]
+JTCN|”Does [Class-Number] have a lab section?”|Yes or No
+JTCN|”What time is the lab section for [Class-Number]?”|[TimeOfDay]
+JTCN|”How many units is [Class-Number]?”|Number
+JTCN|”How long is [Class-Number] including its lab?”|[Duration]
+JTCN|”How many classes is [CSSE-Faculty] teaching in [Year-Term]?”|Number
+JTCN|”Give me the day(s) of the week [Class-Number] is offered?”|List of [Day]’
+JTCN|”Do you know what day(s) of the week [Class-Number] is offered?”|List of [Day]’
+JTCN|”Do you know which day(s) of the week [Class-Number] is offered?”|List of [Day]’
+JTCN|”What day(s) of the week is [Class-Number] offered?”|List of [Day]’
+JTCN|”Tell me the day(s) of the week [Class-Number] is offered?”|List of [Day]’
+JTCN|”Which day(s) of the week is [Class-Number] offered?”|List of [Day]’
+JTCN|"What day(s) of the week is [CSSE-Faculty] free?"|List of [Day]
+JTCN|"What day(s) of the week is [Statistics-Faculty] free?"|List of [Day]’
+JTCN|"What classes are taught in [RoomN]"|List of [Class-Number]’
+JTCN|"Tell me the classes that are taught in [RoomN]"|List of [Class-Number]’
+JTCN|"Can you give me the classes that are taught in [RoomN]"|List of [Class-Number]’
+JTCN|"Which classes are taught in [RoomN]"|List of [Class-Number]’
+JTCN|"How many classes are taught in [RoomN]"|Number of classes
+JTCN|"Is [CSSE-Faculty] available in the [TimeOfDay]"|Yes or No
+JTCN|"Is [CSSE-Faculty] free in the [TimeOfDay]"|Yes or No
+JTCN|"Is [CSSE-Faculty] busy in the [TimeOfDay]"|Yes or No
+JTCN|"Is [CSSE-Faculty] unavailable in the [TimeOfDay]"|Yes or No
+JTCN|"Is there a [TimeOfDay] section for [Class-Number]"|Yes or No
+JTCN|"Tell me if there is a [TimeOfDay] section for [Class-Number]"|Yes or No
+JTCN|"Do you know if there is a [TimeOfDay] section for [Class-Number]"|Yes or No
+JTCN|”How many units is [Class-Number] worth?”|Number
+JTCN|”How many classes does [CSSE-Faculty] teach on [DayOfWeek]?”|Number
+JTCN|”Which classes does [CSSE-Faculty] teach on [DayOfWeek]?”|List of [Class-Number]
+JTCN|”What time does [CSSE-Faculty] office hours end?”|End-Time
+JTCN|”What time does [CSSE-Faculty] office hours start?”|Start-Time
+
+
+
+
+
+
+
+
+[RoomN]: Room Number of Course
+[PhoneN]: Phone number for Faculty
+[Day]: Day of the week
+[Class-Number]: Course Number
+[Class-Number2]: Another, potentially different course number
+[Class-Code]: Class code without a specific section number
+[Class-Level]: A class level/leading digit of a class code
+[CSSE-Faculty]: Name of instructor from the CSSE department
+[Statistics-Faculty]: Name of instructor from Statistics department
+[Term]: A term, i.e. “Spring” or “Winter”
+[Year-Term]: A term and specific year, i.e. “Spring 2021” or variations.
+[Duration]: A span of time, i.e. “1.5 hours”
+[Start-Time]: Time a class starts
+[End-Time]: Time a class ends
+[Location]: Location of a classroom or office
+[Title]: Title of a faculty member
+[TimeOfDay]: A time of day; one of “Morning”, “Afternoon”, or “Evening”
+[DayOfWeek]: A day of the week

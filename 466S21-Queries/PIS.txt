@@ -1,0 +1,136 @@
+PIS | Who is the current Computer Science department chair? | [CSC-Department-Chair] 
+PIS | Who is the current Administrative Support Coordinator for the Computer Science department? | [CSC- Administrative-Support-Coordinator]
+PIS | Does Cal Poly offer a Blended Bachelors and Masters program in Computer Science? | yes 
+PIS | Are there prerequisites for CSC123? | no
+PIS | What is the total number of units required for a Bachelors in Computer Science? | 180 units 
+PIS | What is the total number of units required for a Masters in Computer Science? | 45 units 
+PIS | What are the prerequisites for [CSC-COURSE]? | [PREREQS-CSSE-COURSE]
+PIS | How many concentrations does the Computer Science department offer? | 1
+PIS | What concentrations does the Computer Science department offer? | Concentration in Interactive Entertainment
+PIS | Does Cal Poly offer a Cross Disciplinary Studies Minor in Data Science? | yes 
+PIS | What minors does the Computer Science department offer? | [CSSE-Minors]
+PIS | What requirements does a student need to meet to be qualified for the Computer Science Blended Program? | Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0 
+PIS | How many total students are currently in the Computer Science program? | 550 students 
+PIS | Approximately how many undergrad students are in the Computer Science program? | 450 undergrad students
+PIS | Approximately how many graduate students are in the Computer Science program? | More than 75 graduate students 
+PIS | What is the Computer Science department’s email? | computer-science@calpoly.edu
+PIS | What is the Computer Science department’s phone number? | (805)756-282
+PIS | How many faculty members are in the Computer Science department? | 49 
+PIS | How many affiliate faculty members are in the Computer Science department? | 2
+PIS | How many active emeriti members are in the Computer Science department? | 2
+PIS | How many staff members are in the Computer Science department? | 4
+PIS | Is [CSSE-Faculty] teaching [CSSE-COURSE] this quarter? | yes or no 
+PIS | What classes is [CSSE-Faculty] teaching [TERM]? | [Faculty-CSSE-Courses]
+PIS | What is the building number for the Computer Science building? | 14 
+PIS | What are the two series options to complete the Physical Science Support Electives? | Physics and Chemistry 
+PIS | How many units of  free electives are allowed in the Computer Science curriculum? | 0 units 
+PIS | What is the Computer Science department’s Instagram page? | @cpcscandse
+PIS | What are the hours for the Computer Science Department? | 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday 
+PIS | Is [CSSE-COURSE] being offered in [TERM]? | yes or no 
+PIS | What courses in the Computer Science curriculum don’t require any prerequisites | [CSSE-COURSES]
+PIS | Is the Computer Science office currently open? | no 
+PIS | Is [CSSE-Course] an approved technical elective? | yes or no 
+PIS | Is double-counting allowed between Science Support Electives? | no 
+PIS | How do I contact [CSSE-Faculty] ? |  [CSSE-Faculty-PhoneNumber]
+PIS | What is [CSSE-Faculty] ‘s phone number?  | [CSSE-Faculty-PhoneNumber]
+PIS | Where is [CSSE-Faculty]’s office? | [CSSE-Faculty-Office-Location]
+PIS | Who is teaching STAT 302 this quarter? | Walker, J; McGaughey, K
+PIS | Do you offer the STAT 302 course on Tuesday and Thursday this quarter? | Yes or no
+PIS | How many sections do you offer the STAT 302 course this quarter? 3
+PIS | What is [CSSE-Faculty] ‘s title? | [CSSE-Faculty-Title]
+PIS | Does [STATS-COURSE] have a lab? | yes or no
+PIS | What classes are [STATS-Faculty] teaching this quarter? | [STATS-COURSE] [STATS-SECTION]
+PIS | Who is in [STATS-Faculty-Office-Location]? | [STATS-Faculty]
+PIS | Who is the current Statistics department chair? | [STATS-Department-Chair] 
+PIS | What are the prerequisites for [STATS-COURSE]? | [PREREQS-STATS-COURSE]
+PIS | What is the building number for the Math and Statistics building ? | 25
+PIS | Where do I look for [TERM] schedule? |  https://schedules.calpoly.edu/
+PIS | How many units is [STATS-COURSE] ? | [STATS-COURSE-UNIT]
+PIS | Is [CSSE-COURSE] 4 units? | Yes or no
+PIS | Is [CSSE-Faculty] the current Computer Science department chair? | Yes or no
+PIS | Where can I find [CSSE-Faculty]’s office? | [CSSE-Faculty-Office-Location]
+PIS | What time does [CSSE-COURSE][CSSE-SECTION] start on Monday? | [CSSE-COURSE-TIME-START] or There is no class on Monday
+PIS | I am looking for [CSSE-COURSE] on [CSSE-COURSE-DAYS] | [CSSE-COURSE][CSSE-COURSE] or There is no class that is offered on  [CSSE-COURSE-DAYS]
+PIS | I am looking for [CSSE-COURSE] on [CSSE-COURSE-DAYS] after [Time]? | [CSSE-COURSE][CSSE-COURSE] or There is no class that is offered on  [CSSE-COURSE-DAYS] after [Time]
+PIS | Where can I find the Computer Science building? Cal Poly campus building 14
+PIS | Where can I find the Math and Statistics building? Cal Poly campus building 25
+PIS | How many people drop [STATS-COURSE][STATS-SECTION] in [TERM]? | [STATS-COURSE-DROPS]
+PIS | Are there a lot of people dropping [CSSE-COURSE][CSSE-SECTION] in [TERM]? | There are [STATS-COURSE-DROPS] people dropping this class in [TERM]
+PIS | Do you offer [CSSE-COURSE] this quarter? |Yes or no
+PIS | Where do I look for the Statistic class schedule this quarter? | https://schedules.calpoly.edu/depts_76-CSM_curr.htm 
+PIS | Where do I look for the CSSE class schedule this quarter? https://schedules.calpoly.edu/depts_52-CENG_curr.htm 
+PIS | Does the Computer Science department offer classes on the weekend? | No
+PIS | Is [CSSE-Faculty] teaching [CSSE-COURSE] this quarter? | Yes or No
+PIS | Is [STATS-Faculty] teaching [STATS-COURSE] this quarter? | Yes or No
+PIS | How do I contact [STATS-Faculty]? | Call [STATS-Faculty-PhoneNumber] or visit [STATS-Faculty-Office-Location]
+PIS | Is [STATS-Faculty]’s office [STATS-Faculty-Office-Location]? | Yes or No
+PIS | Is [STATS-COURSE] offered in Fall 2021? Yes or no
+PIS | Can I take [STATS-COURSE] this quarter? Yes or no
+PIS | Do I need to take [CSSE-COURSE] after [CSSE-COURSE]? Yes or no
+PIS | Can I take [STATS-COURSE] as a tech elective? Yes or no
+PIS | Does [STATS-COURSE] count as a technical elective for Computer Science major? Yes or no
+PIS | Does [CSSE-COURSE] have a lab? Yes or no
+PIS | Whose office is in [CSSE-Faculty-Office-Location]? [CSSE-Faculty]
+PIS | What stats classes are offered in [TERM]? [STATS-COURSES]
+PIS | Can you tell me all stats classes offered in [TERM]? [STATS-COURSES]
+PIS | Is [STATS-SECTION] waitlisted? Yes/ no
+PIS | is [STATS-Faculty] teaching  [STATS-COURSE]? Yes / no
+PIS | Who is teaching [STATS-COURSE]? [STATS-Faculty]
+PIS | What do I need to get into Computer Science blended program? Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0 
+PIS | How many units do I need to take to get my Bachelors degree in CS? 180 units
+PIS | Does the computer science department have an instagram page? Yes, it’s @cpcscandse
+PIS | Can I take any free electives as a computer science major? No 
+PIS | Can a computer science major have any free electives? No
+PIS | How many units do I need to get a Master degree in computer science? 45 units
+PIS | Can I take [CSSE-COURSE] as a pre-req to [CSSE-COURSE]? Yes or no
+PIS | Is [CSSE-COURSE] a pre-req to [CSSE-COURSE]?
+PIS | Is [CSSE-COURSE] required for [CSSE-COURSE]?
+PIS | Is the computer science department open during the weekend? No, they are available 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday 
+PIS | Is [CSC-Department-Chair] still the department chair of Computer Science? Yes
+PIS | What time does [STAT-COURSE] section  [STATS-SECTION] starts? [STAT-COURSE-TIME-START]
+PIS | What’s the earliest section for [CSSE-COURSE]? The earliest section is [CSSE-SECTION] taught by CSSE-Faculty] that starts at [CSSE-COURSE-TIME-START]
+PIS | What’s the latest section for [CSSE-COURSE]? The latest section is [CSSE-SECTION] taught by CSSE-Faculty] that starts at [CSSE-COURSE-TIME-START]
+PIS | Are there any CSC courses offered before [TIME]? [CSSE-COURSES]
+PIS | Are there any CSC courses offered  after [TIME]? [CSSE-COURSES]
+PIS | Are there any CSC courses offered  after [TIME] but before [TIME] ? [CSSE-COURSES]
+PIS | What time does [CSSE-COURSE] section  [CSSE-SECTION] starts? [CSSE-COURSE-TIME-START]
+PIS | What time does [CSSE-COURSE] section  [CSSE-SECTION] ends? [CSSE-COURSE-TIME-END]
+PIS | Where is the computer science building? Building 14
+PIS | Where is the statistics building? Building 25
+
+[CSSE-Department-Chair]:  Name of the department chair for the Computer Science  department
+[STATS-Department-Chair]: Name of the department chair for the Statistics department
+[CSSE- Administrative-Support-Coordinator] :  Name of the Administrative Support Coordinator for the Computer Science department
+[CSSE-COURSE]: Name of a course in the Computer Science curriculum 
+[CSSE-COURSES]: List of names of a course in the Computer Science curriculum 
+[PREREQS-CSSE-COURSE]: List of prerequisite courses for a course in the Computer Science curriculum 
+[PREREQS-STATS-COURSE]: List of prerequisite courses for a course in the Statistics curriculum 
+[CSSE-Minors]: List of minors offered by the Computer Science department, currently: Minor in Computer Science, Cross Disciplinary Studies Minor in Data Science, and Computing for Interactive Arts Minor 
+[CSSE-Faculty]: Name of a faculty member from CSSE departments
+[STATS-Faculty]:  Name of a faculty member from the Statistics department
+[CSSE-Faculty-PhoneNumber]: Phone number of a faculty from CSSE  departments
+[STATS-Faculty-PhoneNumber]: Phone number of a faculty from STATS  departments
+[CSSE-Faculty-Office-Location]: Office location of a faculty from CSSE departments
+[STATS-Faculty-Office-Location]: Office location of a faculty from the Statistics department
+[CSSE-Faculty-Title]: Title of a faculty from CSSE departments
+[STATS-COURSE]: Name of a course from the Statistics department
+[STATS-COURSES]: List of names of courses in the Statistics department 
+[STATS-SECTION]: Section of a course from the Statistics department
+[CSSE-SECTION]: Section of a course from the CSSE department
+[TERM]: Current quarter- either Winter, Spring, Summer, or Fall Quarter  
+[Faculty-CSSE-Courses]: List of Computer Science courses taught by a faculty member 
+[STATS-COURSE-UNIT]: Number of units in a STATS course
+[CSSE-COURSE-UNIT]: Number of units in a CSSE course
+[CSSE-COURSE-TIME-START]: Start time of a given CSSE course
+[CSSE-COURSE-TIME-END]: End time of a given CSSE course
+[STAT-COURSE-TIME-START]: Start time of a given STATS course
+[STAT-COURSE-TIME-END]: End time of a given STATS course
+[TIME]: A unit of time
+[CSSE-COURSE-DAYS]: Days of week that the course is taught
+[CSSE-COURSE-DROPS]: Number of people dropped the CSSE course
+[STATS-COURSE-DROPS]: Number of people dropped STATS course
+
+ 
+
+
+

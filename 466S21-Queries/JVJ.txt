@@ -1,0 +1,132 @@
+JVJ|Is [CLASS] being offered?| [YESNO]
+JVJ|Will [CLASS] be offered?| [YESNO]
+JVJ|How many courses is [FACULTY] teaching?|[FACULTY] is teaching [NUM-COURSES] in Fall 2021
+JVJ|How many classes is [FACULTY] teaching?|[FACULTY] is teaching [NUM-COURSES] in Fall 2021
+JVJ|Which professors are teaching [CLASS]?|[FACULTY-LIST] will be teaching [CLASS]
+JVJ|Who is teaching [CLASS]?|[FACULTY-LIST] will be teaching [CLASS]
+JVJ|Who will be teaching [CLASS]?|[FACULTY-LIST] will be teaching [CLASS]
+JVJ|Which professors are teaching [CLASS-SECT]?|[FACULTY] will be teaching [CLASS-SECT]
+JVJ|Who is teaching [CLASS-SECT]?|[FACULTY] will be teaching [CLASS-SECT]
+JVJ|Who will be teaching [CLASS-SECT]?|[FACULTY] will be teaching [CLASS-SECT]
+JVJ|Which [MAJOR] classes are being offered?|[CLASS-LIST]
+JVJ|What [MAJOR] classes are being offered?|[CLASS-LIST]
+JVJ|Which classes will [FACULTY] be teaching?|[FACULTY] will be teaching [CLASS-SECT-LIST]
+JVJ|When will [CLASS] be offered?|[CLASS] will be offered during [TIME-LIST]
+JVJ|When will [CLASS-SECT] be offered?|[CLASS-SECT] will be offered during [TIME]
+JVJ|What days is [CLASS-SECT] on?|[CLASS-SECT] will be taught on [DAYS]
+JVJ|Where will [CLASS-SECT] be located?|[CLASS-SECT] will be taught at [LOCATION]
+JVJ|Where is [CLASS-SECT] going to be?|[CLASS-SECT] will be taught at [LOCATION]
+JVJ|Where will [CLASS-SECT] be?|[CLASS-SECT] will be taught at [LOCATION]
+JVJ|Where will [CLASS-SECT] be taught?|[CLASS-SECT] will be taught at [LOCATION]
+JVJ|What days will [CLASS-SECT] be taught?|[CLASS-SECT] will be taught on [DAYS]
+JVJ|Which days will [CLASS-SECT] be taught?|[CLASS-SECT] will be taught on [DAYS]
+JVJ|How many professors are teaching [CLASS]?|[CLASS] will be taught by [NUM-FACULTY]
+JVJ|Where is [FACULTY]’s office?|[FACULTY] is located in [LOCATION]
+JVJ|Where is [FACULTY] located?|[FACULTY] is located in [LOCATION]
+JVJ|Where is [FACULTY]’s office hours|[FACULTY] is located in [LOCATION]
+JVJ|What is [FACULTY]’s contact?|[FACULTY] can be reached at [PHONE] or [CP-EMAIL]
+JVJ|What is [FACULTY]’s phone number?|[FACULTY] can be reached at [PHONE]
+JVJ|How do I contact [FACULTY]?|[FACULTY] can be reached at [PHONE] or [CP-EMAIL]
+JVJ|What is the name for class [CLASS]?|The name for [CLASS] is [CLASS-NAME]
+JVJ|What is [CLASS]?|The name for [CLASS] is [CLASS-NAME]
+JVJ|Which classes fall under GE [GE-REQ]?|Classes [CLASS-LIST] fall under [GE-REQ]
+JVJ|Which classes count for GE [GE-REQ]?|Classes [CLASS-LIST] fall under [GE-REQ]
+JVJ|How many sections of [CLASS] will be offered?|[NUM-SECTIONS] of [CLASS] will be offered
+JVJ|Which sections of [CLASS] will be offered?|[CLASS-SECT-LIST] are offered for [CLASS]
+JVJ|What is the enrollment capacity for [CLASS-SECT]?|The enrollment capacity for [CLASS-SECT] is [ECAP]
+JVJ|How many people have enrolled in [CLASS-SECT]?|[ENROLLED] have enrolled in [CLASS-SECT]
+JVJ|How many people are there in [CLASS-SECT]?|[ENROLLED] have enrolled in [CLASS-SECT]
+JVJ|How many people have waitlisted in [CLASS-SECT]?|[WAITLISTED] have waitlisted for [CLASS-SECT]
+JVJ|How many people are on the waitlist for [CLASS-SECT]?|[WAITLISTED] have waitlisted for [CLASS-SECT]
+JVJ|Which [MAJOR] [CLASS-LEVEL] level classes are being offered?|[CLASS-LIST] are being offered
+JVJ|What [CLASS-LEVEL] level [MAJOR] classes are being offered?|[CLASS-LIST] are being offered
+JVJ|Which [CLASS-LEVEL] level classes are being offered by [FACULTY]?|[FACULTY] is offering [CLASS-LIST]
+JVJ|Can you search for class [STRING]?|The results are [CLASS-LIST]
+JVJ|Is there a lab for [CLASS]?|[YESNO]
+JVJ|Does [CLASS] have a lab?|[YESNO]
+JVJ|Is there a lab for [CLASS-SECT]?|[YESNO]
+JVJ|Does [CLASS-SECT] have a lab?|[YESNO]
+JVJ|What pre-reqs does [CLASS] have?|The prerequisites for [CLASS] are [PREREQS]
+JVJ|How many pre-reqs does [CLASS] have?|The prerequisites for [CLASS] are [PREREQS]
+JVJ|Does [CLASS] have any pre-reqs?|The prerequisites for [CLASS] are [PREREQS]
+JVJ|What do I need to take before [CLASS]?|The prerequisites for [CLASS] are [PREREQS]
+JVJ|What is the class number for [CLASS]?|The class number for [CLASS] is [CLASS-NUM]
+JVJ|What is the class code for [CLASS]?|The class number for [CLASS] is [CLASS-NUM]
+JVJ|What is [CLASS]’s class number?|The class number for [CLASS] is [CLASS-NUM]
+JVJ|What is [CLASS]’s class code?|The class number for [CLASS] is [CLASS-NUM]
+JVJ|Which class has the most sections?|[CLASS] has the most number of sections
+JVJ|Which [MAJOR] class has the most sections?|[CLASS] has the most number of sections for [MAJOR]
+JVJ|Which classes are offered on [DAYS]?|[CLASS-LIST] are offered on [DAYS]
+JVJ|Which [MAJOR] classes are offered on [DAYS]?|[CLASS-LIST] are offered on [DAYS] for [MAJOR]
+JVJ|Which classes are offered between [TIME] and [TIME]?|[CLASS-LIST] are offered between [TIME] and [TIME]
+JVJ|Which [MAJOR] classes are offered between [TIME] and [TIME]?|[CLASS-LIST] are offered between [TIME] and [TIME] for [MAJOR]
+JVJ|Which sections for [CLASS] are offered between [TIME] and [TIME]?|[CLASS-SECT-LIST] are offered between [TIME] and [TIME] for [CLASS]
+JVJ|What is [FACULTY]’s alias?|[FACULTY]’s Cal Poly username is [CP-USERNAME]
+JVJ|What is [FACULTY]’s Cal Poly username?|[FACULTY]’s Cal Poly username is [CP-USERNAME]
+JVJ|What is [FACULTY]’s email?|[FACULTY]’s Cal Poly email is [CP-EMAIL]
+JVJ|What is the email for [FACULTY]?|[FACULTY]’s Cal Poly email is [CP-EMAIL]
+JVJ|Can I take [CLASS] with [CLASS]?|[YESNO]
+JVJ|Can I take both [CLASS] and [CLASS] at the same time?|[YESNO]
+JVJ|Can I attend [FACULTY]’s office hours and [FACULTY]’s office hours?|[YESNO]
+JVJ|Can I take [CLASS-LIST] without having classes on [DAY]|[YESNO]
+JVJ|Can I take [CLASS-LIST] without any classes on [DAY]?|[YESNO]
+JVJ|Can I take [CLASS-LIST] with only classes on [DAYS]|[YESNO]
+JVJ|What is the total number of seats available for [CLASS]?|[NUM-SECTIONS] * [ECAP]
+JVJ|What is the total number of seats available for [FACULTY]’s [CLASS]?|[NUM-SECTIONS-PROFESSOR] * [ECAP]
+JVJ|How many seats does [CLASS] have?|[NUM-SECTIONS] * [ECAP]
+JVJ|How many seats of [CLASS] are taught by [FACULTY]?|[NUM-SECTIONS-PROFESSOR] * [ECAP]
+JVJ|How many students is [FACULTY] teaching?|[NUM-COURSES]* [ECAP] 
+JVJ|How many seats does [FACULTY] have available?|[NUM-COURSES]* [ECAP]
+JVJ|Will [FACULTY] have office hours at [TIME]?|[YESNO]
+JVJ|Will [FACULTY] have class at [TIME]?|[YESNO]
+JVJ|Does [FACULTY] have office hours on [DAY]?|[YESNO]
+JVJ|Does [FACULTY] have class on [DAY]?|[YESNO]
+JVJ|Can I take a class with [FACULTY] with less than [ECAP] people?|[YESNO]
+JVJ|Can I take [CLASS] with less than [ECAP] people?|[YESNO]
+JVJ|Is there a class taught by [FACULTY] that has less than [ECAP] students|[YESNO]
+JVJ|Is there a section of [CLASS] that has less than [ECAP] students?|[YESNO]
+JVJ|Does [FACULTY] teach [MAJOR] classes?|[YESNO]
+JVJ|Does [FACULTY] teach any non-[MAJOR] classes?|[YESNO]
+JVJ|How many [MAJOR] classes does [FACULTY] teach?|[NUM-COURSES-MAJOR]
+JVJ|How many non-[MAJOR] classes does [FACULTY] teach?|[NUM-COURSES-MAJOR]
+JVJ|Is [FACULTY] teaching [CLASS]?|[YESNO]
+JVJ|Can I take [CLASS] and attend [FACULTY]’s office hours|[YESNO]
+JVJ|Can I take a class taught by [FACULTY] and [FACULTY]|[YESNO]
+JVJ|Can I take a [MAJOR] class taught by [FACULTY] and a [MAJOR] class taught by [FACULTY]?|[YESNO]
+JVJ|What [CLASS-LEVEL] classes is [FACULTY] teaching?|[CLASS-LIST]
+JVJ|What [CLASS-LEVEL] classes are offered [DAYS]|[CLASS-LIST]
+JVJ|How many [CLASS-LEVEL] classes are being offered?|[NUM-CLASSES]
+JVJ|How many [MAJOR] [CLASS-LEVEL] courses are offered?|[NUM-CLASSES]
+JVJ|How many [ECAP] classe are being offered?|[NUM-CLASSES]
+
+
+[MAJOR]: Major Abbreviation (CSC/SE/CPE/STAT)
+[CLASS]: Specific class identifier (CSC 466)
+[CLASS-NAME]: Name of the class
+[CLASS-NUM]: Number of the class
+[CLASS-SECT]: Specific class identifier and section (CSC 466 Sec 01)
+[CLASS-SECT-LIST]: List of Class Sections
+[FACULTY]: Name of instructor from CSSE or STATS department
+[FACULTY-LIST]: List of Faculty
+[CP-USERNAME]: Cal Poly username
+[CP-EMAIL]: Cal Poly email
+[NUM-CLASSES]: Number of classes being offered given x
+[NUM-COURSES]: Number of courses an instructor is teaching
+[NUM-COURSES-MAJOR]: Number of courses an instructor is teaching by major
+[NUM-FACULTY]: Number of instructors 
+[NUM-SECTIONS]: Number of sections for a course
+[NUM-SECTIONS-PROFESSOR]: Number of sections for a course taught by a certain professor
+[DAY]: Day of the week
+[DAYS]: Representation of time in days of the week
+[TIME]: Representation of time
+[TIME-LIST]: List of times
+[LOCATION]: Building number and room
+[PHONE]: Phone number for faculty
+[GE-REQ]: GE Requirement ID (B4)
+[ECAP]: Enrollment capacity for a specified class section
+[YESNO]: Either yes or no
+[ENROLLED]: Number of enrolled students for a specified class section
+[WAITLISTED]: Number of waitlisted students for a specified class section
+[CLASS-LEVEL]: Class level (100, 200, 300, 400, 500)
+[CLASS-LIST]: List of Classes 
+[PREREQS]: Prerequisites for a specified class

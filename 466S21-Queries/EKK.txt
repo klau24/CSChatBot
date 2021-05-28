@@ -1,0 +1,122 @@
+﻿EKK|What is [PROF]’s phone number?|[PHONE]
+EKK|What is [PROF]’s number?|[PHONE]
+EKK|What is the number of [PROF]?|[PHONE]
+EKK|How can I call [PROF]?|[PHONE]
+EKK|How can I talk to [PROF]?|[PHONE]
+EKK|What is [PROF]’s email?|[EMAIL]
+EKK|What is the email of [PROF]?|[EMAIL]
+EKK|How can I email [PROF]?|You can email [PROF] at [EMAIL]
+EKK|How can I message [PROF]?|You can email [PROF] at [EMAIL]
+EKK|How do I contact [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
+EKK|How can I reach [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
+EKK|How can I get in touch [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
+EKK|What is the best way to reach [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
+EKK|What is the alias of [PROF]?|[ALIAS]
+EKK|What is [PROF]’s alias?|[ALIAS]
+EKK|Is [ALIAS] [PROF]?|Yes or No
+EKK|What courses does [PROF] teach?|[PROF] is teaching [COURSES]
+EKK|What is [PROF] teaching this [TERM]?|[PROF] is teaching [COURSES]
+EKK|What courses are [PROF] teaching in [TERM]?|[PROF] is teaching [COURSES] in [TERM]
+EKK|Did [PROF] teach [COURSE] in [TERM]?|Yes or No
+EKK|Is [PROF] teaching [COURSE] in [TERM]?|Yes or No
+EKK|Is [PROF] teaching in the [TERM]?|Yes or No
+EKK|Is [PROF] teaching this [TERM]?|Yes or No
+EKK|Would [PROF] be teaching [COURSE] in [TERM]?|Yes or No
+EKK|Who is the instructor for [COURSE]?|[PROF] teaches [COURSE]
+EKK|Who is the professor for [COURSE]?|[PROF] teaches [COURSE]
+EKK|Who is the teacher for [COURSE]?|[PROF] teaches [COURSE]
+EKK|Who is teaching [COURSE]?|[PROF] teaches [COURSE]
+EKK|Who teaches [COURSE]?|[PROF] teaches [COURSE]
+EKK|Who might teach [COURSE]?|Professor [PROF] teaches [COURSE]
+EKK|Which professor teaches [COURSE]?|[PROF] teaches [COURSE]
+EKK|Which person teaches [COURSE]?|[PROF] teaches [COURSE]
+EKK|When is [COURSE] offered?|[COURSE] are offered during the [TERM]
+EKK|When can I take [COURSE]?|[COURSE] are offered during the [TERM]
+EKK|What quarters can I take [COURSE]?|[COURSE] are offered during the [TERM]
+EKK|What courses are offered in [TERM]?|[COURSES] are offered during the [TERM]
+EKK|Is [COURSE] offered in [TERM]?|Yes or No
+EKK|Can I take [COURSE] in [TERM]?|Yes or No
+EKK|Is [COURSE] available in [TERM]?|Yes or No
+EKK|What are the section numbers of [COURSE] in [TERM]?|The section numbers of [COURSE] are [SECTIONS]
+EKK|How many sections of [COURSE] are available in [TERM]?|NUM([SECTIONS]) of [COURSE] are available in [TERM]
+EKK|What part of the day are the lectures offered for [COURSE] in [TERM] by [PROF]?|The lecture times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|What time are the lectures for [COURSE] in [TERM] by [PROF]?|The lecture times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|What are the lecture times for [COURSE] in [TERM] by [PROF]?|The lecture times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|What part of the day are the labs offered for [COURSE] in [TERM] by [PROF]?|The lab times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|What time are the labs for [COURSE] in [TERM] by [PROF]?|The lab times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|What are the lab times for [COURSE] in [TERM] by [PROF]?|The lab times for [COURSE] in [TERM] by [PROF] are [TIMES]
+EKK|Where is [COURSE] [SECTION]located?|[LOCATION]
+EKK|Where can I find [COURSE] [SECTION]?|[LOCATION]
+EKK|Where is [COURSE] [SECTION] classroom?|[LOCATION]
+EKK|What building is [COURSE] in?|[LOCATION]
+EKK|Is [NUM] the largest enrollment cap for [COURSE]?|Yes or No
+EKK|Where can I see [PROF]?|[LOCATION]
+EKK|Where is [PROF]’s office?|[LOCATION]
+EKK|Where is [PROF]’s office located?|[LOCATION]
+EKK|Where are [PROF]’s office hours?|[LOCATION]
+EKK|Where can I find [PROF] on campus for office hours?|[LOCATION]
+EKK|Is [LOCATION] [PROF]’s office?|Yes or No
+EKK|Is [LOCATION] [PROF]’s office hours?|Yes or No
+EKK|Will I find [PROF] at [LOCATION]?|Yes or No
+EKK|How many sections are there for [COURSE]?|[SECTIONCOUNT]
+EKK|What is the capacity for [LOCATION]?|[LCAP]
+EKK|What is the size of [LOCATION]?|[LCAP]
+EKK|What is the class number for [COURSE] [SECTION]?|[CLASS]
+EKK|Who is the department chair of [DEPT]?|[PROF]
+EKK|On what days is [PROF] in office?|[DAYS]
+EKK|On what days is [PROF] out of the office?|[DAYS]
+EKK|When are [PROF] office hours?|[DAYS] [TIMES]
+EKK|When can I meet with [PROF]?|[DAYS] [TIMES]
+EKK|When is the best time to meet with [PROF]?|[DAYS] [TIMES]
+EKK|How can I see [PROF]?|[DAYS] [TIMES]
+EKK|Does [PROF] have office hours on [DAY]?|Yes or No
+EKK|Is [PROF] available on [DAY]?|Yes or No
+EKK|Is [PROF] in the office on [DAY]?|Yes or No
+EKK|Is [PROF] out of the office on [DAY]?|Yes or No
+EKK|Is [PROF] out on [DAY]?|Yes or No
+EKK|What is the largest enrollment cap for [COURSE]?|[ECAP]
+EKK|What is the maximum amount of students allowed for [COURSE]?|[ECAP]
+EKK|How many students can be enrolled in [COURSE]?|[ECAP]
+EKK|What is the enrollment cap for [COURSE] that [PROF] teaches?|[ECAP]
+EKK|What is the enrollment cap for [COURSE]?|[ECAP]
+EKK|What is the cap for [COURSE] that [PROF] teaches?|[ECAP]
+EKK|What is the max enrollment for [COURSE] that [PROF] teaches?|[ECAP]
+EKK|What is the enrollment cap for [COURSE] [SECTION]?|[ECAP]
+EKK|How many students can be enrolled in [COURSE] [SECTION]?|[ECAP]
+EKK|What is [PROF]’s department? [DEPT]
+EKK|Which department does [PROF] work under?|[DEPT]
+EKK|Is [PROF] in [DEPT]?|Yes or No
+EKK|Tell me the professors from [DEPT]|[PROF]
+EKK|Does [COURSE] have labs?|Yes or No
+EKK|Are there labs for [COURSE]?|Yes or No
+EKK|Do I need to take a lab for [COURSE]?|Yes or No
+EKK|What days is [COURSE] [SECTION] on?|[DAYS]
+EKK|What type of class is [COURSE] [SECTION]?|[TYPE]
+EKK|Is [COURSE] a [TYPE]?|Yes or No
+EKK|What is the title of [PROF]?|[TITLE]
+EKK|Who is [PROF]?|[TITLE]
+EKK|What does [PROF] do?|[TITLE]
+EKK|Who is using [LOCATION] in [TERM]?|[PROF]
+EKK|Is [LOCATION] used in [TERM]?|Yes or No
+
+
+[PROF]: Full name of professor
+[PHONE]: A phone number
+[EMAIL]: An email
+[ALIAS]: First character of first name + last name + integer (optional)
+[TERM]: The academic term which can be Fall, Winter, Spring, or Summer
+[COURSES]: A list of CSSE courses
+[COURSE]: A single CSSE course
+[SECTIONS]: A list of section numbers for a [COURSE]
+[TIMES]: A list of start and end times
+[NUM]: An integer
+[ECAP]: Enrollment capacity
+[LOCATION]: Room code
+[SECTIONCOUNT]: Number of sections
+[LCAP]: Location capacity
+[CLASS]: Class number
+[DEPT]: Department Name
+[DAYS]: Days of week {M,T,W,R,F}
+[DAY]: A single day {M,T,W,R,F}
+[TYPE]: Type of class {Independent study, Lecture, Lab, Seminar, Activity}
+[TITLE]: Title of professor
