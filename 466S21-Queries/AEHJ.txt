@@ -1,0 +1,166 @@
+﻿AEHJ|Does [PROF NAME] teach [COURSE CODE] in [SCHOOL TERM]?|[YES/NO]
+AEHJ|What is [PROF NAME]’s Cal Poly alias?|[PROF NAME]’s Cal Poly alias is [POLY ALIAS]
+AEHJ|What is [PROF NAME]’s job title?|[PROF NAME]’s job title is [JOB TITLE]
+AEHJ|What is [PROF NAME]’s phone number?|[PROF NAME]’s phone number is [PHONE NUM]
+AEHJ|Where is [PROF NAME]’s office?|[PROF NAME]’s office is in [ROOM CODE]
+AEHJ|When are [PROF NAME]’s office hours?|[PROF NAME]’s office hours are [TIME SLOT]
+AEHJ|Does [POLY ALIAS] teach [COURSE CODE] in [TERM]?|[YES/NO]
+AEHJ|What is [POLY ALIAS]’s full name?|[POLY ALIAS]’s full name is [PROF NAME]
+AEHJ|What is [POLY ALIAS]’s job title?|[POLY ALIAS]’s job title is [JOB TITLE]
+AEHJ|What is [POLY ALIAS]’s phone number?|[POLY ALIAS]’s phone number is [PHONE NUM]
+AEHJ|Where is [POLY ALIAS]’s office?|[POLY ALIAS]’s office is in room [ROOM CODE]
+AEHJ|When are [POLY ALIAS]’s office hours?|[POLY ALIAS]’s office hours are [TIME SLOT]
+AEHJ|Who is the department chair of [DEPARTMENT CODE]?|[PROF NAME] is the chair of the [DEPARTMENT CODE] department
+AEHJ|How many sections of [COURSE CODE] are being offered in [SCHOOL TERM]?|There are [INTEGER] sections available of [COURSE CODE] in [SCHOOL TERM] 
+AEHJ|Is [COURSE CODE] being offered in [SCHOOL TERM]?|[YES/NO]
+AEHJ|How many sections of [COURSE CODE] are being taught by [PROF NAME] in [SCHOOL TERM]?|[INTEGER] sections of [COURSE CODE] are being taught by [PROF NAME] in [SCHOOL TERM]
+AEHJ|When is [COURSE CODE] [SECTION NUM]?|[COURSE CODE] [SECTION NUM] is [DAY SLOT] [TIME SLOT] 
+AEHJ|Does [COURSE CODE] have a lab section?|[YES/NO]
+AEHJ|Where is [COURSE CODE] [SECTION NUM]?|[COURSE CODE] [SECTION NUM] is in room [ROOM CODE]
+AEHJ|What class is [COURSE CODE]?|[COURSE CODE] is [COURSE DESCRIPTION]
+AEHJ|What class type is [COURSE CODE]?|[COURSE CODE] is a [COURSE TYPE] class
+AEHJ|Are there any prerequisites for [COURSE CODE]?|[YES/NO]
+AEHJ|What are the prerequisites for [COURSE CODE]?|[COURSE CODE] requires [REQUISITE]
+AEHJ|What’s the enrollment limit of [COURSE CODE]?|The enrollment capacity of [COURSE CODE] is [ENROLL CAP]
+AEHJ|How many students are enrolled in [COURSE CODE]?|[ENROLL COUNT] students are enrolled in [COURSE CODE]
+AEHJ|How many students are waitlisted for [COURSE CODE]?|[WAITLIST TOTAL] students are waitlisted for [COURSE CODE]
+AEHJ|How many distinct students are waitlisted for [COURSE CODE]?|[WAITLIST DISTINCT] students are distinctly waitlisted for [COURSE CODE]
+AEHJ|How many waitlisted students are unaccommodated for [COURSE CODE]?|[WAITLIST UNACCOM] waitlisted students are unaccomodated for [COURSE CODE]
+AEHJ|How many students have dropped [COURSE CODE]?|[DROP COUNT] students have dropped [COURSE CODE]
+AEHJ|How many students have withdrawn from [COURSE CODE]?|[WITHDRAW COUNT] students have withdrawn from [COURSE CODE]
+AEHJ|What class number is [COURSE DESCRIPTION]?|[COURSE DESCRIPTION] is [COURSE CODE]
+AEHJ|What class type is [COURSE DESCRIPTION]?|[COURSE DESCRIPTION] is a [COURSE TYPE] class
+AEHJ|Are there any prerequisites for [COURSE DESCRIPTION]?|[YES/NO]
+AEHJ|What are the prerequisites for [COURSE DESCRIPTION]?|[COURSE DESCRIPTION] requires [REQUISITE]
+AEHJ|What’s the enrollment limit of [COURSE DESCRIPTION]?|The enrollment capacity of [COURSE DESCRIPTION] is [ENROLL CAP]
+AEHJ|How many students are enrolled in [COURSE DESCRIPTION]?|[ENROLL COUNT] students are enrolled in [COURSE DESCRIPTION]
+AEHJ|How many students are waitlisted for [COURSE DESCRIPTION]?|[WAITLIST TOTAL] students are waitlisted for [COURSE DESCRIPTION]
+AEHJ|How many distinct students are waitlisted for [COURSE DESCRIPTION]?|[WAITLIST DISTINCT] students are distinctly waitlisted for [COURSE DESCRIPTION]
+AEHJ|How many waitlisted students are unaccommodated for [COURSE DESCRIPTION]?|[WAITLIST UNACCOM] waitlisted students are unaccomodated for [COURSE DESCRIPTION]
+AEHJ|How many students have dropped [COURSE DESCRIPTION]?|[DROP COUNT] students have dropped [COURSE DESCRIPTION]
+AEHJ|How many students have withdrawn from [COURSE DESCRIPTION]?|[WITHDRAW COUNT] students have withdrawn from [COURSE DESCRIPTION]
+AEHJ|Where are [PROF NAME] office hours?|[PROF NAME] office hours are located in [ROOM CODE] on [days and times].
+AEHJ|Where is [PROF NAME] office?|[ROOM CODE]
+AEHJ|Where is [PROF NAME] at [time]?|[PROF NAME] is in [ROOM CODE] on [days and times].
+AEHJ|When are [PROF NAME] office hours?|[PROF NAME] office hours are located in [ROOM CODE] on [days and times].
+AEHJ|What class is [PROF NAME] teaching at [time]?|[COURSE CODE]
+AEHJ|What is [PROF NAME] schedule?|[list_of(COURSE CODE)] at [days and times]
+AEHJ|When is [PROF NAME] instructing [COURSE CODE]?|[days and times]
+AEHJ|Does [PROF NAME] have office hours on [DAY SLOT]?|[YES/NO]. [PROF NAME] has office hours in [ROOM CODE] on [days and times].
+AEHJ|Does [PROF NAME] teach [COURSE CODE]?|[PROF NAME] instructs [list_of(COURSE CODE)]
+AEHJ|Does [PROF NAME] instruct [COURSE CODE]?|[PROF NAME] instructs [list_of(COURSE CODE)]
+AEHJ|Does [COURSE CODE] interfere with [COURSE CODE]?|[YES/NO], [days and times]
+AEHJ|Does [COURSE CODE] have a scheduling conflict with [COURSE CODE]?|[YES/NO], [days and times]
+AEHJ|Does [COURSE CODE] interfere with [COURSE CODE] or [COURSE CODE]?|[YES/NO], [days and times]
+AEHJ|Are there office hours for [COURSE CODE]?|[YES/NO]. [PROF NAME] has office hours for [COURSE CODE] in [ROOM CODE] on [days and times].
+AEHJ|Who has office hours in [ROOM CODE]?|[list_of(PROF NAME)].
+AEHJ|Who has office hours in [ROOM CODE] at [time]?|[list_of(PROF NAME)].
+AEHJ|Who has office hours in [ROOM CODE] on [DAY SLOT] at [time]?|[list_of(PROF NAME)].
+AEHJ|Who has office hours on [DAY SLOT] at [time]?|[list_of(PROF NAME)].
+AEHJ|Which office hours are in [ROOM CODE]?|[list_of(COURSE CODE)]
+AEHJ|What is the alias for [PROF NAME]?|[POLY ALIAS]
+AEHJ|What is the username for [PROF NAME]?|[POLY ALIAS]
+AEHJ|What is the email for [PROF NAME]?|[POLY ALIAS]@calpoly.edu
+AEHJ|What is [PROF NAME] email?|[POLY ALIAS]@calpoly.edu
+AEHJ|Which professor has email [POLY ALIAS]?|[PROF NAME]
+AEHJ|Give me [PROF NAME] email.|[POLY ALIAS]@calpoly.edu
+AEHJ|Give me [PROF NAME] phone number.|[phone_number]
+AEHJ|Which classes are in [ROOM CODE]?|[list_of(COURSE CODE)]
+AEHJ|Which classes are located in [ROOM CODE]?|[list_of(COURSE CODE)]
+AEHJ|Which classes are in [ROOM CODE] at [time] on [DAY SLOT]?|[list_of(COURSE CODE)]
+AEHJ|Which classes are in [ROOM CODE] at [time]?|[list_of(COURSE CODE)]
+AEHJ|Where are the office hours for [COURSE CODE]?|[PROF NAME] has office hours in [ROOM CODE] on [days and times].
+AEHJ|Where are the office hours for [PROF NAME]?|[PROF NAME] has office hours in [ROOM CODE] on [days and times].
+AEHJ|Where is [COURSE CODE] located?|[COURSE CODE] is located in [ROOM CODE] on [days and times].
+AEHJ|Where is [COURSE CODE] located on [DAY SLOT]?|[COURSE CODE] is located in [ROOM CODE] on [days and times].
+AEHJ|When are the office hours for [COURSE CODE]?|[PROF NAME] has office hours in [ROOM CODE] on [days and times].
+AEHJ|When does [COURSE CODE] start?|[days and times]
+AEHJ|When does [COURSE CODE] end?|[days and times]
+AEHJ|Is [COURSE CODE] lecture or lab?|[COURSE CODE] is a [COURSE TYPE] section.
+AEHJ|Is [COURSE CODE] a lecture?|[YES/NO]
+AEHJ|Is [COURSE CODE] a lab?|[YES/NO]
+AEHJ|Does [COURSE CODE] have a lab section?|[YES/NO]
+AEHJ|What is the lab section for [COURSE CODE]?|[COURSE CODE]
+AEHJ|What is the lab for [COURSE CODE]?|[COURSE CODE]
+AEHJ|What is the activity section for [COURSE CODE]?|[COURSE CODE]
+AEHJ|What is the lecture section for [COURSE CODE]?|[COURSE CODE]
+AEHJ|What is the lecture for [COURSE CODE]?|[COURSE CODE]
+AEHJ|What type is [COURSE CODE]?|[COURSE TYPE]
+AEHJ|What term is [COURSE CODE] offered?|[list_of(SCHOOL TERM)]
+AEHJ|What quarter is [COURSE CODE] offered?|[list_of(SCHOOL TERM)]
+AEHJ|Is [COURSE CODE] offered [SCHOOL TERM]?|[YES/NO]
+AEHJ|How many classes is [PROF NAME] teaching [SCHOOL TERM] quarter?|[number_of(COURSE CODE)].
+AEHJ|Which classes are [PROF NAME] instructing this quarter?|[list_of(COURSE CODE)].
+AEHJ|Which professors are teaching [COURSE CODE]?|[list_of(PROF NAME)]
+AEHJ|Who is teaching [COURSE CODE]?|[list_of(PROF NAME)]
+AEHJ|Which professor is instructing [COURSE CODE]?|[list_of(PROF NAME)]
+AEHJ|What are the sections of [COURSE CODE]?|[list_of(COURSE CODE)]
+AEHJ|Which sections of [COURSE CODE] are on [DAY SLOT]?|[list_of(COURSE CODE)]
+AEHJ|Which sections of [COURSE CODE] are on [DAY SLOT] at [time]?|[list_of(classes)]
+AEHJ|Which sections of [COURSE CODE] are between [time] and [time]?|[list_of(COURSE CODE)]
+AEHJ|Which sections of [COURSE CODE] are between [time] and [time] on [DAY SLOT]?|[list_of(COURSE CODE)]
+AEHJ|How many people are in [COURSE CODE]?|[students]
+AEHJ|How many people are enrolled in [COURSE CODE]?|[students]
+AEHJ|How many students are enrolled in [COURSE CODE]?|[students]
+AEHJ|How many students have dropped [COURSE CODE]?|[students]
+AEHJ|How many students dropped [COURSE CODE]?|[students]
+AEHJ|How many seats are left in [COURSE CODE]?|[students]
+AEHJ|How many seats are remaining in [COURSE CODE]?|[students]
+AEHJ|How many open seats are there in [COURSE CODE]?|[students]
+AEHJ|What is the remaining capacity of [COURSE CODE]?|[students]
+AEHJ|What is the capacity of [COURSE CODE]?|[students]
+AEHJ|What is the enrollment cap of [COURSE CODE]?|[students]
+AEHJ|What is the location cap of [COURSE CODE]?|[students]
+AEHJ|What is the class number for [COURSE CODE]?|[class_number]
+AEHJ|What is the class number of [COURSE CODE]?|[class_number]
+AEHJ|Which class has number [class_number]?|[COURSE CODE]
+AEHJ|Which class is [class_number]?|[COURSE CODE]
+AEHJ|Which class is [COURSE CODE]?|[class_number]
+AEHJ|Which classes have fewer than [students] students?|[list_of(COURSE CODE)]
+AEHJ|Which classes have fewer than [students] [enrollment_status]?|[list_of(COURSE CODE)]
+AEHJ|Which classes have no students [enrollment_status]|[list_of(COURSE CODE)]
+AEHJ|Which classes satisfy [ge]?|[list_of(COURSE CODE)]
+AEHJ|Which classes taught by [PROF NAME] satisfy [ge]?|[list_of(COURSE CODE)]
+AEHJ|Which classes start before [time] and satisfy[ge]?|[list_of(COURSE CODE)]
+AEHJ|Which professors instruct classes that satisfy [ge]?|[list_of(COURSE CODE)]
+AEHJ|Which classes on [DAY SLOT] start before [time]?|[list_of(COURSE CODE)]
+AEHJ|Which classes satisfy [ge] and end before [time]?|[list_of(COURSE CODE)]
+AEHJ|Which classes in [ROOM CODE] start before [time] on [DAY SLOT]?|[list_of(COURSE CODE)]
+AEHJ|Which rooms have a class that starts after [time]?|[list_of(ROOM CODE)]
+AEHJ|Does [COURSE CODE] satisfy [ge]?|[YES/NO], [COURSE CODE] satisfies [ge]
+AEHJ|What are the requirements for [COURSE CODE]?|[REQUISITE]
+
+
+[YES/NO]: A generic variable to represent binary answers
+[INTEGER]: A generic variable to represent number answers for things such as counts
+[PROF NAME]: Full name of instructor
+[COURSE CODE]: Department Code + Course Number
+[SCHOOL TERM]: Quarter/season + Year
+[POLY ALIAS]: Cal Poly username
+[JOB TITLE]: Staff position of associated faculty member
+[PHONE NUM]: A valid phone number (usually contains 1 + Area Code)
+[ROOM CODE]: A building number + room number
+[DEPARTMENT CODE]: The abbreviated name of a college department
+[SECTION NUM]: The integer associated with a specific section of a class
+[TIME SLOT]: A start time + an end time
+[DAY SLOT]: A sequence of days abbreviated into one or two letters each (e.g. MWF)
+[COURSE DESCRIPTION]: The full name of a class
+[COURSE TYPE]: The instruction type of a specific class (e.g. Lecture/Lab, Independent Study)
+[REQUISITE]: The prerequisite requirements for a class
+[ENROLL CAP]: The non-section specific enrollment cap of a course
+[WAITLIST TOTAL]: The non-section specific waitlist total of a course
+[WAITLIST DISTINCT]: The non-section specific waitlist of distinct students of a course
+[WAITLIST UNACCOM]: The non-section specific unaccommodated waitlist of a course 
+[DROP COUNT]: the non-section specific number of students who have dropped a course
+[WITHDRAW COUNT]: the non-section specific number of students who have withdrawn from a course
+[list_of(PROF_NAME)]: multiple professors
+[list_of(ROOM CODE)]: rooms
+[list_of(SCHOOL TERM)]: multiple quarters
+[class_number]: 4 digit identifier for class. ex: 4794
+[list_of(COURSE CODE)]: multiple classes
+[number_of(COURSE CODE)]: number of classes
+[time]: time of day 10:45am
+[days and times]: list of days and times used to describe when something is happening
+[students]: integer number representing amount of students
+[enrollment_status]: waitlisted, enrolled
+[ge]: ge requirements: GEB4, C4, c4,  ge d1

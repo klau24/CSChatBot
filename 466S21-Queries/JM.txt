@@ -1,0 +1,140 @@
+JM|How many instructors are in the [department_name]?|There are [number_of_instructors] in [department_name]
+JM|How many lecturers are in the [department_name]?|There are [number of lecturers] in [department_name]
+JM|What is [professor]'s email?|[professor]'s email is [email]
+JM|How many sections does [professor] teach?|[professor] teaches [number of classes] sections.
+JM|How many different classes are offered this term?|There are [number of courses] offered this term.
+JM|Which professors teach [class]?|[professors...] teach [class]
+JM|What room is [class]-[class_section] taught in?|[class]-[class_section] is taught in [room]
+JM|How many students can enroll in [class]?|[total_number_of_students] can enroll in [class]
+JM|Who teaches class number [class number]?|[professor] teaches class number [class number]
+JM|What days is [class number] scheduled for?|[class_number] is scheduled for [days of week]
+JM|What time does [class number] start?|[class number] starts at [time]
+JM|What section of [class] starts the latest?|[class_section] starts the latest, at [time]
+JM|What section of [class] starts the earliest?|[class_section] starts the earliest, at [time]
+JM|Do all classes have a lab component?|No
+JM|What is the ratio of students to faculty in [department_name]?|The ratio of students to faculty in [department_name] is [ratio]
+JM|What is the most popular building for [department_name] classes?|The most popular building for [department_name] classes is [building_number]
+JM|What is the most popular classroom for [department_name] classes?|The most popular classroom for [department_name] classes is [building_number]
+JM|Where am I most likely to spend time as a [department_name] major?|The most popular building for [department_name] classes is [building_number]
+JM|Where is the lab for [class_number] located?|The lab for [class_number] is in [room]
+JM|When is [professor] free at the end of the day?|[professor] is scheduled for classes until [time]
+JM|How many sections of [class] are offered next quarter?|There are [number_sections] for [class] next quarter
+JM|What is the most popular class in [department_name]?|[class]-[class_section] has the most students enrolled and waiting.
+JM|What class is [class_number]?|[class_number] is [class]
+JM|Can I take both [class]-[class_section] and [class]-[class_section]?|There [is not|is] a conflict between [class]-[class_section] and [class]-[class_section]
+JM|Which sections of [class] are still open?|Sections [section_number...] are still open
+JM|How long is the waitlist for [class]-[class_section]?|The waitlist for [class]-[class_section] is [waitlist_length]
+JM|Is there a waitlist for [class]-[section]?The waitlist for [class]-[section] is [waitlist_length]
+JM|How many people are on the waitlist for [class]-[class_section]?|The waitlist for [class]-[class_section] is [waitlist_length]
+JM|What [number_level] classes are still open?|[class..] are still open.
+JM|How many professors teach [class]?|[number_of_professors] teach [class].
+JM|Which professors still have open sections of [class]?|[professor...] are teaching open sections of [class]
+JM|Is [class] offered next quarter?|[class] [is|is not] offered next quarter.
+JM|Is [professor] a lecturer?|[professor] [is|is not] a lecturer.
+JM|What type of teacher is [professor]?|[professor] is a [teacher_type].
+JM|Who is teaching the most [department_name] classes next quarter?|[professor] is teaching the most classes next quarter.
+JM|What is the least popular class in [department_name]?|[class]-[class_section] has the fewest students enrolled and waiting.
+JM|Which professor is  teaching the fewest hours of class?|[professor] is teaching the fewest hours of class.
+JM|What [class_number_level] classes can I take to have no class on Mondays?|[class...] have sections without class on Mondays.
+JM|How many hours of class does [professor] teach?|[professor] teaches [hours] total.
+JM|Are there any sections of [class] open?|[class_section...] have open seats
+JM|Which professor teaches [class]-[class_section]?|professor] teaches [class]-[section]
+JM|Will [professor] teach [class] next quarter?|[professor] [will|will not] teach [class] next quarter.
+JM|Which section of [class] is the most popular?|[class_section] is the most popular.
+JM|What times can I take [class] next quarter?|[class] is offered at [time...]
+JM|How many 500 level classes does [professor] teach?|[professor] teaches [number_500_level_classes].
+JM|What days can I take [class] on?|[class] is offered [class_days...]
+JM|What [class_number_level] classes can I take to have no class on Fridays?|[class...] have sections without class on Fridays.
+JM|Where are most [department_name] classes held?|[building] has the most [department_name] classess.
+JM|How many students are enrolled so far in [department_name] classes?|[total_number_of_students_enrolled] are currently enrolled in classes.
+JM|Is statistics or computer science a more popular department?|Computer science has more students enrolled in classes.
+JM|What is the name of class number [class_number]|[class_number] is named [class].  
+JM|Is class [class] a GE|Class [class] [GE_status] a GE.  
+JM|Is class [class]-[class_section] a lecture or lab|Class [class]-[class_section] a [lab_lecture_status].  
+JM|Is [class_number] a lecture or lab|Class [class_number] a [lab_lecture_status].  
+JM|How many students have dropped [class]-[class_section]?|[total_number_of_students_dropped] have dropped [class]-[class_section].  
+JM|How many students have dropped [class_number]?|[total_number_of_students_dropped] have dropped [class_number].  
+JM|How many students have withdrawn from [class]-[class_section]?|[total_number_of_students_withdrawn] have withdrawn from [class]-[class_section].  
+JM|How many students have withdrawn from [class_number]?|[total_number_of_students_withdrawn] have withdrawn from [class_number].  
+JM|How many classes does [professor] teach?|[professor] teaches [number_classes_taught].  
+JM|How many sections of [class] does [professor] teach?|[professor] teaches [number_sections_taught].
+JM|Where is [class]-[class_section] located?|[class]-[class_section] is in [room].
+JM|Where is [class_number] located?|[class_number] is in [room].
+JM|What type of class is [class]-[class_section]?|[class]-[class_section] is [class_type].
+JM|What type of class is [class_number]?|[class_number] is [class_type].
+JM|How many labs are in [department_name]?|[department_name] has [number_labs].
+JM|How many lectures are in [department_name]?|[department_name] has [number_lectures].
+JM|How many 400 level classes are in [department_name]?|[department_name] has [number_400_level_classes].
+JM|How many 300 level classes are in [department_name]?|[department_name] has [number_300_level_classes].
+JM|How many 200 level classes are in [department_name]?|[department_name] has [number_200_level_classes].
+JM|How many 100 level classes are in [department_name]?|[department_name] has [number_100_level_classes].
+JM|How many 400 level classes does [professor] teach?|[professor] teaches [number_400_level_classes].
+JM|How many 300 level classes does [professor] teach?|[professor] teaches [number_300_level_classes].
+JM|How many 200 level classes does [professor] teach?|[professor] teaches [number_200_level_classes].
+JM|How many 100 level classes does [professor] teach?|[professor] teaches [number_100_level_classes].
+JM|How many open seats does [class] have?|[class] has [num_open_seats] open seats.
+JM|How many open seats does [class]-[class_section] have?|[class]-[class_section] has [num_open_seats] open seats.
+JM|How many open seats does [class_number] have?|[class_number] has [num_open_seats] open seats.
+JM|How many GEs are in [department_name]?|[num_GEs] are in [department_name].
+JM|Is there a class that satisfies [GE_code] GE in [department_name]?|There [GE_status] a class for [GE_code].
+JM|What classes satisfy GE [GE_code] in [department_name]?|[class ...] satisfy [GE_code].
+JM|Does class satisfy GE [GE_code]?|[class] [GE_status] an option for [GE_code].
+JM|Is [class] offered in [term_name]?|[class] [class_status] offered in [term_name].
+JM|How many sections of [class] is offered in [term_name]?|[class] has [class_section] sections offered in [term_name].
+JM|Is professor [professor] teaching in [term_name]?|[professor] [professor_status] teaching in [term_name].
+JM|What is the date range for [term]?|Term starts on [start_date] and ends on [end_date].
+JM|When does [term] start and end?|Term starts on [start_date] and ends on [end_date].
+JM|What dates does [class]-[class_section] start and end?|[class]-[class_section] starts on [start_date] and ends on [end_date].
+JM|What dates does [class_number] start and end?|[class_number] starts on [start_date] and ends on [end_date].
+JM|How long is [class]-[class_section]?|[class]-[class_section] is [class_duration] hours long.
+JM|How long is [class_number]?|[class_number] is [class_duration] hours long.
+JM|How many classes are offered in [term]?|[number_lectures_in_term] are taught in [term].
+JM|How many lecturers are offered in [term]?|[number_labs_in_term] are taught in [term].
+JM|What are the prereqs for [class]?|[prereqs] are the prereqs for [class].
+JM|What are the prereqs for [class_number]?|[prereqs] are the prereqs for [class_number].
+JM|How many classes does [professor] teach?|[professor] teaches [number_lectures_taught_by_professor].
+JM|How many labs does [professor] teach?|[professor] teaches [number_lab_taught_by_professor].
+JM|Which professor teaches the most classes?|[professor] teaches the most classes.
+JM|Which professor teaches the most sections of [class]?|[professor] teaches the most sections of [class].
+JM|Which professor has the most open seats in [class]?|[professor] has the most open seats in [class].
+JM|Which professor has the most drops?|[professor] has the most drops.
+JM|Which professor has the longest waitlist?|[professor] has the longest waitlist.
+
+[number_of_instructors]: number of instructors/ professors
+[department_name]: name of a department (e.g. CSC)
+[class]: course name (CSC 121)
+[GE_status]: is the class a GE (is, is not)
+[professor_status]: does a professor satisfy the given condition (is, is not)
+[class_status]: does the class satisfy a given condition (is, is not)
+[lab_lecture_status]: is the class a lab or lecture
+[total_number_of_students_enrolled]: total number of students enrolled in classes of a given department.
+[total_number_of_students_dropped]: total number of students that have dropped a class
+[total_number_of_students]: total number of students in a class
+[class_section]: section number of a given class
+[class_number]: class number of a given class (5231)
+[professor]: name of a professor
+[number_classes_taught]: number of classes taught by a professor
+[number_sections_taught]: number of sections taught by a professor
+[room]: room name on campus
+[class_type]: type of a class (Lec, Lab, Ind)
+[total_number_of_students_withdrawn]: total number of student who have withdrawn from a class
+[number_labs]: number of labs satisfying a given condition
+[number_lectures]: number of lectures satisfying a given condition
+[number_lectures_in_term]: number of lectures in a term
+[number_labs_in_term]: number of labs in a term
+[number_lectures_taught_by_professor]: number of lectures taught by a given professor
+[number_lab_taught_by_professor]: number of labs taught by a given professor
+[number_500_level_classes]: number of 500 level classes satisfying a given condition
+[number_400_level_classes]: number of 400 level classes satisfying a given condition
+[number_300_level_classes]: number of 300 level classes satisfying a given condition
+[number_200_level_classes]: number of 200 level classes satisfying a given condition
+[number_100_level_classes]: number of 100 level classes satisfying a given condition
+[num_open_seats]: number of open seats satisfying a given condition
+[num_GEs]: number of GEs satisfying conditions
+[GE_code]: a GE name [B4]
+[term_name]: a term name (Spring Quarter 2021)
+[start_date]: start date of class/ term
+[end_date]: end date of class/ term
+[class_duration]: period of time class-section is
+[prereqs]: prereqs for a given class
+[waitlist_length]: number of students on the waitlist for classes satisfying a given condition

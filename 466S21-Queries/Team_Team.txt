@@ -1,0 +1,111 @@
+Team Team|Are there any sections of [Class]?|There are [Num_Sections] sections of [Class].
+Team Team|Is [Class] being taught this quarter?|There are [Num_Sections] sections of [Class].
+Team Team|Is [Class] offered this quarter?|There are [Num_Sections] sections of [Class].
+Team Team|Can I take [Class] this quarter?|There are [Num_Sections] sections of [Class].
+Team Team|Is [Class] available?|There are [Num_Sections] sections of [Class].
+Team Team|How many sections of [Class] are there?|There are [Num_Sections] sections of [Class].
+Team Team|Who is [Class] being taught by?|[Class] is being taught by [Teachers].
+Team Team|Who is teaching [Class] this quarter?|[Class] is being taught by [Teachers].
+Team Team|What professors are teaching [Class] this quarter?|[Class] is being taught by [Teachers].
+Team Team|Who can I take [Class] with?|[Class] is being taught by [Teachers].
+Team Team|What days is [Class]-[Section] being taught?|[Class]-[Section] is taught on [Days].
+Team Team|What days of the week is [Class]-[Section]?|[Class]-[Section] is taught on [Days].
+Team Team|When is [Class]-[Section] being taught?|[Class]-[Section] is taught on [Days].
+Team Team|What time is [Class]-[Section] being taught?|[Class]-[Section] is taught at [Time].
+Team Team|What time of day is [Class]-[Section] being taught?|[Class]-[Section] is taught at [Time].
+Team Team|Who is [Class]-[Section] taught by?|[Class]-[Section] is taught by [Teacher].
+Team Team|How many sections does [Teacher] teach?|[Teacher] teaches [Integer] sections.
+Team Team|What classes does [Teacher] teach?|[Teacher] teaches [Classes].
+Team Team|Does [Teacher] teach [Class]?|[Teacher] teaches [Classes].
+Team Team|What sections does [Teacher] teach?|[Teacher] teaches [Class_Sections].
+Team Team|Does [Teacher] teach [Class]-[Section]?|[Teacher] teaches [Class_Sections].
+Team Team|Where is [Teacher]'s office?|[Teacher]'s office is at Building [Building], Room [Room].
+Team Team|What is [Teacher]'s phone number?|[Teacher]'s phone number is [Phone].
+Team Team|What type of class is [Class]-[Section]?|[Class]-[Section] is a [Type].
+Team Team|What is [Teacher]'s alias?|[Teacher]'s alias is [Alias].
+Team Team|What time is [Teacher] office hours?|They are at [Time] [Day].
+Team Team|When are [Teacher] office hours?|They are at [Time] [Day].
+Team Team|Does [Teacher] have afternoon office hours?|Yes
+Team Team|Does [Teacher] have morning office hours?|No
+Team Team|Where and when are [Teacher] office hours?|They are at [Time][Day] in [Building][Room]
+Team Team|What [Building] are [Teacher] office hours?|Building [Building], Room [Room]
+Team Team|What [Building] is [Class][Section] in?|Building [Building], Room [Room]
+Team Team|When is [Class] in [Room]?|[Time] [Day]
+Team Team|Is [Class] MWF?|Yes
+Team Team|Is [Class] TR?|No, it is [Day]
+Team Team|Is [Class] MTRF?|No, it is [Day]
+Team Team|Is [Class] MTWR?|No, it is [Day]
+Team Team|Does [Teacher] have office hours [Day]?|Yes, they are at [Time] [Day]
+Team Team|Does [Teacher] have office hours today?|No
+Team Team|Does [Teacher] have office hours tomorrow?|Yes, they are at [Time] [Day]
+Team Team|What time is [Class][Section]?|[Time] [Day]
+Team Team|Who teaches [Class][Section]?|[Teacher]
+Team Team|Who is [User]?|[Teacher]
+Team Team|What is the capacity for [Course][Section]?|The capacity is [Capacity] students.
+Team Team|What is the capacity for [Course]?|The max capacity for Section [Section] is [Capacity[ students
+Team Team|What college is [User] affiliated with?|[College]
+Team Team|What college is [Teacher] affiliated with?|[College]
+Team Team|What college is professor [Teacher] affiliated with?|[College]
+Team Team|What college is Dr. [Teacher] affiliated with?|[College]
+Team Team|What day is [Class] offered on?|[Class] [Section] is [Day]
+Team Team|Is [Class][Section] offered on [Day]?|Yes, [Class] [Section] is offered on [Day]
+Team Team|Does [Class] have a lab?|Yes/No
+Team Team|How long has [Teacher] taught?|[Integer] Years
+Team Team|Are there any teachers with first name [Name]?|Yes [Teacher], [Teacher], ...
+Team Team|Are there any teachers with last name [Name]?|Yes [Teacher], [Teacher], ...
+Team Team|Are there are [Class] being taught on [Day]?|Yes the classes are [Class], [Class], ...
+Team Team|What day does [Quarter] start?|[Month] [Day]
+Team Team|What day does [Quarter] end?|[Month] [Day]
+Team Team|Is [Teacher] a Professor?|Yes/No
+Team Team|What [Section] has the highest enrollment for [Class]?|[Section]
+Team Team|What [Section] has the lowest enrollment for [Class]?|[Section]
+Team Team|What is the average class size for [Teacher]?|[Integer]
+Team Team|Which teacher teaches the most sections for [Class]?|[Teacher]
+Team Team|Which teacher teaches the least sections for [Class]?|[Teacher]
+Team Team|What is the latest start time for [Class]|[Time]
+Team Team|What is the earliest start time for [Class]|[Time]
+Team Team|Which teacher has [Phone]?|[Teacher]
+Team Team|Which teacher has [alias]?|[Teacher]
+Team Team|What is the first name of [Last Name]?|[First Name]
+Team Team|Which teacher teaches the most classes in [Department]|[Teacher]
+Team Team|Which teacher teaches the least classes in [Department]|[Teacher]
+Team Team|Which teacher is at [Office]?|[Teacher]
+Team Team|Which [Quarter] in [Year] had the most sections for [Class]?|[Quarter]
+Team Team|Which [Quarter] in [Year] had the least sections for [Class]?|[Quarter]
+Team Team|Is [Location] Available after [Time]?|Yes
+Team Team|Is [Location] Available before [Time]?|No
+Team Team|Who is using [Location] [Time]?|[Teacher] is using [Location] [Time]
+Team Team|What's the capacity of [Location]?|The capacity of [Location] is 28
+Team Team|What's the enrollment capacity of [Location]?|The enrollment capacity of [Location] is 40
+Team Team|Which classes are being taight in [Location]?|[Class] is being taught in [Location]
+Team Team|Is [Teacher] teaching any in person classes?|Yes
+Team Team|When is [Teacher] available?|[Teacher] is available [Time]
+Team Team|Can I visit [Teacher] [Time]?|No
+Team Team|Who is teaching [Class]?|[Teacher] is teaching [Class]
+Team Team|Can I still enroll [Class]?|Yes
+Team Team|What's the enrollment capacity of [Class]?|The enrollment capacity of [Class] is 40
+Team Team|What [Teacher]'s email address?|[Teacher]'s email address is [Email]
+Team Team|What 's the [Phone number'] of [Teacher]?|It is [Phone number]
+Team Team|When is the [Office hour] of [Teacher]?|It is  [Time]
+Team Team|Where is [Teacher]'s [Class]?|It's at [Location]
+Team Team|What's this [Phone number] belongs to? |It belongs to [Teacher]
+Team Team|Which [Teacher] doesn't teach this quarter? |[Teacher] doesn't teach this quarter, 
+Team Team|Is [Class] virtual or in person?|It's virtual
+Team Team|Is [Class] gonna be virtual?|No
+Team Team|Which in person class is available [Time]?|[Class] are available [Time]
+Team Team|Which virtual class is available [Time]?|[Class] are available [Time]
+Team Team|How to contact [Teacher]?|[Teacher] email is [Email]
+Team Team|Is [Teacher] teaching [Class]?|No 
+Team Team|Does [Teacher] teach 500 level class?|No
+Team Team|Does [Teacher] teach 300 level class?|No
+
+
+Variables:
+[Teacher]: Professor name
+[Time]: time of the day
+[Day]: day of the week
+[Class]: Course code (e.g. CSC 466)
+[User]: Cal Poly id (e.g. daiken)
+[Section]: section of a class (e.g. Section 1 of CSC 466)
+[User]: Cal Poly id (e.g. daiken)
+[Capacity]: number of students allowed in a classroom
