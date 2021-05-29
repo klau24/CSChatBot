@@ -82,7 +82,7 @@ def extract_features(question, asked_by_user=True):
     # add remaining "important" words to features
     features += [token.text for token in doc]
     # print(tokens)
-    print("Features", features)
+    # print("Features", features)
     # print("Entities", entities)
     return (features, entities)
 
