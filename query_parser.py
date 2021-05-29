@@ -29,7 +29,7 @@ def identify_persons(doc, entities):
     # returns the remaining tokens
     for token in doc:
         if token.ent_type_ == "PERSON":
-            entities["[PROF]"].append(token.text)
+            entities["PROF"].append(token.text)
     return [token for token in doc if token.ent_type_ != "PERSON"]
 
 
@@ -40,7 +40,7 @@ def identify_courses(doc, entitites):
         token = doc[i]
         # example course: CSC 466 or STAT 312
         if i > 0 and token.like_num and doc[i - 1].is_alpha:
-            entitites["[COURSE]"].append(f"{doc[i-1].text} {token.text}")
+            entitites["COURSE"].append(f"{doc[i-1].text} {token.text}")
             # pop last added token since that was the department name (CSC/STAT)
             remaining_tokens.pop()
         else:
@@ -50,10 +50,10 @@ def identify_courses(doc, entitites):
 
 def extract_features(question, asked_by_user=True):
     # extracts features from each question
-    # returns an array of features
+    # returns a list of features and a dictionary of entities
 
-    features = dict()
-    entities = {"[PROF]": [], "[COURSE]": []}
+    features = []
+    entities = {"PROF": [], "COURSE": []}
 
     # remove question mark
     question = re.sub(f"[?]", "", question)
@@ -70,16 +70,20 @@ def extract_features(question, asked_by_user=True):
         doc = identify_courses(doc, entities)
 
         # take the first word (often a question word (who, what, where, when, why, how, is, does))
-    features["first_word"] = doc[0].text.lower()
+    features.append(doc[0].text.lower())
 
     # remove stop words
     doc = [token for token in doc if not token.is_stop]
 
-    features["variables"] = set(entities.keys())
-    features["tokens"] = doc
+    # added variables to features
+    features += [
+        key for (key, value) in entities.items() if value is not None and len(value) > 0
+    ]
+    # add remaining "important" words to features
+    features += [token.text for token in doc]
     # print(tokens)
     print("Features", features)
-    print("Entities", entities)
+    # print("Entities", entities)
     return (features, entities)
 
 

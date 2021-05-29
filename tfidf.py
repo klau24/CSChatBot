@@ -6,6 +6,7 @@ import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk import pos_tag
+from query_parser import extract_features
 
 nltk.download("punkt")
 nltk.download("wordnet")
@@ -13,13 +14,14 @@ nltk.download("averaged_perceptron_tagger")
 
 
 def customTokenizer(doc):
-    tokens = []
-    ignore_tokens = [",", ".", ";", ":", '"', "``", "''", "`"]
-    words = [t for t in word_tokenize(doc) if t not in ignore_tokens]
-    for pair in pos_tag(words):  # to flatten the (word, tag) pairs
-        tokens.append(pair[0])
-        tokens.append(pair[1])
-    return tokens
+    features, entities = extract_features(doc)
+    # tokens = []
+    # ignore_tokens = [",", ".", ";", ":", '"', "``", "''", "`"]
+    # words = [t for t in word_tokenize(doc) if t not in ignore_tokens]
+    # for pair in pos_tag(words):  # to flatten the (word, tag) pairs
+    #     tokens.append(pair[0])
+    #     tokens.append(pair[1])
+    return features
 
 
 def get_answer(q):
