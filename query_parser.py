@@ -13,12 +13,12 @@ def extract_bracketed_variables(string, entities):
     # returns the remaining string
 
     # example match [PROF]'s
-    matches = re.findall(f'(\[\w+])\S*', string)
+    matches = re.findall(f"(\[\w+])\S*", string)
     for match in matches:
         entities[match] = None
 
     # replace brackets with spaces
-    no_var_string = re.sub(f'(\[\w+])\S*', "", string)
+    no_var_string = re.sub(f"(\[\w+])\S*", "", string)
     # remove extra spaces between words
     no_var_string = " ".join(no_var_string.split())
     return no_var_string
@@ -28,9 +28,9 @@ def identify_persons(doc, entities):
     # identifies names in the doc adding them to entities dictionary
     # returns the remaining tokens
     for token in doc:
-        if token.ent_type_ == 'PERSON':
-            entities['[PROF]'].append(token.text)
-    return [token for token in doc if token.ent_type_ != 'PERSON']
+        if token.ent_type_ == "PERSON":
+            entities["[PROF]"].append(token.text)
+    return [token for token in doc if token.ent_type_ != "PERSON"]
 
 
 def identify_courses(doc, entitites):
@@ -39,8 +39,8 @@ def identify_courses(doc, entitites):
     for i in range(len(doc)):
         token = doc[i]
         # example course: CSC 466 or STAT 312
-        if i > 0 and token.like_num and doc[i-1].is_alpha:
-            entitites['[COURSE]'].append(f'{doc[i-1].text} {token.text}')
+        if i > 0 and token.like_num and doc[i - 1].is_alpha:
+            entitites["[COURSE]"].append(f"{doc[i-1].text} {token.text}")
             # pop last added token since that was the department name (CSC/STAT)
             remaining_tokens.pop()
         else:
@@ -53,13 +53,10 @@ def extract_features(question, asked_by_user=True):
     # returns an array of features
 
     features = dict()
-    entities = {
-        '[PROF]': [],
-        '[COURSE]': []
-    }
+    entities = {"[PROF]": [], "[COURSE]": []}
 
     # remove question mark
-    question = re.sub(f'[?]', "", question)
+    question = re.sub(f"[?]", "", question)
 
     # extract bracketed variables
     no_var_string = extract_bracketed_variables(question, entities)
@@ -73,13 +70,13 @@ def extract_features(question, asked_by_user=True):
         doc = identify_courses(doc, entities)
 
         # take the first word (often a question word (who, what, where, when, why, how, is, does))
-    features['first_word'] = doc[0].text.lower()
+    features["first_word"] = doc[0].text.lower()
 
     # remove stop words
     doc = [token for token in doc if not token.is_stop]
 
-    features['variables'] = set(entities.keys())
-    features['tokens'] = doc
+    features["variables"] = set(entities.keys())
+    features["tokens"] = doc
     # print(tokens)
     print("Features", features)
     print("Entities", entities)
@@ -88,7 +85,7 @@ def extract_features(question, asked_by_user=True):
 
 def retrieve_queries_from_file(filepath):
     # return an array of queries, ["EKK", <question>, <answer>]
-    with open(filepath, 'r') as f:
+    with open(filepath, "r") as f:
         lines = f.readlines()
 
     # pre-process each line
@@ -109,7 +106,7 @@ if __name__ == "__main__":
         _, question, answer = query
         extract_features(question, False)
 
-    with open('sample_questions.txt', 'r') as f:
+    with open("sample_questions.txt", "r") as f:
         lines = f.readlines()
     test_questions = [line.strip() for line in lines]
 
