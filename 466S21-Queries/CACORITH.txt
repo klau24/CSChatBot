@@ -1,0 +1,145 @@
+CACORITH|What is [TeacherName]’s Alias?|[TeacherName]’s Alias is [Alias].
+CACORITH|What’s [TeacherName]’s username?|[TeacherName]’s username is [Alias]
+CACORITH|What is [TeacherName]’s email?|[TeacherName]’s email is [Alias]@calpoly.edu
+CACORITH|How can I contact [TeacherName]?|[TeacherName]’s email is [Alias]@calpoly.edu
+CACORITH|What is [TeacherName]’s title? [TeacherName]’s title is [TeacherTitle]
+CACORITH|What’s [TeacherName]’s phone number?|[TeacherName]’s phone number is [PhoneNumber]
+CACORITH|Do you have the phone number for [TeacherName]?|Yes, you can reach [TeacherName] at [PhoneNumber].
+CACORITH|How can I contact [TeacherName]?|Here is the contact information for [TeacherName], phone: [PhoneNumber], email: [Alias]@calpoly.edu office: [RoomNumber].
+CACORITH|What’s [TeacherName]'s title?|[TeacherName]'s title is [TeacherTitle].
+CACORITH|Where is [TeacherName]’s office?|[TeacherName]’s office is [RoomNumber]
+CACORITH|What is the room number of [TeacherName]’s office?|[TeacherName]’s office is [RoomNumber]
+CACORITH|Where can I find [TeacherName]?|[TeacherName] has office hours at [RoomNumber] on [DayOfWeek] - [TimeRange].
+CACORITH|When does [TeacherName] hold office hours today?|[TeacherName] holds office hours at [TimeRange]
+CACORITH|When does [TeacherName] hold office hours?|[TeacherName] holds office hours at [DayAndTime]
+CACORITH|What days does [TeacherName] hold office hours?|[TeacherName] holds office hours at [DayOfWeek]
+CACORITH|When are [TeacherName]’s office hours today?|[TeacherName] holds office hours at [TimeRange]
+CACORITH|When can I go to [TeacherName]’s office hours today?|[TeacherName] holds office hours at [TimeRange]
+CACORITH|Does [TeacherName] have hours today?|[Bool]
+CACORITH|When are [TeacherName]’s office hours today?|[TeacherName] holds office hours at [TimeOfDay]
+CACORITH|When are [TeacherName]’s office hours?|[TeacherName] holds office hours at [DayAndTime]
+CACORITH|What classes does [TeacherName] teach?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|What courses does [TeacherName] teach?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|What classes does [TeacherName] teach?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|Which classes are taught by [TeacherName]?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|What course does [TeacherName] teach?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|What does [TeacherName] teach?|[TeacherName] teaches these classes: [CourseNumber]
+CACORITH|Does [TeacherName] teach [CourseNumOrName]?|Yes, [TeacherName] teaches [CourseNumOrName] section [CourseSection].
+CACORITH|Where does [TeacherName] teach [CourseNumOrName]?|[TeacherName] teaches [CourseNumOrName] at [RoomNumber].
+CACORITH|When does [TeacherName] teach [CourseNumOrName]?|[TeacherName] teaches [CourseNumOrName] at [TimeRange] on [DayOfWeek].
+CACORITH|How many people can take [TeacherName]'s section of [CourseNumOrName]?|[TeacherName]'s section of [CourseNumOrName] has an enrollment capacity of [EnrollmentCap].
+CACORITH|What is the location capacity of [TeacherName]'s section of [CourseNumOrName]?|[TeacherName]'s section of [CourseNumOrName] has a location capacity of [LocationCap].
+CACORITH|What are the professors for [CourseNumOrName]? The professors for [CourseNumOrName] are: [TeacherNameList].
+CACORITH|Who teaches [CourseNumOrName]?|[CourseNumber] is taught by: [TeacherName]
+CACORITH|Who is [CourseNumOrName] taught by?|[CourseNumber] is taught by: [TeacherName]
+CACORITH|What is the schedule for [CourseNumOrName] [CourseSection]?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|What time is [CourseNumOrName] [CourseSection]?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|What day is [CourseNumOrName] [CourseSection]?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|When is [CourseNumOrName] [CourseSection]?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|What days is [CourseNumOrName] [CourseSection] taught?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|What times is [CourseNumOrName] [CourseSection] taught?|[CourseNumber] [CourseSection] is offered [DayOfWeek] at [TimeRange]
+CACORITH|What is the name of [CourseNumber]?|[CourseNumber]: [CourseName]
+CACORITH|What is [CourseNumber] called?|[CourseNumber]: [CourseName]
+CACORITH|What is [CourseNumber]?|[CourseNumber]: [CourseName]
+CACORITH|What class is [CourseNumber]?|[CourseNumber]: [CourseName]
+CACORITH|What is the course number of [CourseName]?|[CourseNumber]: [CourseName]
+CACORITH|What class is [CourseName]?|[CourseNumber]: [CourseName]
+CACORITH|What is the course code of [CourseName]?|[CourseNumber]: [CourseName]
+CACORITH|How many sections of [CourseNumOrName] are there?|[NumberOfSections]
+CACORITH|When does [CourseNumOrName] start today?|[CourseNumber] is offered at [TimeRange]
+CACORITH|When does [CourseNumOrName] start today?|[CourseNumber] is offered at [TimeRange]
+CACORITH|How many sections of [CourseNumOrName]?|There are [NumberOfSections] sections of [CourseNumOrName].
+CACORITH|What is [CourseNumOrName] called?|[CourseNumOrName] is known as [CourseName].
+CACORITH|Are there prerequisites for [CourseNumOrName]?|The prerequisites for [CourseNumOrName] are: [CourseRequisites].
+CACORITH|Tell me the course number for [CourseName]?|The course number for [CourseNumOrName] [CourseSection] is [CourseNumber].
+CACORITH|When is [CourseNumOrName] [CourseSection] taught?|[CourseNumOrName] is taught at [TimeRange] on [DayOfWeek].
+CACORITH|How many students can take [CourseNumOrName]?|The enrollment capacity for [CourseNumOrName] section [CourseSection] is [EnrollmentCap].
+CACORITH|When would I get out of [CourseNumOrName][CourseSection]?|[CourseNumOrName] section [CourseSection] ends at [DayAndTime].
+CACORITH|Does [CourseNumOrName][CourseSection] conflict with [CourseNumOrName][CourseSection]?|[Bool].
+CACORITH|How many courses does [Dept] offer?|[Dept] offers [NumberOfCourses]
+CACORITH|How many classes does [Dept] offer?|[Dept] offers [NumberOfCourses]
+CACORITH|What courses does [Dept] offer?|[Dept] offers [CourseNumber]:[CourseName]
+CACORITH|What [Dept] courses are offered?|[Dept] offers [CourseNumber]:[CourseName]
+CACORITH|What [Dept] classes are offered in the Fall?|[Dept] offers [CourseNumber]:[CourseName]
+CACORITH|What [Dept] classes are there?|[Dept] offers [CourseNumber]:[CourseName]
+CACORITH|What sections of [CourseNumOrName] are offered?|
+CACORITH|What is the enrollment cap of [CourseNumOrName]?|[EnrollmentCap] total seats in [CourseNumOrName]
+CACORITH|How many spots are there in  [CourseNumOrName]?|[EnrollmentCap] total seats in [CourseNumOrName]
+CACORITH|How many seats are there in [CourseNumOrName]?|[EnrollmentCap] total seats in [CourseNumOrName]
+CACORITH|How many available seats are there in [CourseNumOrName]?|[Enr]/[EnrollmentCap] seats available in [CourseNumOrName]
+CACORITH|How many open spots does [CourseNumOrName] have?|[Enr]/[EnrollmentCap] seats available in [CourseNumOrName]
+CACORITH|Can I enroll in [CourseNumOrName]?|[Enr]/[EnrollmentCap] seats available in [CourseNumOrName]
+CACORITH|Does [CourseNumOrName] have open seats?|[Enr]/[EnrollmentCap] seats available in [CourseNumOrName]
+CACORITH|How long is the waitlist for [CourseNumOrName]?|[Waitlist] people on the waitlist for [CourseNumOrName]
+CACORITH|How many people are waiting in [CourseNumOrName]?|[Waitlist] people on the waitlist for [CourseNumOrName]
+CACORITH|Is there a waitlist for [CourseNumOrName]?|[Waitlist] people on the waitlist for [CourseNumOrName]
+CACORITH|What classes use [RoomNumber]?[CourseList] are taught in [RoomNumber].
+CACORITH|Who teaches in [RoomNumber]?[TeacherNameList] uses [RoomNumber].
+CACORITH|When is [RoomNumber] in use on [DayOfWeek]?|[RoomNumber] is used during [TimeRange] on day.
+CACORITH|Is [RoomNumber] available at [TimeRange] on [DayOfWeek]? [Bool].
+CACORITH|How many people can fit in [RoomNumber]?[LocationCap] people can fit in [RoomNumber].
+CACORITH|What is [RoomNumber] called?|[RoomNumber] is known as [RoomName].
+CACORITH|Is [CourseNumOrName] taught in [RoomNumber]?[Bool].
+CACORITH|Does [TeacherName] use [RoomNumber]?[Bool].
+CACORITH|Are there any [GEArea] courses in [RoomNumber]?|[Bool].
+CACORITH|Can I find [TeacherName] in [RoomNumber]?|[Bool].
+CACORITH|What GE areas does [CourseNumOrName] satisfy?|[CourseNumber] satisfies [GEArea]
+CACORITH|Which GE area does [CourseNumOrName] satisfy?|[CourseNumber] satisfies [GEArea]
+CACORITH|What are the GE areas for [CourseNumOrName]?|[CourseNumber] satisfies [GEArea]
+CACORITH|How many [CourseNumber] sections are there?|There are [NumberOfSections] sections of [CourseNumber].
+CACORITH|What GE requirement is fulfilled by taking [CourseNumber]?|[CourseNumber] fulfulls GE Requirement [GeReq].
+CACORITH|What is the description for [CourseNumber]?|[CourseNumber]'s description is [CourseName].
+CACORITH|Which course is [CourseName]?|[CourseName]'s course number is [CourseNumber].
+CACORITH|What is the enrollment cap for [CourseNumber]?|There can be a maximum of [EnrollmentCap] students in a section of [CourseNumber].
+CACORITH|What courses are taught by [TeacherName]?|[TeacherName] teaches [CourseList].
+CACORITH|What is [TeacherName]'s weekly schedule?|[TeacherName] is busy [DayAndTime].
+CACORITH|What times is [TeacherName] available on [DayOfWeek]?|[TeacherName] is busy [TimeRange].
+CACORITH|Where can I find [TeacherName]'s office?|[TeacherName]'s office is [RoomNumber].
+CACORITH|Which professor works in office [RoomNumber]?|[TeacherName] works in [RoomNumber].
+CACORITH|Which sections of [CourseName] are taught by [TeacherName]?|[TeacherName] teaches sections [SectionList].
+CACORITH|What is [TeacherName]'s phone number?|You can reach [TeacherName] at [PhoneNumber].
+CACORITH|Is [TeacherName] a lecturer?|[Bool], [TeacherName] [IsIsnt] as lecturer.
+CACORITH|What is [TeacherName]'s job title?|[TeacherName] is a [TeacherTitle].
+CACORITH|How many sections of independent study are advised by [TeacherName]?|[TeacherName] advises [NumberOfSections] sections.
+CACORITH|In which classroom is secion [CourseSection] of course [CourseNumber] taught?|[CourseName] section [CourseSection] [RoomNumber]
+CACORITH|What courses are being taught in [RoomNumber]?|[CourseList] are all taught in [RoomNumber].
+CACORITH|What is the weekly schedule for [CourseNumber] section [CourseSection]?|Section [CourseSection] of [CourseNumber] is taught [DayAndTime].
+CACORITH|What is [TeacherName]'s Cal Poly username?|[TeacherName]'s username is [Alias].
+CACORITH|How can I contact [TeacherName]?|[TeacherName]'s phone number is [PhoneNumber], and [TeacherName]'s office is [RoomNumber].
+CACORITH|How many sections of independent study does [TeacherName] advise?|[TeacherName] is the advisor for [NumberOfSections] sections of independent study.
+CACORITH|How can I fulfill GE requirement [GeReq]?|[CourseList] fulfills GE requirement [GeReq].
+CACORITH|How busy is [TeacherName]?|[TeacherName] is busy [DayAndTime].
+CACORITH|What is [TeacherName]'s email address?|You can reach [TeacherName] at [Alias]@calpoly.edu.
+CACORITH|Which professors teach [CourseName]?|[CourseName] is taught by [TeacherNameList]
+CACORITH|Who teaches section [CourseSection] of [CourseNumber]?|[TeacherName] teaches [CourseSection] of [CourseNumber].
+CACORITH|Who are the [Dept] professors?|The [Dept] professors are [TeacherNameList].
+CACORITH|What are the courses offered by [Dept]?[Dept] offers [CourseList].
+
+[TeacherName]: The name of a teacher at Cal Poly.
+[TeacherNameList]: A list of teachers names.
+[Alias]: Calpoly username
+[TeacherTitle]: Prefix/honorific to refer to a teacher
+[DayOfWeek]: Name of a weekday
+[TimeRange]: Range of time, in hours and minutes (Eg. 3:10-4:30)
+[DayAndTime]: One or more matched days and times (eg. M 2-4, Tu 4-8)
+[RoomNumber]: Room code of a room on campus (eg 10-251)
+[RoomName]: Name of room on campus (eg Dexter 10)
+[PhoneNumber]: phone number, possibly with extension and/or +1 country code
+[CourseNumOrName]: Unique identifier of a course, being either its name or number
+[CourseNumber]: The course number of a course (eg CSC 466)
+[CourseSection]: The section number of a course 
+[CourseName]: The english name of a course. (eg Knowledge Discovery from Data)
+[CourseRequisites]: The prerequisites for a course.
+[CourseList]: A list of courses.
+[Bool]: Yes or No
+[Dept]: A Cal Poly department (eg CSC or Computer Science)
+[NumberOfCourses]: A number of classes with a given attribute.
+[NumberOfSections]: Number of sections for a course.
+[EnrollmentCap]: Maximum number of students allowed in a course.
+[LocationCap]: Maximum number of people allowed at a location.
+[Enr]: Number of students enrolled in a class.
+[Waitlist]: Number of students on the waitlist for a class.
+[GEArea]: GE course code of a class. (eg D)
+[SectionList]: A list of section numbers.
+[IsIsnt]: Is or isn't.
+[GeReq]: An area of Cal Poly's general education requirments. For example: B4.

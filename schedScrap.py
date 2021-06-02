@@ -5,6 +5,7 @@ import pymysql.cursors
 import copy
 from bs4 import BeautifulSoup
 
+
 def courseInText(text):
    out = "CSC" in text or "CPE" in text or "DATA" in text or "LAES" in text or "EE" in text or "GSB" in text or "STAT" in text or "IME" in text
    return out
@@ -78,6 +79,7 @@ def getInfo(url, i):
    #need to also return courses
    return output, courses
 
+
 def addCourseToProf(count, output, courses):
    profAndCourses = []
    allCourses = []
@@ -114,6 +116,7 @@ def addProfToDB(profCount, output):
             profCount += 1
       connection.commit()
    return profCount
+
 
 def addCourseToDB(allCourses):
    connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
