@@ -65,8 +65,8 @@ class QueryParser:
         # tokenize the remaining words
         doc = nlp(no_var_string)
 
-        for chunk in doc.noun_chunks:
-            print(chunk.text)
+        # for chunk in doc.noun_chunks:
+        #     print(chunk.text)
 
         # extract entities from tokens if question is coming from the user
         if asked_by_user:

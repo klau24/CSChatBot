@@ -6,7 +6,8 @@ import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk import pos_tag
-from query_parser import extract_features
+from query_parser import QueryParser
+
 
 nltk.download("punkt")
 nltk.download("wordnet")
@@ -14,14 +15,14 @@ nltk.download("averaged_perceptron_tagger")
 
 
 def customTokenizer(doc):
-    features, entities = extract_features(doc)
+    parser = QueryParser(doc)
     # tokens = []
     # ignore_tokens = [",", ".", ";", ":", '"', "``", "''", "`"]
     # words = [t for t in word_tokenize(doc) if t not in ignore_tokens]
     # for pair in pos_tag(words):  # to flatten the (word, tag) pairs
     #     tokens.append(pair[0])
     #     tokens.append(pair[1])
-    return features
+    return parser.features
 
 
 def get_answer(q):
@@ -34,6 +35,9 @@ def get_answer(q):
 
     tfidf = vectorizer.fit_transform(df["questions"])
 
+    parser = QueryParser(q)
+    print(parser.features)
+    print(parser.entities)
     test = vectorizer.transform([q])
     cosine = cosine_similarity(test, tfidf)
     cosine = pd.Series(cosine[0])
