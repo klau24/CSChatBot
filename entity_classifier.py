@@ -5,16 +5,40 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.naive_bayes import MultinomialNB
 
-df = pd.read_csv("entity_data.csv")
-df = df.sample(frac=1).reset_index(drop=True)
 
-train = df.iloc[:int(len(df)*0.8)]
-test = df.iloc[int(len(df)*0.8):]
+class EntityClassifier:
+    def __init__(self):
+        df = pd.read_csv("entity_data.csv")
 
-text_clf = Pipeline([('vect', CountVectorizer()),
-  ('tfidf', TfidfTransformer()),
-  ('clf', MultinomialNB())])
+        # shuffle data
+        df = df.sample(frac=1).reset_index(drop=True)
 
-text_clf = text_clf.fit(train["Word"], train["Entity"])
-predicted = text_clf.predict(test["Word"])
-print("Accuracy:", np.mean(predicted == test["Entity"]))
+        self.train = df.iloc[: int(len(df) * 0.8)]
+        self.test = df.iloc[int(len(df) * 0.8) :]
+
+        print(len(df))
+        print(len(self.train))
+        print(len(self.test))
+
+        self.clf = Pipeline(
+            [
+                ("vect", CountVectorizer()),
+                ("tfidf", TfidfTransformer()),
+                ("clf", MultinomialNB()),
+            ]
+        )
+        # train on data
+        self.clf = self.clf.fit(self.train["Word"], self.train["Entity"])
+
+    def test_accuracy(self):
+        predicted = self.clf.predict(self.test["Word"])
+        print(predicted)
+        print("Accuracy:", np.mean(predicted == self.test["Entity"]))
+
+
+if __name__ == "__main__":
+    e = EntityClassifier()
+    e.test_accuracy()
+
+    # print(e.clf.predict(["CSC 238", "Mike James", "Aaron",
+    #       "Data Structures", "Introduction to Computer Science"]))
