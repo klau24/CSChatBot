@@ -97,10 +97,10 @@ JTCN| Tell me the day(s) of the week [COURSE] is offered? |[DAYS]
 JTCN| Which day(s) of the week is [COURSE] offered? |[DAYS]
 JTCN| What day(s) of the week is [PROF] free? |[DAYS]
 JTCN| What day(s) of the week is [PROF] free? |[DAYS]
-JTCN| What COURSES are taught in [LOCATION] |[COURSES]
-JTCN| Tell me the COURSES that are taught in [LOCATION] |[COURSES]
-JTCN| Can you give me the COURSES that are taught in [LOCATION] |[COURSES]
-JTCN| Which COURSES are taught in [LOCATION] |[COURSES]
+JTCN| What [COURSES] are taught in [LOCATION] |[COURSES]
+JTCN| Tell me the [COURSES] that are taught in [LOCATION] |[COURSES]
+JTCN| Can you give me the [COURSES] that are taught in [LOCATION] |[COURSES]
+JTCN| Which [COURSES] are taught in [LOCATION] |[COURSES]
 JTCN| How many COURSES are taught in [LOCATION] |Number of [COURSES]
 JTCN| Is [PROF] available in the [TIME] |Yes or No
 JTCN| Is [PROF] free in the [TIME] |Yes or No
@@ -205,13 +205,13 @@ Team Team|What 's the [PHONE number'] of [PROF]?|It is [PHONE number]
 Team Team|When is the [LOCATION hour] of [PROF]?|It is  [TIME]
 Team Team|Where is [PROF]'s [COURSE]?|It's at [LOCATION]
 Team Team|What's this [PHONE number] belongs to? |It belongs to [PROF]
-Team Team|Which [PROF] doesn't teach this quarter? |[PROF] doesn't teach this quarter, 
+Team Team|Which [PROF] doesn't teach this quarter? |[PROF] doesn't teach this quarter,
 Team Team|Is [COURSE] virtual or in person?|It's virtual
 Team Team|Is [COURSE] gonna be virtual?|No
 Team Team|Which in person COURSE is available [TIME]?|[COURSE] are available [TIME]
 Team Team|Which virtual COURSE is available [TIME]?|[COURSE] are available [TIME]
 Team Team|How to contact [PROF]?|[PROF] EMAIL is [EMAIL]
-Team Team|Is [PROF] teaching [COURSE]?|No 
+Team Team|Is [PROF] teaching [COURSE]?|No
 Team Team|Does [PROF] teach 500 level COURSE?|No
 Team Team|Does [PROF] teach 300 level COURSE?|No
 CACORITH|What is [PROF]’s ALIAS?|[PROF]’s ALIAS is [ALIAS].
@@ -407,7 +407,7 @@ JVJ|What is the total number of seats available for [COURSE]?|[NUM-SECTIONS] * [
 JVJ|What is the total number of seats available for [PROF]’s [COURSE]?|[NUM-SECTIONS-PROFESSOR] * [ECAP]
 JVJ|How many seats does [COURSE] have?|[NUM-SECTIONS] * [ECAP]
 JVJ|How many seats of [COURSE] are taught by [PROF]?|[NUM-SECTIONS-PROFESSOR] * [ECAP]
-JVJ|How many students is [PROF] teaching?|[COURSECOUNT]* [ECAP] 
+JVJ|How many students is [PROF] teaching?|[COURSECOUNT]* [ECAP]
 JVJ|How many seats does [PROF] have available?|[COURSECOUNT]* [ECAP]
 JVJ|Will [PROF] have office HOURS at [TIME]?|[Yes or No]
 JVJ|Will [PROF] have COURSE at [TIME]?|[Yes or No]
@@ -480,14 +480,14 @@ JM|What [COURSE_NUMBERLEVEL] COURSES can I take to have no COURSE on Fridays?|[C
 JM|Where are most [DEPT] COURSES held?|[BUILDING] has the most [DEPT] courses.
 JM|How many students are enrolled so far in [DEPT] COURSES?|[ECAP] are currently enrolled in COURSES.
 JM|Is statistics or computer science a more popular department?|Computer science has more students enrolled in COURSES.
-JM|What is the name of COURSE number [COURSE]|[COURSE] is named [COURSE].  
-JM|Is COURSE [COURSE] a GE|COURSE [COURSE] [GE] a GE.  
+JM|What is the name of COURSE number [COURSE]|[COURSE] is named [COURSE].
+JM|Is COURSE [COURSE] a GE|COURSE [COURSE] [GE] a GE.
 JM|Is COURSE [COURSE]-[SECTION] a lecture or lab|COURSE [COURSE]-[SECTION] a [LABORLECTURE]
-JM|Is [COURSE] a lecture or lab|COURSE [COURSE] a [LABORLECTURE].  
-JM|How many students have dropped [COURSE]-[SECTION]?|[ECAP_DROPPED] have dropped [COURSE]-[SECTION].  
-JM|How many students have dropped [COURSE]?|[ECAP_DROPPED] have dropped [COURSE].  
-JM|How many students have withdrawn from [COURSE]-[SECTION]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE]-[SECTION].  
-JM|How many students have withdrawn from [COURSE]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE].  
+JM|Is [COURSE] a lecture or lab|COURSE [COURSE] a [LABORLECTURE].
+JM|How many students have dropped [COURSE]-[SECTION]?|[ECAP_DROPPED] have dropped [COURSE]-[SECTION].
+JM|How many students have dropped [COURSE]?|[ECAP_DROPPED] have dropped [COURSE].
+JM|How many students have withdrawn from [COURSE]-[SECTION]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE]-[SECTION].
+JM|How many students have withdrawn from [COURSE]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE].
 JM|How many COURSES does [PROF] teach?|[PROF] teaches COUNT([COURSES])
 JM|How many sections of [COURSE] does [PROF] teach?|[PROF] teaches COUNT([SECTIONS])
 JM|Where is [COURSE]-[SECTION] located?|[COURSE]-[SECTION] is in [LOCATION].
@@ -543,10 +543,10 @@ AEHJ|What is [ALIAS]’s phone number?|[ALIAS]’s phone number is [PHONE]
 AEHJ|Where is [ALIAS]’s office?|[ALIAS]’s office is in room [LOCATION]
 AEHJ|When are [ALIAS]’s office hours?|[ALIAS]’s office hours are [TIMES]
 AEHJ|Who is the department chair of [DEPT]?|[PROF] is the chair of the [DEPT] department
-AEHJ|How many sections of [COURSE] are being offered in [TERM]?|There are [NUM] sections available of [COURSE] in [TERM] 
+AEHJ|How many sections of [COURSE] are being offered in [TERM]?|There are [NUM] sections available of [COURSE] in [TERM]
 AEHJ|Is [COURSE] being offered in [TERM]?|[YES/NO]
 AEHJ|How many sections of [COURSE] are being taught by [PROF] in [TERM]?|[NUM] sections of [COURSE] are being taught by [PROF] in [TERM]
-AEHJ|When is [COURSE] [SECTION]?|[COURSE] [SECTION] is [DAYS] [TIMES] 
+AEHJ|When is [COURSE] [SECTION]?|[COURSE] [SECTION] is [DAYS] [TIMES]
 AEHJ|Does [COURSE] have a lab section?|[YES/NO]
 AEHJ|Where is [COURSE] [SECTION]?|[COURSE] [SECTION] is in room [LOCATION]
 AEHJ|What class is [COURSE]?|[COURSE] is [DESCRPTION]
@@ -760,51 +760,49 @@ EKK|Who is [PROF]?|[TITLE]
 EKK|What does [PROF] do?|[TITLE]
 EKK|Who is using [LOCATION] in [TERM]?|[PROF]
 EKK|Is [LOCATION] used in [TERM]?|Yes or No
-PIS | Who is the current Computer Science department chair? | [PROF] 
+PIS | Who is the current Computer Science department chair? | [PROF]
 PIS | Who is the current Administrative Support Coordinator for the Computer
 Science department? | [PROF]
-PIS | Does Cal Poly offer a Blended Bachelors and Masters program in Computer Science? | yes 
+PIS | Does Cal Poly offer a Blended Bachelors and Masters program in Computer Science? | yes
 PIS | Are there prerequisites for CSC123? | no
-PIS | What is the total number of units required for a Bachelors in Computer Science? | 180 units 
-PIS | What is the total number of units required for a Masters in Computer Science? | 45 units 
+PIS | What is the total number of units required for a Bachelors in Computer Science? | 180 units
+PIS | What is the total number of units required for a Masters in Computer Science? | 45 units
 PIS | What are the prerequisites for [COURSE]? | [PREREQ]
 PIS | How many concentrations does the Computer Science department offer? | 1
 PIS | What concentrations does the Computer Science department offer? | Concentration in Interactive Entertainment
-PIS | Does Cal Poly offer a Cross Disciplinary Studies Minor in Data Science? | yes 
+PIS | Does Cal Poly offer a Cross Disciplinary Studies Minor in Data Science? | yes
 PIS | What minors does the Computer Science department offer? | [CSSE-Minors]
-PIS | What requirements does a student need to meet to be qualified for the Computer Science Blended Program? | Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0 
-PIS | How many total students are currently in the Computer Science program? | 550 students 
+PIS | What requirements does a student need to meet to be qualified for the Computer Science Blended Program? | Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0
+PIS | How many total students are currently in the Computer Science program? | 550 students
 PIS | Approximately how many undergrad students are in the Computer Science program? | 450 undergrad students
-PIS | Approximately how many graduate students are in the Computer Science program? | More than 75 graduate students 
+PIS | Approximately how many graduate students are in the Computer Science program? | More than 75 graduate students
 PIS | What is the Computer Science department’s email? | computer-science@calpoly.edu
 PIS | What is the Computer Science department’s phone number? | (805)756-282
-PIS | How many faculty members are in the Computer Science department? | 49 
+PIS | How many faculty members are in the Computer Science department? | 49
 PIS | How many affiliate faculty members are in the Computer Science department? | 2
 PIS | How many active emeriti members are in the Computer Science department? | 2
 PIS | How many staff members are in the Computer Science department? | 4
-PIS | Is [PROF] teaching [COURSE] this quarter? | yes or no 
+PIS | Is [PROF] teaching [COURSE] this quarter? | yes or no
 PIS | What classes is [PROF] teaching [TERM]? | [COURSES]
-PIS | What is the building number for the Computer Science building? | 14 
-PIS | What are the two series options to complete the Physical Science Support Electives? | Physics and Chemistry 
-PIS | How many units of  free electives are allowed in the Computer Science curriculum? | 0 units 
+PIS | What is the building number for the Computer Science building? | 14
+PIS | What are the two series options to complete the Physical Science Support Electives? | Physics and Chemistry
+PIS | How many units of  free electives are allowed in the Computer Science curriculum? | 0 units
 PIS | What is the Computer Science department’s Instagram page? | @cpcscandse
-PIS | What are the hours for the Computer Science Department? | 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday 
-PIS | Is [COURSE] being offered in [TERM]? | yes or no 
+PIS | What are the hours for the Computer Science Department? | 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
+PIS | Is [COURSE] being offered in [TERM]? | yes or no
 PIS | What courses in the Computer Science curriculum don’t require any prerequisites | [COURSES]
-PIS | Is the Computer Science office currently open? | no 
-PIS | Is [COURSE] an approved technical elective? | yes or no 
-PIS | Is double-counting allowed between Science Support Electives? | no 
+PIS | Is the Computer Science office currently open? | no
+PIS | Is [COURSE] an approved technical elective? | yes or no
+PIS | Is double-counting allowed between Science Support Electives? | no
 PIS | How do I contact [PROF] ? |  [PHONE]
 PIS | What is [PROF] ‘s phone number?  | [PHONE]
 PIS | Where is [PROF]’s office? | [LOCATION]
-PIS | Who is teaching STAT 302 this quarter? | Walker, J; McGaughey, K
-PIS | Do you offer the STAT 302 course on Tuesday and Thursday this quarter? | Yes or no
 PIS | How many sections do you offer the STAT 302 course this quarter? 3
 PIS | What is [PROF] ‘s title? | [TITLE]
 PIS | Does [COURSE] have a lab? | yes or no
 PIS | What classes are [PROF] teaching this quarter? | [COURSE] [SECTION]
 PIS | Who is in [LOCATION]? | [PROF]
-PIS | Who is the current Statistics department chair? | [PROF] 
+PIS | Who is the current Statistics department chair? | [PROF]
 PIS | What are the prerequisites for [COURSE]? | [PREREQ]
 PIS | What is the building number for the Math and Statistics building ? | 25
 PIS | Where do I look for [TERM] schedule? |  https://schedules.calpoly.edu/
@@ -821,43 +819,40 @@ PIS | Where can I find the Math and Statistics building? Cal Poly campus buildin
 PIS | How many people drop [COURSE][SECTION] in [TERM]? | [STATS-COURSE-DROPS]
 PIS | Are there a lot of people dropping [COURSE][SECTION] in [TERM]? | There are [STATS-COURSE-DROPS] people dropping this class in [TERM]
 PIS | Do you offer [COURSE] this quarter? |Yes or no
-PIS | Where do I look for the Statistic class schedule this quarter? | https://schedules.calpoly.edu/depts_76-CSM_curr.htm 
-PIS | Where do I look for the CSSE class schedule this quarter? https://schedules.calpoly.edu/depts_52-CENG_curr.htm 
+PIS | Where do I look for the Statistic class schedule this quarter? | https://schedules.calpoly.edu/depts_76-CSM_curr.htm
+PIS | Where do I look for the CSSE class schedule this quarter? https://schedules.calpoly.edu/depts_52-CENG_curr.htm
 PIS | Does the Computer Science department offer classes on the weekend? | No
 PIS | Is [PROF] teaching [COURSE] this quarter? | Yes or No
 PIS | Is [PROF] teaching [COURSE] this quarter? | Yes or No
 PIS | How do I contact [PROF]? | Call [PHONE] or visit [LOCATION]
 PIS | Is [PROF]’s office [LOCATION]? | Yes or No
-PIS | Is [COURSE] offered in Fall 2021? Yes or no
-PIS | Can I take [COURSE] this quarter? Yes or no
-PIS | Do I need to take [COURSE] after [COURSE]? Yes or no
-PIS | Can I take [COURSE] as a tech elective? Yes or no
-PIS | Does [COURSE] count as a technical elective for Computer Science major? Yes or no
-PIS | Does [COURSE] have a lab? Yes or no
-PIS | Whose office is in [LOCATION]? [PROF]
-PIS | What stats classes are offered in [TERM]? [COURSES]
-PIS | Can you tell me all stats classes offered in [TERM]? [COURSES]
-PIS | Is [SECTION] waitlisted? Yes/ no
-PIS | is [PROF] teaching  [COURSE]? Yes / no
-PIS | Who is teaching [COURSE]? [PROF]
-PIS | What do I need to get into Computer Science blended program? Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0 
-PIS | How many units do I need to take to get my Bachelors degree in CS? 180 units
-PIS | Does the computer science department have an instagram page? Yes, it’s @cpcscandse
-PIS | Can I take any free electives as a computer science major? No 
-PIS | Can a computer science major have any free electives? No
-PIS | How many units do I need to get a Master degree in computer science? 45 units
-PIS | Can I take [COURSE] as a pre-req to [COURSE]? Yes or no
-PIS | Is [COURSE] a pre-req to [COURSE]?
-PIS | Is [COURSE] required for [COURSE]?
-PIS | Is the computer science department open during the weekend? No, they are available 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday 
-PIS | Is [PROF] still the department chair of Computer Science? Yes
-PIS | What time does [COURSE] section  [SECTION] starts? [TIMES]
-PIS | What’s the earliest section for [COURSE]? The earliest section is [SECTION] taught by [PROF] that starts at [TIMES]
-PIS | What’s the latest section for [COURSE]? The latest section is [SECTION] taught by [PROF] that starts at [TIMES]
-PIS | Are there any CSC courses offered before [TIMES]? [COURSES]
-PIS | Are there any CSC courses offered  after [TIMES]? [COURSES]
-PIS | Are there any CSC courses offered  after [TIMES] but before [TIMES] ? [COURSES]
-PIS | What time does [COURSE] section  [SECTION] starts? [TIMES]
-PIS | What time does [COURSE] section  [SECTION] ends? [TIMES]
-PIS | Where is the computer science building? Building 14
-PIS | Where is the statistics building? Building 25
+PIS | Is [COURSE] offered in Fall 2021? |Yes or no
+PIS | Can I take [COURSE] this quarter? |Yes or no
+PIS | Do I need to take [COURSE] after [COURSE]?| Yes or no
+PIS | Can I take [COURSE] as a tech elective? |Yes or no
+PIS | Does [COURSE] count as a technical elective for Computer Science major? |Yes or no
+PIS | Does [COURSE] have a lab? |Yes or no
+PIS | Whose office is in [LOCATION]? |[PROF]
+PIS | What stats classes are offered in [TERM]?| [COURSES]
+PIS | Can you tell me all stats classes offered in [TERM]? |[COURSES]
+PIS | Is [SECTION] waitlisted?|Yes/ no
+PIS | is [PROF] teaching  [COURSE]? |Yes / no
+PIS | Who is teaching [COURSE]? |[PROF]
+PIS | What do I need to get into Computer Science blended program? |Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0
+PIS | How many units do I need to take to get my Bachelors degree in CS? |180 units
+PIS | Does the computer science department have an instagram page? |Yes, it’s @cpcscandse
+PIS | Can I take any free electives as a computer science major? |No
+PIS | Can a computer science major have any free electives?| No
+PIS | How many units do I need to get a Master degree in computer science?| 45 units
+PIS | Can I take [COURSE] as a pre-req to [COURSE]? |Yes or no
+PIS | Is the computer science department open during the weekend? |No, they are available 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
+PIS | Is [PROF] still the department chair of Computer Science? |Yes
+PIS | What time does [COURSE] section [SECTION] starts? |[TIMES]
+PIS | What’s the earliest section for [COURSE]? |The earliest section is [SECTION] taught by [PROF] that starts at [TIMES]
+PIS | What’s the latest section for [COURSE]? |The latest section is [SECTION] taught by [PROF] that starts at [TIMES]
+PIS | Are there any CSC courses offered before [TIMES]? |[COURSES]
+PIS | Are there any CSC courses offered  after [TIMES]? |[COURSES]
+PIS | What time does [COURSE] section  [SECTION] starts? |[TIMES]
+PIS | What time does [COURSE] section  [SECTION] ends? |[TIMES]
+PIS | Where is the computer science building? Building | 14
+PIS | Where is the statistics building? | Building 25
