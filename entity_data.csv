@@ -1,1045 +1,219 @@
 Word,Entity
-CSC 599,COURSE
-CSC 492,COURSE
-CSC 597,COURSE
-CSC 400,COURSE
-CSC 400,COURSE
-CSC 597,COURSE
-CSC 491,COURSE
-CSC 599,COURSE
-CSC 492,COURSE
-CSC 491,COURSE
-CSC 400,COURSE
-CSC 491,COURSE
-CSC 400,COURSE
-CPE 400,COURSE
-CSC 498,COURSE
-CSC 491,COURSE
-CSC 497,COURSE
-CSC 498,COURSE
-CSC 497,COURSE
-CSC 597,COURSE
-CSC 599,COURSE
-CSC 492,COURSE
-CSC 492,COURSE
-CSC 597,COURSE
-CSC 599,COURSE
-CSC 498,COURSE
-CSC 596,COURSE
-CSC 466,COURSE
-CSC 466,COURSE
-CSC 466,COURSE
-CSC 466,COURSE
-CSC 497,COURSE
-CSC 492,COURSE
 CPE 426,COURSE
-CSC 430,COURSE
-CPE 426,COURSE
-CSC 430,COURSE
-CSC 491,COURSE
-CSC 491,COURSE
 CSC 590,COURSE
 CSC 530,COURSE
-CSC 430,COURSE
-CSC 492,COURSE
-CPE 462,COURSE
-CSC 500,COURSE
-CSC 430,COURSE
-CSC 599,COURSE
-CSC 400,COURSE
 CSC 309,COURSE
-CSC 309,COURSE
-CSC 492,COURSE
-CSC 309,COURSE
-CSC 309,COURSE
-CSC 599,COURSE
-CSC 597,COURSE
 CSC 422,COURSE
-CSC 422,COURSE
-CSC 498,COURSE
-CPE 462,COURSE
-CSC 497,COURSE
-CPE 400,COURSE
-CSC 599,COURSE
-CSC 492,COURSE
-CSC 500,COURSE
 CSC 500,COURSE
 CSC 474,COURSE
-CSC 474,COURSE
-CPE 471,COURSE
 CSC 450,COURSE
 CPE 471,COURSE
-CSC 491,COURSE
-CPE 462,COURSE
-CSC 498,COURSE
-CSC 400,COURSE
-CSC 492,COURSE
-CSC 307,COURSE
-CSC 307,COURSE
-CPE 462,COURSE
-CSC 307,COURSE
-CSC 492,COURSE
-CSC 307,COURSE
-CSC 400,COURSE
 CSC 596,COURSE
 CSC 325,COURSE
-CSC 325,COURSE
-CPE 462,COURSE
-CSC 492,COURSE
-CSC 400,COURSE
-CSC 599,COURSE
-CSC 349,COURSE
-CSC 349,COURSE
-CSC 349,COURSE
-CSC 349,COURSE
-CSC 400,COURSE
-CSC 492,COURSE
-CSC 491,COURSE
-CPE 400,COURSE
-CPE 462,COURSE
-CPE 462,COURSE
 LAES 462,COURSE
-CSC 406,COURSE
-CSC 406,COURSE
 CSC 405,COURSE
-CSC 405,COURSE
-CSC 492,COURSE
-CPE 462,COURSE
-CSC 400,COURSE
-CSC 599,COURSE
-CSC 400,COURSE
-CSC 492,COURSE
-CSC 491,COURSE
 CSC 313,COURSE
-CSC 313,COURSE
-CSC 498,COURSE
-CSC 597,COURSE
-CSC 365,COURSE
-CSC 365,COURSE
-CSC 121,COURSE
 CSC 121,COURSE
 CSC 305,COURSE
-CSC 305,COURSE
-CSC 492,COURSE
-CSC 599,COURSE
 CSC 582,COURSE
-CSC 582,COURSE
-CSC 466,COURSE
-CSC 400,COURSE
 CSC 466,COURSE
 CPE 461,COURSE
-CSC 498,COURSE
-CSC 492,COURSE
-CPE 462,COURSE
 CPE 400,COURSE
-CSC 400,COURSE
-CSC 498,COURSE
 CSC 349,COURSE
-CSC 349,COURSE
-CSC 349,COURSE
-CSC 497,COURSE
-CSC 491,COURSE
-CSC 349,COURSE
-CSC 599,COURSE
-CSC 492,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CSC 492,COURSE
-CSC 492,COURSE
-CSC 498,COURSE
 CPE 419,COURSE
-CPE 419,COURSE
-CPE 315,COURSE
-CPE 315,COURSE
-CSC 400,COURSE
-CSC 491,COURSE
-CSC 599,COURSE
-CPE 462,COURSE
-CSC 492,COURSE
 CPE 453,COURSE
-CPE 453,COURSE
-CPE 453,COURSE
-CPE 453,COURSE
-CSC 400,COURSE
-CPE 462,COURSE
 CPE 315,COURSE
-CPE 315,COURSE
-CPE 315,COURSE
-CPE 315,COURSE
-CSC 492,COURSE
 CPE 464,COURSE
-CPE 462,COURSE
-CPE 464,COURSE
-CPE 464,COURSE
-CPE 464,COURSE
-CSC 468,COURSE
 CSC 468,COURSE
 CSC 400,COURSE
 CSC 491,COURSE
-CSC 492,COURSE
-CSC 498,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CSC 492,COURSE
-CSC 348,COURSE
-CSC 445,COURSE
 CSC 445,COURSE
 CSC 566,COURSE
-CPE 462,COURSE
 CSC 497,COURSE
 DATA 472,COURSE
 CSC 597,COURSE
 CSC 492,COURSE
 CSC 498,COURSE
 CSC 599,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
-CPE 202,COURSE
 CSC 480,COURSE
-CSC 480,COURSE
-CPE 202,COURSE
-CSC 406,COURSE
-CSC 406,COURSE
-CSC 406,COURSE
-CSC 307,COURSE
 CSC 307,COURSE
 CSC 406,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CSC 232,COURSE
 CSC 232,COURSE
 CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CPE 357,COURSE
-CSC 365,COURSE
-CSC 365,COURSE
-CSC 369,COURSE
-CSC 365,COURSE
 CSC 365,COURSE
 CSC 369,COURSE
 CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
-CPE 203,COURSE
 CPE 202,COURSE
-CPE 202,COURSE
-CSC 225,COURSE
-CSC 225,COURSE
 EE 329,COURSE
-EE 329,COURSE
-CSC 225,COURSE
-CSC 225,COURSE
-CSC 484,COURSE
-CSC 484,COURSE
-CSC 484,COURSE
-CSC 486,COURSE
 CSC 486,COURSE
 CSC 484,COURSE
 CSC 225,COURSE
 CSC 348,COURSE
-CSC 225,COURSE
-CSC 348,COURSE
-CSC 430,COURSE
 CSC 430,COURSE
 CSC 231,COURSE
-CSC 231,COURSE
-CSC 231,COURSE
 CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-CPE 101,COURSE
-STAT 400,COURSE
 STAT 462,COURSE
 GSB S570 ,COURSE
 STAT 434,COURSE
-STAT 331,COURSE
-STAT 218,COURSE
-STAT 217,COURSE
-STAT 542,COURSE
 STAT 419,COURSE
-STAT 312,COURSE
-STAT 312,COURSE
 STAT 542,COURSE
 STAT 321,COURSE
-STAT 321,COURSE
-STAT 334,COURSE
 STAT 334,COURSE
 STAT 130,COURSE
-STAT 130,COURSE
-STAT 313,COURSE
-STAT 302,COURSE
-STAT 302,COURSE
 STAT 513,COURSE
 STAT 427,COURSE
-STAT 427,COURSE
-STAT 251,COURSE
-STAT 365,COURSE
 STAT 365,COURSE
 STAT 323,COURSE
 STAT 523,COURSE
 STAT 423,COURSE
 STAT 410,COURSE
-STAT 217,COURSE
-STAT 217,COURSE
-STAT 466,COURSE
-STAT 466,COURSE
-STAT 466,COURSE
 STAT 466,COURSE
 CPE 462,COURSE
 DATA 452,COURSE
 STAT 400,COURSE
 STAT 350,COURSE
-STAT 350,COURSE
 STAT 531,COURSE
-STAT 531,COURSE
-STAT 331,COURSE
 STAT 331,COURSE
 STAT 302,COURSE
-STAT 312,COURSE
 IME 596,COURSE
-STAT 217,COURSE
-STAT 217,COURSE
-STAT 218,COURSE
-STAT 218,COURSE
-STAT 218,COURSE
-STAT 312,COURSE
-STAT 312,COURSE
-STAT 312,COURSE
 STAT 312,COURSE
 STAT 218,COURSE
-STAT 218,COURSE
-STAT 218,COURSE
-STAT 217,COURSE
 STAT 217,COURSE
 STAT 251,COURSE
-STAT 251,COURSE
-STAT 252,COURSE
-STAT 252,COURSE
-STAT 252,COURSE
 STAT 313,COURSE
 STAT 252,COURSE
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Lupo Christopher,Professor
-Professor Lupo Christopher,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Anderson Paul,Professor
-Professor Anderson Paul,Professor
-Beard Stephen,Professor
-Professor Beard Stephen,Professor
-Beard Stephen,Professor
-Professor Beard Stephen,Professor
-Beard Stephen,Professor
-Professor Beard Stephen,Professor
-Beard Stephen,Professor
-Professor Beard Stephen,Professor
-Beard Stephen,Professor
-Professor Beard Stephen,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-Clements John,Professor
-Professor Clements John,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-da Silva Bruno,Professor
-Professor da Silva Bruno,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-DeBruhl Bruce,Professor
-Professor DeBruhl Bruce,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eckhardt Christian,Professor
-Professor Eckhardt Christian,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Eisty Nasir,Professor
-Professor Eisty Nasir,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Fang Dongfeng,Professor
-Professor Fang Dongfeng,Professor
-Gharibyan Hasmik,Professor
-Professor Gharibyan Hasmik,Professor
-Gharibyan Hasmik,Professor
-Professor Gharibyan Hasmik,Professor
-Gharibyan Hasmik,Professor
-Professor Gharibyan Hasmik,Professor
-Gharibyan Hasmik,Professor
-Professor Gharibyan Hasmik,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Haungs Michael,Professor
-Professor Haungs Michael,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Janzen David,Professor
-Professor Janzen David,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kazerouni Ayaan,Professor
-Professor Kazerouni Ayaan,Professor
-Kearns Timothy,Professor
-Professor Kearns Timothy,Professor
-Kearns Timothy,Professor
-Professor Kearns Timothy,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Keen Aaron,Professor
-Professor Keen Aaron,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Khosmood Foaad,Professor
-Professor Khosmood Foaad,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Migler Theresa,Professor
-Professor Migler Theresa,Professor
-Nico Phillip,Professor
-Professor Nico Phillip,Professor
-Nico Phillip,Professor
-Professor Nico Phillip,Professor
-Nico Phillip,Professor
-Professor Nico Phillip,Professor
-Nico Phillip,Professor
-Professor Nico Phillip,Professor
-Nico Phillip,Professor
-Professor Nico Phillip,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Pantoja Maria,Professor
-Professor Pantoja Maria,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Peterson Zachary,Professor
-Professor Peterson Zachary,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Seng John,Professor
-Professor Seng John,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Smith Hugh,Professor
-Professor Smith Hugh,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Stanchev Lubomir,Professor
-Professor Stanchev Lubomir,Professor
-Turner Clark,Professor
-Professor Turner Clark,Professor
-Turner Clark,Professor
-Professor Turner Clark,Professor
-Turner Clark,Professor
-Professor Turner Clark,Professor
-Turner Clark,Professor
-Professor Turner Clark,Professor
-Turner Clark,Professor
-Professor Turner Clark,Professor
-Vakalis Ignatios,Professor
-Professor Vakalis Ignatios,Professor
-Vakalis Ignatios,Professor
-Professor Vakalis Ignatios,Professor
-Vakalis Ignatios,Professor
-Professor Vakalis Ignatios,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Ventura Jonathan,Professor
-Professor Ventura Jonathan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Einakian Sussan,Professor
-Professor Einakian Sussan,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Hatalsky Paul,Professor
-Professor Hatalsky Paul,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Humer Irene,Professor
-Professor Humer Irene,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Kauffman Daniel,Professor
-Professor Kauffman Daniel,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Klingenberg BJ,Professor
-Professor Klingenberg BJ,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Kuboi Toshihiro,Professor
-Professor Kuboi Toshihiro,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Mammen Kurt,Professor
-Professor Mammen Kurt,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Migler Andrew,Professor
-Professor Migler Andrew,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Mork Kirsten,Professor
-Professor Mork Kirsten,Professor
-Parkinson Dave,Professor
-Professor Parkinson Dave,Professor
-Parkinson Dave,Professor
-Professor Parkinson Dave,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Planck John,Professor
-Professor Planck John,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Sheets Erin,Professor
-Professor Sheets Erin,Professor
-Siu Christopher,Professor
-Professor Siu Christopher,Professor
-Siu Christopher,Professor
-Professor Siu Christopher,Professor
-Siu Christopher,Professor
-Professor Siu Christopher,Professor
-Siu Christopher,Professor
-Professor Siu Christopher,Professor
-Van De Vanter Michael,Professor
-Professor Van De Vanter Michael,Professor
-Van De Vanter Michael,Professor
-Professor Van De Vanter Michael,Professor
-Voelker Kurt,Professor
-Professor Voelker Kurt,Professor
-Voelker Kurt,Professor
-Professor Voelker Kurt,Professor
-Voelker Kurt,Professor
-Professor Voelker Kurt,Professor
-Workman Julie,Professor
-Professor Workman Julie,Professor
-Workman Julie,Professor
-Professor Workman Julie,Professor
-Workman Julie,Professor
-Professor Workman Julie,Professor
-Workman Julie,Professor
-Professor Workman Julie,Professor
-Schaffner Andrew,Professor
-Professor Schaffner Andrew,Professor
-Schaffner Andrew,Professor
-Professor Schaffner Andrew,Professor
-Bodwin Kelly,Professor
-Professor Bodwin Kelly,Professor
-Bodwin Kelly,Professor
-Professor Bodwin Kelly,Professor
-Bodwin Kelly,Professor
-Professor Bodwin Kelly,Professor
-Bodwin Kelly,Professor
-Professor Bodwin Kelly,Professor
-Chance Beth,Professor
-Professor Chance Beth,Professor
-Doi Jimmy,Professor
-Professor Doi Jimmy,Professor
-Doi Jimmy,Professor
-Professor Doi Jimmy,Professor
-Doi Jimmy,Professor
-Professor Doi Jimmy,Professor
-Doi Jimmy,Professor
-Professor Doi Jimmy,Professor
-Doi Jimmy,Professor
-Professor Doi Jimmy,Professor
-Frame Samuel,Professor
-Professor Frame Samuel,Professor
-Frame Samuel,Professor
-Professor Frame Samuel,Professor
-Gopalan Giri,Professor
-Professor Gopalan Giri,Professor
-Gopalan Giri,Professor
-Professor Gopalan Giri,Professor
-Holladay Bret,Professor
-Professor Holladay Bret,Professor
-Holladay Bret,Professor
-Professor Holladay Bret,Professor
-Lund Ulric,Professor
-Professor Lund Ulric,Professor
-McGaughey Karen,Professor
-Professor McGaughey Karen,Professor
-McGaughey Karen,Professor
-Professor McGaughey Karen,Professor
-Rein Steven,Professor
-Professor Rein Steven,Professor
-Ross Kevin,Professor
-Professor Ross Kevin,Professor
-Ross Kevin,Professor
-Professor Ross Kevin,Professor
-Rossman Allan,Professor
-Professor Rossman Allan,Professor
-Rossman Allan,Professor
-Professor Rossman Allan,Professor
-Rossman Allan,Professor
-Professor Rossman Allan,Professor
-Roy Soma,Professor
-Professor Roy Soma,Professor
-Roy Soma,Professor
-Professor Roy Soma,Professor
-Roy Soma,Professor
-Professor Roy Soma,Professor
-Sabbag Anelise,Professor
-Professor Sabbag Anelise,Professor
-Sabbag Anelise,Professor
-Professor Sabbag Anelise,Professor
-Sabbag Anelise,Professor
-Professor Sabbag Anelise,Professor
-Sklar Jeffrey,Professor
-Professor Sklar Jeffrey,Professor
-Sklar Jeffrey,Professor
-Professor Sklar Jeffrey,Professor
-Sklar Jeffrey,Professor
-Professor Sklar Jeffrey,Professor
-Sklar Jeffrey,Professor
-Professor Sklar Jeffrey,Professor
-Sun Dennis,Professor
-Professor Sun Dennis,Professor
-Sun Dennis,Professor
-Professor Sun Dennis,Professor
-Sun Dennis,Professor
-Professor Sun Dennis,Professor
-Sun Dennis,Professor
-Professor Sun Dennis,Professor
-Sun Dennis,Professor
-Professor Sun Dennis,Professor
-Theobold Allison,Professor
-Professor Theobold Allison,Professor
-Theobold Allison,Professor
-Professor Theobold Allison,Professor
-Theobold Allison,Professor
-Professor Theobold Allison,Professor
-Theobold Allison,Professor
-Professor Theobold Allison,Professor
-Walker John,Professor
-Professor Walker John,Professor
-Cheng Nianpin,Professor
-Professor Cheng Nianpin,Professor
-Cheng Nianpin,Professor
-Professor Cheng Nianpin,Professor
-Grant Billie-Jo,Professor
-Professor Grant Billie-Jo,Professor
-Grant Billie-Jo,Professor
-Professor Grant Billie-Jo,Professor
-Korengel Felicia,Professor
-Professor Korengel Felicia,Professor
-Korengel Felicia,Professor
-Professor Korengel Felicia,Professor
-Korengel Felicia,Professor
-Professor Korengel Felicia,Professor
-Oksanish James,Professor
-Professor Oksanish James,Professor
-Oksanish James,Professor
-Professor Oksanish James,Professor
-Oksanish James,Professor
-Professor Oksanish James,Professor
-Oksanish James,Professor
-Professor Oksanish James,Professor
-Schroth-Glanz Maddie,Professor
-Professor Schroth-Glanz Maddie,Professor
-Schroth-Glanz Maddie,Professor
-Professor Schroth-Glanz Maddie,Professor
-Schroth-Glanz Maddie,Professor
-Professor Schroth-Glanz Maddie,Professor
-Schuster Sonja,Professor
-Professor Schuster Sonja,Professor
-Schuster Sonja,Professor
-Professor Schuster Sonja,Professor
-Schuster Sonja,Professor
-Professor Schuster Sonja,Professor
-Tenore Roger,Professor
-Professor Tenore Roger,Professor
-Tenore Roger,Professor
-Professor Tenore Roger,Professor
-Tenore Roger,Professor
-Professor Tenore Roger,Professor
-Williams Immanuel,Professor
-Professor Williams Immanuel,Professor
-Williams Immanuel,Professor
-Professor Williams Immanuel,Professor
-Williams Immanuel,Professor
-Professor Williams Immanuel,Professor
+Lupo Christopher,PROF
+Professor Lupo Christopher,PROF
+Anderson Paul,PROF
+Professor Anderson Paul,PROF
+Beard Stephen,PROF
+Professor Beard Stephen,PROF
+Clements John,PROF
+Professor Clements John,PROF
+da Silva Bruno,PROF
+Professor da Silva Bruno,PROF
+Professor DeBruhl Bruce,PROF
+DeBruhl Bruce,PROF
+Professor Eckhardt Christian,PROF
+Eckhardt Christian,PROF
+Professor Eisty Nasir,PROF
+Eisty Nasir,PROF
+Professor Fang Dongfeng,PROF
+Fang Dongfeng,PROF
+Professor Gharibyan Hasmik,PROF
+Gharibyan Hasmik,PROF
+Professor Haungs Michael,PROF
+Haungs Michael,PROF
+Professor Janzen David,PROF
+Janzen David,PROF
+Professor Kazerouni Ayaan,PROF
+Kazerouni Ayaan,PROF
+Kearns Timothy,PROF
+Professor Kearns Timothy,PROF
+Keen Aaron,PROF
+Professor Keen Aaron,PROF
+Khosmood Foaad,PROF
+Professor Khosmood Foaad,PROF
+Migler Theresa,PROF
+Professor Migler Theresa,PROF
+Nico Phillip,PROF
+Professor Nico Phillip,PROF
+Pantoja Maria,PROF
+Professor Pantoja Maria,PROF
+Peterson Zachary,PROF
+Professor Peterson Zachary,PROF
+Seng John,PROF
+Professor Seng John,PROF
+Smith Hugh,PROF
+Professor Smith Hugh,PROF
+Stanchev Lubomir,PROF
+Professor Stanchev Lubomir,PROF
+Turner Clark,PROF
+Professor Turner Clark,PROF
+Vakalis Ignatios,PROF
+Professor Vakalis Ignatios,PROF
+Ventura Jonathan,PROF
+Professor Ventura Jonathan,PROF
+Einakian Sussan,PROF
+Professor Einakian Sussan,PROF
+Hatalsky Paul,PROF
+Professor Hatalsky Paul,PROF
+Humer Irene,PROF
+Professor Humer Irene,PROF
+Kauffman Daniel,PROF
+Professor Kauffman Daniel,PROF
+Klingenberg BJ,PROF
+Professor Klingenberg BJ,PROF
+Kuboi Toshihiro,PROF
+Professor Kuboi Toshihiro,PROF
+Mammen Kurt,PROF
+Professor Mammen Kurt,PROF
+Migler Andrew,PROF
+Professor Migler Andrew,PROF
+Mork Kirsten,PROF
+Professor Mork Kirsten,PROF
+Parkinson Dave,PROF
+Professor Parkinson Dave,PROF
+Planck John,PROF
+Professor Planck John,PROF
+Sheets Erin,PROF
+Professor Sheets Erin,PROF
+Siu Christopher,PROF
+Professor Siu Christopher,PROF
+Van De Vanter Michael,PROF
+Professor Van De Vanter Michael,PROF
+Voelker Kurt,PROF
+Professor Voelker Kurt,PROF
+Workman Julie,PROF
+Professor Workman Julie,PROF
+Schaffner Andrew,PROF
+Professor Schaffner Andrew,PROF
+Bodwin Kelly,PROF
+Professor Bodwin Kelly,PROF
+Chance Beth,PROF
+Professor Chance Beth,PROF
+Doi Jimmy,PROF
+Professor Doi Jimmy,PROF
+Frame Samuel,PROF
+Gopalan Giri,PROF
+Professor Gopalan Giri,PROF
+Holladay Bret,PROF
+Professor Holladay Bret,PROF
+Lund Ulric,PROF
+Professor Lund Ulric,PROF
+McGaughey Karen,PROF
+Professor McGaughey Karen,PROF
+Rein Steven,PROF
+Professor Rein Steven,PROF
+Ross Kevin,PROF
+Professor Ross Kevin,PROF
+Rossman Allan,PROF
+Professor Rossman Allan,PROF
+Professor Roy Soma,PROF
+Roy Soma,PROF
+Sabbag Anelise,PROF
+Professor Sabbag Anelise,PROF
+Sklar Jeffrey,PROF
+Professor Sklar Jeffrey,PROF
+Sun Dennis,PROF
+Professor Sun Dennis,PROF
+Theobold Allison,PROF
+Professor Theobold Allison,PROF
+Walker John,PROF
+Professor Walker John,PROF
+Cheng Nianpin,PROF
+Professor Cheng Nianpin,PROF
+Grant Billie-Jo,PROF
+Professor Grant Billie-Jo,PROF
+Korengel Felicia,PROF
+Professor Korengel Felicia,PROF
+Oksanish James,PROF
+Professor Oksanish James,PROF
+Schroth-Glanz Maddie,PROF
+Professor Schroth-Glanz Maddie,PROF
+Schuster Sonja,PROF
+Professor Schuster Sonja,PROF
+Tenore Roger,PROF
+Professor Tenore Roger,PROF
+Williams Immanuel,PROF
+Professor Williams Immanuel,PROF
