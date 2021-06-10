@@ -23,7 +23,8 @@ class QueryClassifier:
                 self.data["responses"].iloc[answers.index[i]],
             )
         )
-    return answers.iloc[:5]
+    #return answers.iloc[:5]
+    return self.data["responses"].iloc[answers.index[0]]
 
 
   def preprocess_queries(self, filename):

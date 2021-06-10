@@ -46,11 +46,15 @@ class ChatBot:
     print(tokens)
     print(entities)
     print(new_q)
-    self.queryClf.get_answer(new_q)
+    answer = self.queryClf.get_answer(new_q)
+    return entities, answer
 
 if __name__ == "__main__":
   bot = ChatBot()
+  print("Hello I am EKK, your Cal Poly Virtual Assistant. How can I help you today?")
   q = input("Q> ")
   while q != "exit" and q != "Exit":
-    bot.get_sample_answers(q)
+    entities, answer = bot.get_sample_answers(q)
+    query = sql_queries.Query(entities, answer)
+    query.queryDB()
     q = input("Q> ")
