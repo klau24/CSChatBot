@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.pipeline import Pipeline
@@ -32,7 +33,14 @@ class EntityClassifier:
         print("Accuracy:", np.mean(predicted == self.test["Entity"]))
 
     def predict(self, doc):
-      return self.clf.predict([doc])
+        # handles specific course codes
+        COURSE_CODE_REGEX = f"(CSC|STAT) \d\d\d"
+        match = re.search(COURSE_CODE_REGEX, doc, re.IGNORECASE)
+        if match:
+            return "['COURSE']"
+
+        return self.clf.predict([doc])
+
 
 if __name__ == "__main__":
     e = EntityClassifier()
