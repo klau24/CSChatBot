@@ -8,17 +8,13 @@ from sklearn.naive_bayes import MultinomialNB
 
 class EntityClassifier:
     def __init__(self):
-        df = pd.read_csv("entity_data.csv")
+        df = pd.read_csv("entity_data.csv").drop_duplicates(ignore_index=True)
 
         # shuffle data
         df = df.sample(frac=1).reset_index(drop=True)
 
         self.train = df.iloc[: int(len(df) * 0.8)]
         self.test = df.iloc[int(len(df) * 0.8) :]
-
-        print(len(df))
-        print(len(self.train))
-        print(len(self.test))
 
         self.clf = Pipeline(
             [
@@ -35,6 +31,8 @@ class EntityClassifier:
         print(predicted)
         print("Accuracy:", np.mean(predicted == self.test["Entity"]))
 
+    def predict(self, doc):
+      return self.clf.predict([doc])
 
 if __name__ == "__main__":
     e = EntityClassifier()
