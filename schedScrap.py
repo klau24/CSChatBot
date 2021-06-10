@@ -5,7 +5,6 @@ import pymysql.cursors
 import copy
 from bs4 import BeautifulSoup
 
-
 def courseInText(text):
    out = "CSC" in text or "CPE" in text or "DATA" in text or "LAES" in text or "EE" in text or "GSB" in text or "STAT" in text or "IME" in text
    return out
@@ -79,7 +78,6 @@ def getInfo(url, i):
    #need to also return courses
    return output, courses
 
-
 def addCourseToProf(count, output, courses):
    profAndCourses = []
    allCourses = []
@@ -104,19 +102,21 @@ def addProfToDB(profCount, output):
    with connection:
       with connection.cursor() as cursor:
          for prof in output:
-            sql = "INSERT INTO `Professors` (`id`, `name`, `alias`, `title`, `phone`, `office`, `courseID`) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+            name = prof[0].lower().split(' ')
+            first = name[1]
+            last = name[0].replace(',', '')
+            sql = "INSERT INTO `Professors` (`id`, `first`, `last`, `alias`, `title`, `phone`, `office`, `courseID`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
             if len(prof) == 6:
-               cursor.execute(sql, (profCount, prof[0], prof[1], prof[2], prof[3], prof[4], prof[5])) 
-            elif len(prof) == 5:
-               cursor.execute(sql, (profCount, prof[0], prof[1], prof[2], prof[3], prof[4], "NULL")) 
-            elif len(prof) == 4:
-               cursor.execute(sql, (profCount, prof[0], prof[1], prof[2], "NULL", "NULL", prof[3])) 
-            elif len(prof) == 3:
-               cursor.execute(sql, (profCount, prof[0], prof[1], "NULL", "NULL", prof[2])) 
+               cursor.execute(sql, (profCount, first, last, prof[1], prof[2], prof[3], prof[4], prof[5])) 
+            elif len(prof) == 5: #[name, alias, title, phone, courseID]
+               cursor.execute(sql, (profCount, first, last, prof[1], prof[2], prof[3], "NULL", prof[4])) 
+            elif len(prof) == 4: #[name, alias, title, courseID]
+               cursor.execute(sql, (profCount, first, last, prof[1], prof[2], "NULL", "NULL", prof[3])) 
+            elif len(prof) == 3: #[name, alias, courseID]
+               cursor.execute(sql, (profCount, first, last, prof[1], "NULL", "NULL", "NULL", prof[2])) 
             profCount += 1
       connection.commit()
    return profCount
-
 
 def addCourseToDB(allCourses):
    connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
