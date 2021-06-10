@@ -7,6 +7,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk import pos_tag
 from query_parser import QueryParser
+import sql_queries
 
 
 nltk.download("punkt")
@@ -36,12 +37,12 @@ def get_answer(q):
     tfidf = vectorizer.fit_transform(df["questions"])
 
     parser = QueryParser(q)
-    print(parser.features)
-    print(parser.entities)
+    #print(parser.features)
+    #print(parser.entities)
     test = vectorizer.transform([q])
     cosine = cosine_similarity(test, tfidf)
     cosine = pd.Series(cosine[0])
-    return cosine
+    return cosine, parser.features, parser.entities
 
 
 def preprocess_queries(filename):
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     q = input("Q> ")
 
     while q != "exit" or q != "Exit":
-        answers = get_answer(q)
+        answers, features, entities = get_answer(q)
         answers = answers.sort_values(ascending=False)
         print("Index\t\tScore\t\tResponses")
         print("----------------------------")
@@ -84,4 +85,8 @@ if __name__ == "__main__":
                     df["responses"].iloc[answers.index[i]],
                 )
             )
+        response = df["responses"].iloc[answers.index[0]]
+        query = sql_queries.Query(q, entities, response)
+        queryOutput = query.queryDB()
+
         q = input("Q> ")
