@@ -23,7 +23,9 @@ class QueryClassifier:
                 self.data["responses"].iloc[answers.index[i]],
             )
         )
-    #return answers.iloc[:5]
+    if answers.values[0] < .50:
+       print("[Signal: Unknown Query][Query: '{0}']".format(q.strip()))
+       return -1
     return self.data["responses"].iloc[answers.index[0]]
 
 
