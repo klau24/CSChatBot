@@ -31,7 +31,7 @@ class ChatBot:
         entities = {}
         for token in tokens:
             if token[1] == "NN":
-                ent = self.entityClf.predict(token[0])[0]
+                ent = self.entityClf.predict(token[0])
                 if ent != "NON-ENTITY":
                     entities[ent] = token[0]
                     new_q += " [{}]".format(ent)
