@@ -16,12 +16,16 @@ class ChatBot:
         doc = nlp(q)
         tokenized = []
         for token in doc:
-            if token.tag_[:2] in ["NN", "CD", "HY"] and tokenized[-1][1] == "NN":
-                tokenized[-1][0] += " " + token.text
-            elif token.tag_[:2] == "NN":
-                tokenized.append([token.text, "NN"])
-            else:
-                tokenized.append([token.text, token.tag_])
+            try:
+                if token.tag_[:2] in ["NN", "CD", "HY"] and tokenized[-1][1] == "NN":
+                    tokenized[-1][0] += " " + token.text
+                elif token.tag_[:2] == "NN":
+                    tokenized.append([token.text, "NN"])
+                else :
+                    tokenized.append([token.text, token.tag_])
+            except:
+                print("[Signal: Error][Issue with query][Query: '{0}']".format(q))
+                return -1
         return tokenized
 
     # Given tokenized query, substitutes recognized entities with entity tags
@@ -44,10 +48,9 @@ class ChatBot:
     # Given a query, prints responses from similar questions
     def get_sample_answers(self, q):
         tokens = self.group_tokens(q)
+        if tokens == -1:
+            return {}, -1
         entities, new_q = self.subst_entities(tokens)
-        print(tokens)
-        print(entities)
-        print(new_q)
         answer = self.queryClf.get_answer(new_q)
         return entities, answer
 
@@ -58,6 +61,9 @@ if __name__ == "__main__":
     q = input("Q> ")
     while q != "exit" and q != "Exit":
         entities, answer = bot.get_sample_answers(q)
-        query = sql_queries.Query(entities, answer)
-        query.queryDB()
+        if answer != -1:
+           query = sql_queries.Query(q, entities, answer)
+           query.queryDB()
         q = input("Q> ")
+    print("I'm glad I could help you :)")
+    print("[Signal: End]")

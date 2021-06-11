@@ -4,7 +4,8 @@ import pymysql.cursors
 
 
 class Query:
-    def __init__(self, entities, answer):
+    def __init__(self, query, entities, answer):
+        self.query = query
         self.entities = entities
         if "PROF" in self.entities.keys():
             self.entities["PROF"] = self.entities["PROF"].lower().replace("dr.", "").replace("professor", "").strip()
@@ -14,7 +15,6 @@ class Query:
             course[0] = course[0].upper()
             course = " ".join(course)
             self.entities["COURSE"] = course
-        print(self.entities)
         self.answer = answer
         self.response = ""
 
@@ -49,7 +49,6 @@ class Query:
                 elif i == "[LOCATION]" and "PROF" in self.entities:
                     self.response += self.entities["OFFICE"] + " "
             except:
-                print("Sorry, I do not know how to answer that.")    
                 return -2
 
         if len(self.response) > oldLen:
@@ -76,7 +75,6 @@ class Query:
                 elif i == "[LOCATION]" and "COURSE" in self.entities:
                     self.response += self.entities["LOCATION"] + " "
             except:
-                print("Sorry, I do not know how to answer that.")    
                 return -2
 
         if len(self.response) > oldLen:
@@ -85,7 +83,6 @@ class Query:
         
 
     def formatOutput(self):
-        print("entities:", self.entities)
         self.answer = self.answer.split()
         count = 0
         for i in self.answer: 
@@ -106,13 +103,14 @@ class Query:
             count += 1
         if res != -2:
             print(self.response)
+            print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
+        else:
+            print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
 
     def profAndCourseQuery(self):
-        print("this is a prof and course query")
         return
 
     def profQuery(self):
-        print("prof query")
         output = None
         lastName = 0
         fullName = 0
@@ -143,7 +141,6 @@ class Query:
                 self.entities[key] = output[i]
 
     def courseQuery(self):
-        print("this is a course query")
         course = self.entities["COURSE"]
 
         connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
