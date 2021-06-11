@@ -8,11 +8,18 @@ class Query:
         self.entities = entities
         if "PROF" in self.entities.keys():
             self.entities["PROF"] = self.entities["PROF"].lower().replace("dr.", "").replace("professor", "").strip()
+        elif "COURSE" in self.entities.keys():
+            self.entities["COURSE"] = self.entities["COURSE"].replace("course", "").strip()
+            course = self.entities["COURSE"].split()
+            course[0] = course[0].upper()
+            course = " ".join(course)
+            self.entities["COURSE"] = course
+        print(self.entities)
         self.answer = answer
         self.response = ""
 
     def queryDB(self):
-        keys = self.entities.keys()
+        keys = list(self.entities.keys())
         if "PROF" in keys and "COURSE" in keys:
             self.profAndCourseQuery()
         elif "PROF" in keys and "COURSE" not in keys:
@@ -25,6 +32,7 @@ class Query:
     def formatProf(self, i):
         oldLen = len(self.response)
         if '[' in i:   
+            i = i.replace(".", "")
             try:
                 if i == "[PROF]":
                     self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + " "
@@ -39,7 +47,6 @@ class Query:
                 elif i == "[PHONE]":
                     self.response += self.entities["PHONE"] + " "
                 elif i == "[LOCATION]" and "PROF" in self.entities:
-
                     self.response += self.entities["OFFICE"] + " "
             except:
                 print("Sorry, I do not know how to answer that.")    
@@ -52,6 +59,7 @@ class Query:
     def formatCourse(self, i):
         oldLen = len(self.response)
         if '[' in i:   
+            i = i.replace(".", "")
             try:
                 if i == "[COURSE]":
                     self.response += self.entities["CODE"] + " "
@@ -82,6 +90,9 @@ class Query:
         count = 0
         for i in self.answer: 
             res = self.formatProf(i)
+            if res == 1:
+               count += 1
+               continue
             if res == -2:
                break
             res = self.formatCourse(i)

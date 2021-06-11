@@ -34,10 +34,10 @@ class EntityClassifier:
 
     def predict(self, doc):
         # handles specific course codes
-        COURSE_CODE_REGEX = f"(CSC|STAT) \d\d\d"
+        COURSE_CODE_REGEX = f"((CSC|STAT) \d\d\d)"
         match = re.search(COURSE_CODE_REGEX, doc, re.IGNORECASE)
-        if match:
-            return "['COURSE']"
+        if match[1]:
+            return "COURSE"
 
         return self.clf.predict([doc])
 

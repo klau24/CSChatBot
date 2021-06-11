@@ -10,27 +10,27 @@ JTCN| When is [PROF] done teaching on [DAY]? |[TIMES]
 JTCN| When is [PROF] done teaching on [DAY]? |[TIMES]
 JTCN| Tell me [PROF] office location? |[LOCATION]
 JTCN| Do you know [PROF] office location? |[LOCATION]
-JTCN| Where can I find [PROF] in between COURSES?  |[LOCATION]
+JTCN| Where can I find [PROF] in between COURSE?  |[LOCATION]
 JTCN| Can you tell me the location of [PROF]’s office?  |[LOCATION]
 JTCN| What is [PROF] earliest lecture? |[TIMES]
 JTCN| Do you know [PROF] first lecture? |[TIMES]
 JTCN| What is [PROF] latest lecture? |[TIMES]
 JTCN| Do you know [PROF] last lecture on [DAY]? |[TIMES]
 JTCN| Do you know [PROF] last lecture on [DAY]? |[TIMES]
-JTCN| How many sections of [COURSE] are being taught this quarter? | [COURSES]
-JTCN| How many sections of [COURSE] are being taught this quarter by [PROF]? |SUM([COURSES])
-JTCN| How many sections of [COURSE] are being taught this quarter on [DAY]? |SUM([COURSES])
-JTCN| How many sections of [COURSE] are being taught this quarter in [LOCATION]? |SUM([COURSES])
+JTCN| How many sections of [COURSE] are being taught this quarter? | [COURSE]
+JTCN| How many sections of [COURSE] are being taught this quarter by [PROF]? |SUM([COURSE])
+JTCN| How many sections of [COURSE] are being taught this quarter on [DAY]? |SUM([COURSE])
+JTCN| How many sections of [COURSE] are being taught this quarter in [LOCATION]? |SUM([COURSE])
 JTCN| How long is the average COURSE in the Statistics department? |AVG([TIMES])
 JTCN| How long is the average COURSE in the CSSE department? |AVG([TIMES])
 JTCN| What [COURSE] has the least amount of HOURS per week in the CSSE department? |MIN([TIMES])
 JTCN| What [COURSE] has the most amount of HOURS per week in the CSSE department? |MAX([TIMES])
 JTCN| What is the title of [PROF] in the CSSE department? |[TITLE]
 JTCN| What is the title of [PROF] in the Statistics department? |[TITLE]
-JTCN| How many upper division COURSES is [PROF] teaching? |Number of [COURSES]
-JTCN| How many upper division COURSES is [PRPF] teaching? |Number of [COURSES]
-JTCN| How many lower division COURSES is [PROF] teaching? |Number of [COURSES]
-JTCN| How many lower division COURSES is [PROF] teaching? |Number of [COURSES]
+JTCN| How many upper division COURSE is [PROF] teaching? |Number of [COURSE]
+JTCN| How many upper division COURSE is [PRPF] teaching? |Number of [COURSE]
+JTCN| How many lower division COURSE is [PROF] teaching? |Number of [COURSE]
+JTCN| How many lower division COURSE is [PROF] teaching? |Number of [COURSE]
 JTCN| What is the number of PROFs teaching [COURSE] ? |Number of [PROF]
 JTCN| What is the number of PROFs teaching in the CSSE department? |Number of [PROF]
 JTCN| What is the number of PROFs teaching in the Statistics department? |Number of [PROF]
@@ -71,24 +71,24 @@ JTCN| Will [PROF] be teaching [COURSE] this quarter? |Yes or No
 JTCN| Where will [PROF] be at [TIME] on [DAY]? |[LOCATION]
 JTCN| Will [PROF] be available for [TIME] on [DAY]? |Yes or No
 JTCN| Will [PROF] be available at [TIME] on [DAY]? |Yes or No
-JTCN| How many COURSES are being offered in [TERM]? |Number
+JTCN| How many COURSE are being offered in [TERM]? |Number
 JTCN| How many faculty are teaching [COURSE]? |Number
 JTCN| How many sections of [COURSE] have COURSE on [DAY]? |Number
 JTCN| How many available seats are there in [COURSE]? |Number
 JTCN| What type of COURSE is [COURSE]? |[LEVEL]
 JTCN| Is [PROF] teaching in [TERM]? |Yes or No
-JTCN| What are the prerequisites for [COURSE]? |[COURSES]
-JTCN| What are the corequisites for [COURSE]? |[COURSES]
+JTCN| What are the prerequisites for [COURSE]? |[COURSE]
+JTCN| What are the corequisites for [COURSE]? |[COURSE]
 JTCN| Does [COURSE] have any prerequisites? |Yes or No
 JTCN| Does [COURSE] have any corequisites? |Yes or No
 JTCN| Is [COURSE] offered in the [TIME]? |Yes or No
-JTCN| What COURSES are offered in the [TIME]? |[COURSES]
-JTCN| What [TIME] COURSES are there? |[COURSES]
+JTCN| What COURSE are offered in the [TIME]? |[COURSE]
+JTCN| What [TIME] COURSE are there? |[COURSE]
 JTCN| Does [COURSE] have a lab section? |Yes or No
 JTCN| What TIME is the lab section for [COURSE]? |[TIME]
 JTCN| How many units is [COURSE]? |Number
 JTCN| How long is [COURSE] including its lab? |[DURATION]
-JTCN| How many COURSES is [PROF] teaching in [TERM]? |Number
+JTCN| How many COURSE is [PROF] teaching in [TERM]? |Number
 JTCN| Give me the day(s) of the week [COURSE] is offered? |[DAYS]
 JTCN| Do you know what day(s) of the week [COURSE] is offered? |[DAYS]
 JTCN| Do you know which day(s) of the week [COURSE] is offered? |[DAYS]
@@ -97,11 +97,11 @@ JTCN| Tell me the day(s) of the week [COURSE] is offered? |[DAYS]
 JTCN| Which day(s) of the week is [COURSE] offered? |[DAYS]
 JTCN| What day(s) of the week is [PROF] free? |[DAYS]
 JTCN| What day(s) of the week is [PROF] free? |[DAYS]
-JTCN| What [COURSES] are taught in [LOCATION] |[COURSES]
-JTCN| Tell me the [COURSES] that are taught in [LOCATION] |[COURSES]
-JTCN| Can you give me the [COURSES] that are taught in [LOCATION] |[COURSES]
-JTCN| Which [COURSES] are taught in [LOCATION] |[COURSES]
-JTCN| How many COURSES are taught in [LOCATION] |Number of [COURSES]
+JTCN| What [COURSE] are taught in [LOCATION] |[COURSE]
+JTCN| Tell me the [COURSE] that are taught in [LOCATION] |[COURSE]
+JTCN| Can you give me the [COURSE] that are taught in [LOCATION] |[COURSE]
+JTCN| Which [COURSE] are taught in [LOCATION] |[COURSE]
+JTCN| How many COURSE are taught in [LOCATION] |Number of [COURSE]
 JTCN| Is [PROF] available in the [TIME] |Yes or No
 JTCN| Is [PROF] free in the [TIME] |Yes or No
 JTCN| Is [PROF] busy in the [TIME] |Yes or No
@@ -110,8 +110,8 @@ JTCN| Is there a [TIME] section for [COURSE] |Yes or No
 JTCN| Tell me if there is a [TIME] section for [COURSE] |Yes or No
 JTCN| Do you know if there is a [TIME] section for [COURSE] |Yes or No
 JTCN| How many units is [COURSE] worth? |Number
-JTCN| How many COURSES does [PROF] teach on [DAY]? |Number
-JTCN| Which COURSES does [PROF] teach on [DAY]? |[COURSES]
+JTCN| How many COURSE does [PROF] teach on [DAY]? |Number
+JTCN| Which COURSE does [PROF] teach on [DAY]? |[COURSE]
 JTCN| What TIME does [PROF] office HOURS end? |[TIMES]
 JTCN| What TIME does [PROF] office HOURS start? |[TIMES]
 Team Team|Are there any sections of [COURSE]?|There are SUM([SECTIONS]) sections of [COURSE].
@@ -131,8 +131,8 @@ Team Team|What TIME is [COURSE]-[SECTION] being taught?|[COURSE]-[SECTION] is ta
 Team Team|What TIME of day is [COURSE]-[SECTION] being taught?|[COURSE]-[SECTION] is taught at [TIME].
 Team Team|Who is [COURSE]-[SECTION] taught by?|[COURSE]-[SECTION] is taught by [PROF].
 Team Team|How many sections does [PROF] teach?|[PROF] teaches [INTEGER] sections.
-Team Team|What COURSES does [PROF] teach?|[PROF] teaches [COURSES].
-Team Team|Does [PROF] teach [COURSE]?|[PROF] teaches [COURSES].
+Team Team|What COURSE does [PROF] teach?|[PROF] teaches [COURSE].
+Team Team|Does [PROF] teach [COURSE]?|[PROF] teaches [COURSE].
 Team Team|What sections does [PROF] teach?|[PROF] teaches [SECTIONS].
 Team Team|Does [PROF] teach [COURSE]-[SECTION]?|[PROF] teaches [SECTIONS].
 Team Team|Where is [PROF]'s office?|[PROF]'s office is at BUILDING [BUILDING], ROOM [ROOM].
@@ -169,7 +169,7 @@ Team Team|Does [COURSE] have a lab?|Yes/No
 Team Team|How long has [PROF] taught?|[INTEGER] YEARs
 Team Team|Are there any teachers with first name [Name]?|Yes [PROF], [PROF], ...
 Team Team|Are there any teachers with last name [Name]?|Yes [PROF], [PROF], ...
-Team Team|Are there are [COURSE] being taught on [DAYS]?|Yes the COURSES are [COURSE], [COURSE], ...
+Team Team|Are there are [COURSE] being taught on [DAYS]?|Yes the COURSE are [COURSE], [COURSE], ...
 Team Team|What day does [QUARTER] start?|[Month] [DAYS]
 Team Team|What day does [QUARTER] end?|[Month] [DAYS]
 Team Team|Is [PROF] a Professor?|Yes/No
@@ -183,8 +183,8 @@ Team Team|What is the earliest start TIME for [COURSE]|[TIME]
 Team Team|Which teacher has [PHONE]?|[PROF]
 Team Team|Which teacher has [ALIAS]?|[PROF]
 Team Team|What is the first name of [LASTNAME]?|[FIRSTNAME]
-Team Team|Which teacher teaches the most COURSES in [DEPT]|[PROF]
-Team Team|Which teacher teaches the least COURSES in [DEPT]|[PROF]
+Team Team|Which teacher teaches the most COURSE in [DEPT]|[PROF]
+Team Team|Which teacher teaches the least COURSE in [DEPT]|[PROF]
 Team Team|Which teacher is at [LOCATION]?|[PROF]
 Team Team|Which [QUARTER] in [YEAR] had the most sections for [COURSE]?|[QUARTER]
 Team Team|Which [QUARTER] in [YEAR] had the least sections for [COURSE]?|[QUARTER]
@@ -193,8 +193,8 @@ Team Team|Is [LOCATION] Available before [TIME]?|No
 Team Team|Who is using [LOCATION] [TIME]?|[PROF] is using [LOCATION] [TIME]
 Team Team|What's the capacity of [LOCATION]?|The capacity of [LOCATION] is 28
 Team Team|What's the enrollment capacity of [LOCATION]?|The enrollment capacity of [LOCATION] is 40
-Team Team|Which COURSES are being taight in [LOCATION]?|[COURSE] is being taught in [LOCATION]
-Team Team|Is [PROF] teaching any in person COURSES?|Yes or No
+Team Team|Which COURSE are being taight in [LOCATION]?|[COURSE] is being taught in [LOCATION]
+Team Team|Is [PROF] teaching any in person COURSE?|Yes or No
 Team Team|When is [PROF] available?|[PROF] is available [TIME]
 Team Team|Can I visit [PROF] [TIME]?|No
 Team Team|Who is teaching [COURSE]?|[PROF] is teaching [COURSE]
@@ -234,50 +234,50 @@ CACORITH|When can I go to [PROF]’s office HOURS today?|[PROF] holds office HOU
 CACORITH|Does [PROF] have HOURS today?|Yes or No
 CACORITH|When are [PROF]’s office HOURS today?|[PROF] holds office HOURS at [TIMES]
 CACORITH|When are [PROF]’s office HOURS?|[PROF] holds office HOURS at [DAYS] at [TIMES]
-CACORITH|What COURSES does [PROF] teach?|[PROF] teaches these COURSES: [COURSES]
-CACORITH|What courses does [PROF] teach?|[PROF] teaches these COURSES: [COURSES]
-CACORITH|What COURSES does [PROF] teach?|[PROF] teaches these COURSES: [COURSES]
-CACORITH|Which COURSES are taught by [PROF]?|[PROF] teaches these COURSES: [COURSES]
-CACORITH|What course does [PROF] teach?|[PROF] teaches these COURSES: [COURSES]
-CACORITH|What does [PROF] teach?|[PROF] teaches these COURSES: [COURSES]
+CACORITH|What COURSE does [PROF] teach?|[PROF] teaches these COURSE: [COURSE]
+CACORITH|What courses does [PROF] teach?|[PROF] teaches these COURSE: [COURSE]
+CACORITH|What COURSE does [PROF] teach?|[PROF] teaches these COURSE: [COURSE]
+CACORITH|Which COURSE are taught by [PROF]?|[PROF] teaches these COURSE: [COURSE]
+CACORITH|What course does [PROF] teach?|[PROF] teaches these COURSE: [COURSE]
+CACORITH|What does [PROF] teach?|[PROF] teaches these COURSE: [COURSE]
 CACORITH|Does [PROF] teach [COURSE]?|Yes, [PROF] teaches [COURSE] section [SECTION].
 CACORITH|Where does [PROF] teach [COURSE]?|[PROF] teaches [COURSE] at [LOCATION].
 CACORITH|When does [PROF] teach [COURSE]?|[PROF] teaches [COURSE] at [TIMES] on [DAYS].
 CACORITH|How many people can take [PROF]'s section of [COURSE]?|[PROF]'s section of [COURSE] has an enrollment capacity of [ECAP].
 CACORITH|What is the location capacity of [PROF]'s section of [COURSE]?|[PROF]'s section of [COURSE] has a location capacity of [LCAP].
 CACORITH|What are the PROFs for [COURSE]?| The PROFs for [COURSE] are: [PROFS].
-CACORITH|Who teaches [COURSE]?|[COURSES] is taught by: [PROF]
-CACORITH|Who is [COURSE] taught by?|[COURSES] is taught by: [PROF]
-CACORITH|What is the schedule for [COURSE] [SECTION]?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|What TIME is [COURSE] [SECTION]?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|What day is [COURSE] [SECTION]?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|When is [COURSE] [SECTION]?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|What days is [COURSE] [SECTION] taught?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|What TIMEs is [COURSE] [SECTION] taught?|[COURSES] [SECTION] is offered [DAYS] at [TIMES]
-CACORITH|What is the name of [COURSES]?|[COURSE]: [COURSENAME]
-CACORITH|What is [COURSES] called?|[COURSE]: [COURSENAME]
-CACORITH|What is [COURSES]?|[COURSE]: [COURSENAME]
-CACORITH|What COURSE is [COURSES]?|[COURSE]: [COURSENAME]
-CACORITH|What is the course number of [COURSENAME]?|[COURSES]: [COURSENAME]
-CACORITH|What COURSE is [COURSENAME]?|[COURSES]: [COURSENAME]
-CACORITH|What is the course code of [COURSENAME]?|[COURSES]: [COURSENAME]
+CACORITH|Who teaches [COURSE]?|[COURSE] is taught by: [PROF]
+CACORITH|Who is [COURSE] taught by?|[COURSE] is taught by: [PROF]
+CACORITH|What is the schedule for [COURSE] [SECTION]?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|What TIME is [COURSE] [SECTION]?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|What day is [COURSE] [SECTION]?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|When is [COURSE] [SECTION]?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|What days is [COURSE] [SECTION] taught?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|What TIMEs is [COURSE] [SECTION] taught?|[COURSE] [SECTION] is offered [DAYS] at [START] to [END]
+CACORITH|What is the name of [COURSE]?|[COURSE]: [COURSENAME]
+CACORITH|What is [COURSE] called?|[COURSE]: [COURSENAME]
+CACORITH|What is [COURSE]?|[COURSE]: [COURSENAME]
+CACORITH|What COURSE is [COURSE]?|[COURSE]: [COURSENAME]
+CACORITH|What is the course number of [COURSENAME]?|[COURSE]: [COURSENAME]
+CACORITH|What COURSE is [COURSENAME]?|[COURSE]: [COURSENAME]
+CACORITH|What is the course code of [COURSENAME]?|[COURSE]: [COURSENAME]
 CACORITH|How many sections of [COURSE] are there?|[SECTIONCOUNT]
-CACORITH|When does [COURSE] start today?|[COURSES] is offered at [TIMES]
-CACORITH|When does [COURSE] start today?|[COURSES] is offered at [TIMES]
+CACORITH|When does [COURSE] start today?|[COURSE] is offered at [TIMES]
+CACORITH|When does [COURSE] start today?|[COURSE] is offered at [TIMES]
 CACORITH|How many sections of [COURSE]?|There are [SECTIONCOUNT] sections of [COURSE].
 CACORITH|What is [COURSE] called?|[COURSE] is known as [COURSENAME].
 CACORITH|Are there prerequisites for [COURSE]?|The prerequisites for [COURSE] are: [COURSEREQUISITES].
-CACORITH|Tell me the course number for [COURSENAME]?|The course number for [COURSE] [SECTION] is [COURSES].
+CACORITH|Tell me the course number for [COURSENAME]?|The course number for [COURSE] [SECTION] is [COURSE].
 CACORITH|When is [COURSE] [SECTION] taught?|[COURSE] is taught at [TIMES] on [DAYS].
 CACORITH|How many students can take [COURSE]?|The enrollment capacity for [COURSE] section [SECTION] is [ECAP].
 CACORITH|When would I get out of [COURSE][SECTION]?|[COURSE] section [SECTION] ends at [DAYS] and [TIMES]
 CACORITH|Does [COURSE][SECTION] conflict with [COURSE][SECTION]?|Yes or No
-CACORITH|How many courses does [DEPT] offer?|[DEPT] offers SUM([COURSES])
-CACORITH|How many COURSES does [DEPT] offer?|[DEPT] offers SUM([COURSES])
-CACORITH|What courses does [DEPT] offer?|[DEPT] offers [COURSES]:[COURSENAME]
-CACORITH|What [DEPT] courses are offered?|[DEPT] offers [COURSES]:[COURSENAME]
-CACORITH|What [DEPT] COURSES are offered in the Fall?|[DEPT] offers [COURSES]:[COURSENAME]
-CACORITH|What [DEPT] COURSES are there?|[DEPT] offers [COURSES]:[COURSENAME]
+CACORITH|How many courses does [DEPT] offer?|[DEPT] offers SUM([COURSE])
+CACORITH|How many COURSE does [DEPT] offer?|[DEPT] offers SUM([COURSE])
+CACORITH|What courses does [DEPT] offer?|[DEPT] offers [COURSE]:[COURSENAME]
+CACORITH|What [DEPT] courses are offered?|[DEPT] offers [COURSE]:[COURSENAME]
+CACORITH|What [DEPT] COURSE are offered in the Fall?|[DEPT] offers [COURSE]:[COURSENAME]
+CACORITH|What [DEPT] COURSE are there?|[DEPT] offers [COURSE]:[COURSENAME]
 CACORITH|What sections of [COURSE] are offered?|[SECTIONS]
 CACORITH|What is the enrollment cap of [COURSE]?|[ECAP] total seats in [COURSE]
 CACORITH|How many spots are there in  [COURSE]?|[ECAP] total seats in [COURSE]
@@ -289,7 +289,7 @@ CACORITH|Does [COURSE] have open seats?|[ENR]/[ECAP] seats available in [COURSE]
 CACORITH|How long is the waitlist for [COURSE]?|[WAITLIST] people on the waitlist for [COURSE]
 CACORITH|How many people are waiting in [COURSE]?|[WAITLIST] people on the waitlist for [COURSE]
 CACORITH|Is there a waitlist for [COURSE]?|[WAITLIST] people on the waitlist for [COURSE]
-CACORITH|What COURSES use [LOCATION]?|[COURSES] are taught in [LOCATION].
+CACORITH|What COURSE use [LOCATION]?|[COURSE] are taught in [LOCATION].
 CACORITH|Who teaches in [LOCATION]?|[PROFS] uses [LOCATION].
 CACORITH|When is [LOCATION] in use on [DAYS]?|[LOCATION] is used during [TIMES] on day.
 CACORITH|Is [LOCATION] available at [TIMES] on [DAYS]? |Yes or No
@@ -299,15 +299,15 @@ CACORITH|Is [COURSE] taught in [LOCATION]?|Yes or No
 CACORITH|Does [PROF] use [LOCATION]?|Yes or No
 CACORITH|Are there any [GE] courses in [LOCATION]?|Yes or No
 CACORITH|Can I find [PROF] in [LOCATION]?|Yes or No
-CACORITH|What GE areas does [COURSE] satisfy?|[COURSES] satisfies [GE]
-CACORITH|Which GE area does [COURSE] satisfy?|[COURSES] satisfies [GE]
-CACORITH|What are the GE areas for [COURSE]?|[COURSES] satisfies [GE]
-CACORITH|How many [COURSES] sections are there?|There are [SECTIONCOUNT] sections of [COURSE].
-CACORITH|What GE requirement is fulfilled by taking [COURSES]?|[COURSE] fulfulls GE Requirement [GE].
-CACORITH|What is the description for [COURSES]?|[COURSE]'s description is [COURSENAME].
-CACORITH|Which course is [COURSENAME]?|[COURSENAME]'s course number is [COURSES].
-CACORITH|What is the enrollment cap for [COURSES]?|There can be a maximum of [ECAP] students in a section of [COURSE].
-CACORITH|What courses are taught by [PROF]?|[PROF] teaches [COURSES].
+CACORITH|What GE areas does [COURSE] satisfy?|[COURSE] satisfies [GE]
+CACORITH|Which GE area does [COURSE] satisfy?|[COURSE] satisfies [GE]
+CACORITH|What are the GE areas for [COURSE]?|[COURSE] satisfies [GE]
+CACORITH|How many [COURSE] sections are there?|There are [SECTIONCOUNT] sections of [COURSE].
+CACORITH|What GE requirement is fulfilled by taking [COURSE]?|[COURSE] fulfulls GE Requirement [GE].
+CACORITH|What is the description for [COURSE]?|[COURSE]'s description is [COURSENAME].
+CACORITH|Which course is [COURSENAME]?|[COURSENAME]'s course number is [COURSE].
+CACORITH|What is the enrollment cap for [COURSE]?|There can be a maximum of [ECAP] students in a section of [COURSE].
+CACORITH|What courses are taught by [PROF]?|[PROF] teaches [COURSE].
 CACORITH|What is [PROF]'s weekly schedule?|[PROF] is busy on [DAYS] at [TIMES]
 CACORITH|What TIMEs is [PROF] available on [DAYS]?|[PROF] is busy [TIMES].
 CACORITH|Where can I find [PROF]'s office?|[PROF]'s office is [LOCATION].
@@ -317,32 +317,32 @@ CACORITH|What is [PROF]'s phone number?|You can reach [PROF] at [PHONE].
 CACORITH|Is [PROF] a lecturer?|Yes or No
 CACORITH|What is [PROF]'s job title?|[PROF] is a [TITLE].
 CACORITH|How many sections of independent study are advised by [PROF]?|[PROF] advises [SECTIONCOUNT] sections.
-CACORITH|In which COURSELOCATION is secion [SECTION] of course [COURSES] taught?|[COURSENAME] section [SECTION] [LOCATION]
-CACORITH|What courses are being taught in [LOCATION]?|[COURSES] are all taught in [LOCATION].
-CACORITH|What is the weekly schedule for [COURSES] section [SECTION]?|SECTION [SECTION] of [COURSE] is taught on [DAYS] at [TIMES]
+CACORITH|In which COURSELOCATION is secion [SECTION] of course [COURSE] taught?|[COURSENAME] section [SECTION] [LOCATION]
+CACORITH|What courses are being taught in [LOCATION]?|[COURSE] are all taught in [LOCATION].
+CACORITH|What is the weekly schedule for [COURSE] section [SECTION]?|SECTION [SECTION] of [COURSE] is taught on [DAYS] at [TIMES]
 CACORITH|What is [PROF]'s Cal Poly username?|[PROF]'s username is [ALIAS].
 CACORITH|How can I contact [PROF]?|[PROF]'s phone number is [PHONE], and [PROF]'s office is [LOCATION].
 CACORITH|How many sections of independent study does [PROF] advise?|[PROF] is the advisor for [SECTIONCOUNT] sections of independent study.
-CACORITH|How can I fulfill GE requirement [GE]?|[COURSES] fulfills GE requirement [GE].
+CACORITH|How can I fulfill GE requirement [GE]?|[COURSE] fulfills GE requirement [GE].
 CACORITH|How busy is [PROF]?|[PROF] is busy on [DAYS] at [TIMES]
 CACORITH|What is [PROF]'s EMAIL address?|You can reach [PROF] at [ALIAS]@calpoly.edu.
 CACORITH|Which PROFs teach [COURSENAME]?|[COURSENAME] is taught by [PROFS]
-CACORITH|Who teaches section [SECTION] of [COURSES]?|[PROF] teaches [SECTION] of [COURSE].
+CACORITH|Who teaches section [SECTION] of [COURSE]?|[PROF] teaches [SECTION] of [COURSE].
 CACORITH|Who are the [DEPT] PROFs?|The [DEPT] PROFs are [PROFS].
-CACORITH|What are the courses offered by [DEPT]?|[DEPT] offers [COURSES].
+CACORITH|What are the courses offered by [DEPT]?|[DEPT] offers [COURSE].
 JVJ|Is [COURSE] being offered?| Yes or No
 JVJ|Will [COURSE] be offered?| Yes or No
 JVJ|How many courses is [PROF] teaching?|[PROF] is teaching [COURSECOUNT] in Fall 2021
-JVJ|How many COURSES is [PROF] teaching?|[PROF] is teaching [COURSECOUNT] in Fall 2021
+JVJ|How many COURSE is [PROF] teaching?|[PROF] is teaching [COURSECOUNT] in Fall 2021
 JVJ|Which PROFs are teaching [COURSE]?|[PROFS] will be teaching [COURSE]
 JVJ|Who is teaching [COURSE]?|[PROFS] will be teaching [COURSE]
 JVJ|Who will be teaching [COURSE]?|[PROFS] will be teaching [COURSE]
 JVJ|Which PROFs are teaching [COURSE-SECT]?|[PROF] will be teaching [COURSE-SECT]
 JVJ|Who is teaching [COURSE-SECT]?|[PROF] will be teaching [COURSE-SECT]
 JVJ|Who will be teaching [COURSE-SECT]?|[PROF] will be teaching [COURSE-SECT]
-JVJ|Which [MAJOR] COURSES are being offered?|[COURSE-LIST]
-JVJ|What [MAJOR] COURSES are being offered?|[COURSE-LIST]
-JVJ|Which COURSES will [PROF] be teaching?|[PROF] will be teaching [COURSE-SECT-LIST]
+JVJ|Which [MAJOR] COURSE are being offered?|[COURSE-LIST]
+JVJ|What [MAJOR] COURSE are being offered?|[COURSE-LIST]
+JVJ|Which COURSE will [PROF] be teaching?|[PROF] will be teaching [COURSE-SECT-LIST]
 JVJ|When will [COURSE] be offered?|[COURSE] will be offered during [TIME-LIST]
 JVJ|When will [COURSE-SECT] be offered?|[COURSE-SECT] will be offered during [TIME]
 JVJ|What days is [COURSE-SECT] on?|[COURSE-SECT] will be taught on [DAYS]
@@ -361,8 +361,8 @@ JVJ|What is [PROF]’s phone number?|[PROF] can be reached at [PHONE]
 JVJ|How do I contact [PROF]?|[PROF] can be reached at [PHONE] or [CP-EMAIL]
 JVJ|What is the name for COURSE [COURSE]?|The name for [COURSE] is [COURSE-NAME]
 JVJ|What is [COURSE]?|The name for [COURSE] is [COURSE-NAME]
-JVJ|Which COURSES fall under GE [GE-REQ]?|COURSES [COURSE-LIST] fall under [GE-REQ]
-JVJ|Which COURSES count for GE [GE-REQ]?|COURSES [COURSE-LIST] fall under [GE-REQ]
+JVJ|Which COURSE fall under GE [GE-REQ]?|COURSE [COURSE-LIST] fall under [GE-REQ]
+JVJ|Which COURSE count for GE [GE-REQ]?|COURSE [COURSE-LIST] fall under [GE-REQ]
 JVJ|How many sections of [COURSE] will be offered?|[NUM-SECTIONS] of [COURSE] will be offered
 JVJ|Which sections of [COURSE] will be offered?|[COURSE-SECT-LIST] are offered for [COURSE]
 JVJ|What is the enrollment capacity for [COURSE-SECT]?|The enrollment capacity for [COURSE-SECT] is [ECAP]
@@ -370,9 +370,9 @@ JVJ|How many people have enrolled in [COURSE-SECT]?|[ENROLLED] have enrolled in 
 JVJ|How many people are there in [COURSE-SECT]?|[ENROLLED] have enrolled in [COURSE-SECT]
 JVJ|How many people have waitlisted in [COURSE-SECT]?|[WAITLISTED] have waitlisted for [COURSE-SECT]
 JVJ|How many people are on the waitlist for [COURSE-SECT]?|[WAITLISTED] have waitlisted for [COURSE-SECT]
-JVJ|Which [MAJOR] [COURSE-LEVEL] level COURSES are being offered?|[COURSE-LIST] are being offered
-JVJ|What [COURSE-LEVEL] level [MAJOR] COURSES are being offered?|[COURSE-LIST] are being offered
-JVJ|Which [COURSE-LEVEL] level COURSES are being offered by [PROF]?|[PROF] is offering [COURSE-LIST]
+JVJ|Which [MAJOR] [COURSE-LEVEL] level COURSE are being offered?|[COURSE-LIST] are being offered
+JVJ|What [COURSE-LEVEL] level [MAJOR] COURSE are being offered?|[COURSE-LIST] are being offered
+JVJ|Which [COURSE-LEVEL] level COURSE are being offered by [PROF]?|[PROF] is offering [COURSE-LIST]
 JVJ|Can you search for COURSE [STRING]?|The results are [COURSE-LIST]
 JVJ|Is there a lab for [COURSE]?|[Yes or No]
 JVJ|Does [COURSE] have a lab?|[Yes or No]
@@ -388,10 +388,10 @@ JVJ|What is [COURSE]’s COURSE number?|The COURSE number for [COURSE] is [COURS
 JVJ|What is [COURSE]’s COURSE code?|The COURSE number for [COURSE] is [COURSE-NUM]
 JVJ|Which COURSE has the most sections?|[COURSE] has the most number of sections
 JVJ|Which [MAJOR] COURSE has the most sections?|[COURSE] has the most number of sections for [MAJOR]
-JVJ|Which COURSES are offered on [DAYS]?|[COURSE-LIST] are offered on [DAYS]
-JVJ|Which [MAJOR] COURSES are offered on [DAYS]?|[COURSE-LIST] are offered on [DAYS] for [MAJOR]
-JVJ|Which COURSES are offered between [TIME] and [TIME]?|[COURSE-LIST] are offered between [TIME] and [TIME]
-JVJ|Which [MAJOR] COURSES are offered between [TIME] and [TIME]?|[COURSE-LIST] are offered between [TIME] and [TIME] for [MAJOR]
+JVJ|Which COURSE are offered on [DAYS]?|[COURSE-LIST] are offered on [DAYS]
+JVJ|Which [MAJOR] COURSE are offered on [DAYS]?|[COURSE-LIST] are offered on [DAYS] for [MAJOR]
+JVJ|Which COURSE are offered between [TIME] and [TIME]?|[COURSE-LIST] are offered between [TIME] and [TIME]
+JVJ|Which [MAJOR] COURSE are offered between [TIME] and [TIME]?|[COURSE-LIST] are offered between [TIME] and [TIME] for [MAJOR]
 JVJ|Which sections for [COURSE] are offered between [TIME] and [TIME]?|[COURSE-SECT-LIST] are offered between [TIME] and [TIME] for [COURSE]
 JVJ|What is [PROF]’s ALIAS?|[PROF]’s Cal Poly username is [ALIAS]
 JVJ|What is [PROF]’s Cal Poly username?|[PROF]’s Cal Poly username is [CP-USERNAME]
@@ -400,9 +400,9 @@ JVJ|What is the EMAIL for [PROF]?|[PROF]’s Cal Poly EMAIL is [CP-EMAIL]
 JVJ|Can I take [COURSE] with [COURSE]?|[Yes or No]
 JVJ|Can I take both [COURSE] and [COURSE] at the same TIME?|[Yes or No]
 JVJ|Can I attend [PROF]’s office HOURS and [PROF]’s office HOURS?|[Yes or No]
-JVJ|Can I take [COURSE-LIST] without having COURSES on [DAY]|[Yes or No]
-JVJ|Can I take [COURSE-LIST] without any COURSES on [DAY]?|[Yes or No]
-JVJ|Can I take [COURSE-LIST] with only COURSES on [DAYS]|[Yes or No]
+JVJ|Can I take [COURSE-LIST] without having COURSE on [DAY]|[Yes or No]
+JVJ|Can I take [COURSE-LIST] without any COURSE on [DAY]?|[Yes or No]
+JVJ|Can I take [COURSE-LIST] with only COURSE on [DAYS]|[Yes or No]
 JVJ|What is the total number of seats available for [COURSE]?|[NUM-SECTIONS] * [ECAP]
 JVJ|What is the total number of seats available for [PROF]’s [COURSE]?|[NUM-SECTIONS-PROFESSOR] * [ECAP]
 JVJ|How many seats does [COURSE] have?|[NUM-SECTIONS] * [ECAP]
@@ -417,22 +417,22 @@ JVJ|Can I take a COURSE with [PROF] with less than [ECAP] people?|[Yes or No]
 JVJ|Can I take [COURSE] with less than [ECAP] people?|[Yes or No]
 JVJ|Is there a COURSE taught by [PROF] that has less than [ECAP] students|[Yes or No]
 JVJ|Is there a section of [COURSE] that has less than [ECAP] students?|[Yes or No]
-JVJ|Does [PROF] teach [MAJOR] COURSES?|[Yes or No]
-JVJ|Does [PROF] teach any non-[MAJOR] COURSES?|[Yes or No]
-JVJ|How many [MAJOR] COURSES does [PROF] teach?|[COURSECOUNT-MAJOR]
-JVJ|How many non-[MAJOR] COURSES does [PROF] teach?|[COURSECOUNT-MAJOR]
+JVJ|Does [PROF] teach [MAJOR] COURSE?|[Yes or No]
+JVJ|Does [PROF] teach any non-[MAJOR] COURSE?|[Yes or No]
+JVJ|How many [MAJOR] COURSE does [PROF] teach?|[COURSECOUNT-MAJOR]
+JVJ|How many non-[MAJOR] COURSE does [PROF] teach?|[COURSECOUNT-MAJOR]
 JVJ|Is [PROF] teaching [COURSE]?|[Yes or No]
 JVJ|Can I take [COURSE] and attend [PROF]’s office HOURS|[Yes or No]
 JVJ|Can I take a COURSE taught by [PROF] and [PROF]|[Yes or No]
 JVJ|Can I take a [MAJOR] COURSE taught by [PROF] and a [MAJOR] COURSE taught by [PROF]?|[Yes or No]
-JVJ|How many [COURSE-LEVEL] COURSES are being offered?|[NUM-COURSEES]
+JVJ|How many [COURSE-LEVEL] COURSE are being offered?|[NUM-COURSEES]
 JVJ|How many [MAJOR] [COURSE-LEVEL] courses are offered?|[NUM-COURSEES]
 JVJ|How many [ECAP] COURSEe are being offered?|[NUM-COURSEES]
 JM|How many instructors are in the [DEPT]?|There are COUNT([PROFS]) in [DEPT]
 JM|How many lecturers are in the [DEPT]?|There are COUNT([LECTS]) of lecturers] in [DEPT]
 JM|What is [PROF]'s EMAIL?|[PROF]'s EMAIL is [EMAIL]
-JM|How many sections does [PROF] teach?|[PROF] teaches COUNT([COURSES]) of COURSES] sections.
-JM|How many different COURSES are offered this term?|There are COUNT([COURSES]) offered this term.
+JM|How many sections does [PROF] teach?|[PROF] teaches COUNT([COURSE]) of COURSE] sections.
+JM|How many different COURSE are offered this term?|There are COUNT([COURSE]) offered this term.
 JM|Which PROFs teach [COURSE]?|[PROFs] teach [COURSE]
 JM|What LOCATION is [COURSE]-[SECTION] taught in?|[COURSE]-[SECTION] is taught in [LOCATION]
 JM|How many students can enroll in [COURSE]?|[ECAP] can enroll in [COURSE]
@@ -441,13 +441,13 @@ JM|What days is [COURSENUM] scheduled for?|[COURSENUM] is scheduled for [DAYS]
 JM|What TIME does [COURSENUM] start?|[COURSENUM] starts at [TIME]
 JM|What section of [COURSE] starts the latest?|[SECTION] starts the latest, at [TIME]
 JM|What section of [COURSE] starts the earliest?|[SECTION] starts the earliest, at [TIME]
-JM|Do all COURSES have a lab component?|No
+JM|Do all COURSE have a lab component?|No
 JM|What is the RATIO of students to faculty in [DEPT]?|The RATIO of students to faculty in [DEPT] is [RATIO]
-JM|What is the most popular building for [DEPT] COURSES?|The most popular building for [DEPT] COURSES is [LOCATION]
-JM|What is the most popular COURSELOCATION for [DEPT] COURSES?|The most popular COURSELOCATION for [DEPT] COURSES is [LOCATION]
-JM|Where am I most likely to spend TIME as a [DEPT] major?|The most popular building for [DEPT] COURSES is [LOCATION]
+JM|What is the most popular building for [DEPT] COURSE?|The most popular building for [DEPT] COURSE is [LOCATION]
+JM|What is the most popular COURSELOCATION for [DEPT] COURSE?|The most popular COURSELOCATION for [DEPT] COURSE is [LOCATION]
+JM|Where am I most likely to spend TIME as a [DEPT] major?|The most popular building for [DEPT] COURSE is [LOCATION]
 JM|Where is the lab for [COURSE] located?|The lab for [COURSE] is in [LOCATION]
-JM|When is [PROF] free at the end of the day?|[PROF] is scheduled for COURSES until [TIME]
+JM|When is [PROF] free at the end of the day?|[PROF] is scheduled for COURSE until [TIME]
 JM|How many sections of [COURSE] are offered next quarter?|There are [SECTIONCOUNT] for [COURSE] next quarter
 JM|What is the most popular COURSE in [DEPT]?|[COURSE]-[SECTION] has the most students enrolled and waiting.
 JM|What COURSE is [COURSE]?|[COURSE] is [COURSE]
@@ -456,28 +456,28 @@ JM|Which sections of [COURSE] are still open?|SECTIONs [SECTION] are still open
 JM|How long is the waitlist for [COURSE]-[SECTION]?|The waitlist for [COURSE]-[SECTION] is [WAITLIST]
 JM|Is there a waitlist for [COURSE]-[section]?The waitlist for [COURSE]-[section] is [WAITLIST]
 JM|How many people are on the waitlist for [COURSE]-[SECTION]?|The waitlist for [COURSE]-[SECTION] is [WAITLIST]
-JM|What [NUMBERLEVEL] COURSES are still open?|[COURSES] are still open.
+JM|What [NUMBERLEVEL] COURSE are still open?|[COURSE] are still open.
 JM|How many PROFs teach [COURSE]?|COUNT([PROFS]) teach [COURSE].
 JM|Which PROFs still have open sections of [COURSE]?|[PROFS] are teaching open sections of [COURSE]
 JM|Is [COURSE] offered next quarter?|Yes or No
 JM|Is [PROF] a lecturer?|Yes or No
 JM|What type of teacher is [PROF]?|[PROF] is a [TITLE].
-JM|Who is teaching the most [DEPT] COURSES next quarter?|[PROF] is teaching the most COURSES next quarter.
+JM|Who is teaching the most [DEPT] COURSE next quarter?|[PROF] is teaching the most COURSE next quarter.
 JM|What is the least popular COURSE in [DEPT]?|[COURSE]-[SECTION] has the fewest students enrolled and waiting.
 JM|Which PROF is  teaching the fewest HOURS of COURSE?|[PROF] is teaching the fewest HOURS of COURSE.
-JM|What [COURSE_NUMBERLEVEL] COURSES can I take to have no COURSE on Mondays?|[COURSES] have sections without COURSE on Mondays.
+JM|What [COURSE_NUMBERLEVEL] COURSE can I take to have no COURSE on Mondays?|[COURSE] have sections without COURSE on Mondays.
 JM|How many HOURS of COURSE does [PROF] teach?|[PROF] teaches [HOURS] total.
 JM|Are there any sections of [COURSE] open?|[SECTIONS] have open seats
 JM|Which PROF teaches [COURSE]-[SECTION]?|PROF] teaches [COURSE]-[SECTION]
 JM|Will [PROF] teach [COURSE] next quarter?|Yes or No
 JM|Which section of [COURSE] is the most popular?|[SECTION] is the most popular.
 JM|What TIMEs can I take [COURSE] next quarter?|[COURSE] is offered at [TIMES]
-JM|How many 500 level COURSES does [PROF] teach?|[PROF] teaches COUNT([COURSES])
+JM|How many 500 level COURSE does [PROF] teach?|[PROF] teaches COUNT([COURSE])
 JM|What days can I take [COURSE] on?|[COURSE] is offered [DAYS] at [TIMES]
-JM|What [COURSE_NUMBERLEVEL] COURSES can I take to have no COURSE on Fridays?|[COURSES] have sections without COURSE on Fridays.
-JM|Where are most [DEPT] COURSES held?|[BUILDING] has the most [DEPT] courses.
-JM|How many students are enrolled so far in [DEPT] COURSES?|[ECAP] are currently enrolled in COURSES.
-JM|Is statistics or computer science a more popular department?|Computer science has more students enrolled in COURSES.
+JM|What [COURSE_NUMBERLEVEL] COURSE can I take to have no COURSE on Fridays?|[COURSE] have sections without COURSE on Fridays.
+JM|Where are most [DEPT] COURSE held?|[BUILDING] has the most [DEPT] courses.
+JM|How many students are enrolled so far in [DEPT] COURSE?|[ECAP] are currently enrolled in COURSE.
+JM|Is statistics or computer science a more popular department?|Computer science has more students enrolled in COURSE.
 JM|What is the name of COURSE number [COURSE]|[COURSE] is named [COURSE].
 JM|Is COURSE [COURSE] a GE|COURSE [COURSE] [GE] a GE.
 JM|Is COURSE [COURSE]-[SECTION] a lecture or lab|COURSE [COURSE]-[SECTION] a [LABORLECTURE]
@@ -486,7 +486,7 @@ JM|How many students have dropped [COURSE]-[SECTION]?|[ECAP_DROPPED] have droppe
 JM|How many students have dropped [COURSE]?|[ECAP_DROPPED] have dropped [COURSE].
 JM|How many students have withdrawn from [COURSE]-[SECTION]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE]-[SECTION].
 JM|How many students have withdrawn from [COURSE]?|[ECAP_WITHDRAWN] have withdrawn from [COURSE].
-JM|How many COURSES does [PROF] teach?|[PROF] teaches COUNT([COURSES])
+JM|How many COURSE does [PROF] teach?|[PROF] teaches COUNT([COURSE])
 JM|How many sections of [COURSE] does [PROF] teach?|[PROF] teaches COUNT([SECTIONS])
 JM|Where is [COURSE]-[SECTION] located?|[COURSE]-[SECTION] is in [LOCATION].
 JM|Where is [COURSE] located?|[COURSE] is in [LOCATION].
@@ -494,7 +494,7 @@ JM|What type of COURSE is [COURSE]-[SECTION]?|[COURSE]-[SECTION] is [TYPE]
 JM|What type of COURSE is [COURSE]?|[COURSE] is [TYPE]
 JM|How many labs are in [DEPT]?|[DEPT] has COUNT([LABS])
 JM|How many lectures are in [DEPT]?|[DEPT] has COUNT([LECTURES])
-JM|How many 400 level COURSES are in [DEPT]?|[DEPT] has COUNT([COURSES])
+JM|How many 400 level COURSE are in [DEPT]?|[DEPT] has COUNT([COURSE])
 JM|How many 300 level classes are in [DEPT]?|[DEPT] has [number_300_level_classes].
 JM|How many 200 level classes are in [DEPT]?|[DEPT] has [number_200_level_classes].
 JM|How many 100 level classes are in [DEPT]?|[DEPT] has [number_100_level_classes].
@@ -507,7 +507,7 @@ JM|How many open seats does [COURSE]-[class_section] have?|[COURSE]-[class_secti
 JM|How many open seats does [CLASS] have?|[CLASS] has [num_open_seats] open seats.
 JM|How many GEs are in [DEPT]?|[num_GEs] are in [DEPT].
 JM|Is there a class that satisfies [GE_code] GE in [DEPT]?|There [GE_status] a class for [GE_code].
-JM|What classes satisfy GE [GE_code] in [DEPT]?|[COURSES] satisfy [GE_code].
+JM|What classes satisfy GE [GE_code] in [DEPT]?|[COURSE] satisfy [GE_code].
 JM|Does class satisfy GE [GE_code]?|[COURSE] [GE_status] an option for [GE_code].
 JM|Is [COURSE] offered in [TERM]?|[COURSE] [class_status] offered in [TERM].
 JM|How many sections of [COURSE] is offered in [TERM]?|[COURSE] has [class_section] sections offered in [TERM].
@@ -559,7 +559,7 @@ AEHJ|How many waitlisted students are unaccommodated for [COURSE]?|[WAITLIST UNA
 AEHJ|How many students have dropped [COURSE]?|[DROP COUNT] students have dropped [COURSE]
 AEHJ|How many students have withdrawn from [COURSE]?|[WITHDRAW COUNT] students have withdrawn from [COURSE]
 AEHJ|What class number is [DESCRPTION]?|[DESCRPTION] is [COURSE]
-AEHJ|What class type is [DESCRPTION]?|[DESCRPTION] is a [COURSE TYPE] class
+AEHJ|What class type is [DESCRPTION]?|[DESCRPTION] is a [TYPE] class
 AEHJ|Are there any prerequisites for [DESCRPTION]?|[YES/NO]
 AEHJ|What are the prerequisites for [DESCRPTION]?|[DESCRPTION] requires [PREREQ]
 AEHJ|What’s the enrollment limit of [DESCRPTION]?|The enrollment capacity of [DESCRPTION] is [ECAP]
@@ -599,14 +599,14 @@ AEHJ|Which classes are in [LOCATION]?|[list_of(COURSE)]
 AEHJ|Which classes are located in [LOCATION]?|[list_of(COURSE)]
 AEHJ|Which classes are in [LOCATION] at [TIMES] on [DAYS]?|[list_of(COURSE)]
 AEHJ|Which classes are in [LOCATION] at [TIMES]?|[list_of(COURSE)]
-AEHJ|Where are the office hours for [COURSE]?|[PROF] has office hours in [LOCATION] on [DAYS] [TIMES].
-AEHJ|Where are the office hours for [PROF]?|[PROF] has office hours in [LOCATION] on [DAYS] [TIMES].
-AEHJ|Where is [COURSE] located?|[COURSE] is located in [LOCATION] on [DAYS] [TIMES].
-AEHJ|Where is [COURSE] located on [DAYS]?|[COURSE] is located in [LOCATION] on [DAYS] [TIMES].
-AEHJ|When are the office hours for [COURSE]?|[PROF] has office hours in [LOCATION] on [DAYS] [TIMES].
+AEHJ|Where are the office hours for [COURSE]?|[PROF] has office hours in [LOCATION] on [DAYS] 
+AEHJ|Where are the office hours for [PROF]?|[PROF] has office hours in [LOCATION] on [DAYS] 
+AEHJ|Where is [COURSE] located?|[COURSE] is located in [LOCATION] on [DAYS] 
+AEHJ|Where is [COURSE] located on [DAYS]?|[COURSE] is located in [LOCATION]
+AEHJ|When are the office hours for [COURSE]?|[PROF] has office hours in [LOCATION] on [DAYS] 
 AEHJ|When does [COURSE] start?|[DAYS] [TIMES]
 AEHJ|When does [COURSE] end?|[DAYS] [TIMES]
-AEHJ|Is [COURSE] lecture or lab?|[COURSE] is a [COURSE TYPE] section.
+AEHJ|Is [COURSE] lecture or lab?|[COURSE] is a [TYPE] section.
 AEHJ|Is [COURSE] a lecture?|[YES/NO]
 AEHJ|Is [COURSE] a lab?|[YES/NO]
 AEHJ|Does [COURSE] have a lab section?|[YES/NO]
@@ -615,7 +615,7 @@ AEHJ|What is the lab for [COURSE]?|[COURSE]
 AEHJ|What is the activity section for [COURSE]?|[COURSE]
 AEHJ|What is the lecture section for [COURSE]?|[COURSE]
 AEHJ|What is the lecture for [COURSE]?|[COURSE]
-AEHJ|What type is [COURSE]?|[COURSE TYPE]
+AEHJ|What type is [COURSE]?|[COURSE] is a [TYPE] section.
 AEHJ|What term is [COURSE] offered?|[list_of(TERM)]
 AEHJ|What quarter is [COURSE] offered?|[list_of(TERM)]
 AEHJ|Is [COURSE] offered [TERM]?|[YES/NO]
@@ -674,9 +674,9 @@ EKK|What is the best way to reach [PROF]?|You can call [PROF] at [PHONE] or emai
 EKK|What is the alias of [PROF]?|[ALIAS]
 EKK|What is [PROF]’s alias?|[ALIAS]
 EKK|Is [ALIAS] [PROF]?|Yes or No
-EKK|What courses does [PROF] teach?|[PROF] is teaching [COURSES]
-EKK|What is [PROF] teaching this [TERM]?|[PROF] is teaching [COURSES]
-EKK|What courses are [PROF] teaching in [TERM]?|[PROF] is teaching [COURSES] in [TERM]
+EKK|What courses does [PROF] teach?|[PROF] is teaching [COURSE]
+EKK|What is [PROF] teaching this [TERM]?|[PROF] is teaching [COURSE]
+EKK|What courses are [PROF] teaching in [TERM]?|[PROF] is teaching [COURSE] in [TERM]
 EKK|Did [PROF] teach [COURSE] in [TERM]?|Yes or No
 EKK|Is [PROF] teaching [COURSE] in [TERM]?|Yes or No
 EKK|Is [PROF] teaching in the [TERM]?|Yes or No
@@ -693,7 +693,7 @@ EKK|Which person teaches [COURSE]?|[PROF] teaches [COURSE]
 EKK|When is [COURSE] offered?|[COURSE] are offered during the [TERM]
 EKK|When can I take [COURSE]?|[COURSE] are offered during the [TERM]
 EKK|What quarters can I take [COURSE]?|[COURSE] are offered during the [TERM]
-EKK|What courses are offered in [TERM]?|[COURSES] are offered during the [TERM]
+EKK|What courses are offered in [TERM]?|[COURSE] are offered during the [TERM]
 EKK|Is [COURSE] offered in [TERM]?|Yes or No
 EKK|Can I take [COURSE] in [TERM]?|Yes or No
 EKK|Is [COURSE] available in [TERM]?|Yes or No
@@ -710,10 +710,10 @@ EKK|Where can I find [COURSE] [SECTION]?|[LOCATION]
 EKK|Where is [COURSE] [SECTION] classroom?|[LOCATION]
 EKK|What building is [COURSE] in?|[LOCATION]
 EKK|Is [NUM] the largest enrollment cap for [COURSE]?|Yes or No
-EKK|Where can I see [PROF]?|[LOCATION]
-EKK|Where is [PROF]’s office?|[LOCATION]
-EKK|Where is [PROF]’s office located?|[LOCATION]
-EKK|Where are [PROF]’s office hours?|[LOCATION]
+EKK|Where can I see [PROF]?|[PROF] can be found at [LOCATION]
+EKK|Where is [PROF]’s office?|[PROF] can be found at [LOCATION]
+EKK|Where is [PROF]’s office located?|[PROF] can be found at [LOCATION]
+EKK|Where are [PROF]’s office hours?|[PROF] can be found at [LOCATION]
 EKK|Where can I find [PROF] on campus for office hours?|[LOCATION]
 EKK|Is [LOCATION] [PROF]’s office?|Yes or No
 EKK|Is [LOCATION] [PROF]’s office hours?|Yes or No
@@ -781,14 +781,14 @@ PIS | How many affiliate faculty members are in the Computer Science department?
 PIS | How many active emeriti members are in the Computer Science department? | 2
 PIS | How many staff members are in the Computer Science department? | 4
 PIS | Is [PROF] teaching [COURSE] this quarter? | yes or no
-PIS | What classes is [PROF] teaching [TERM]? | [COURSES]
+PIS | What classes is [PROF] teaching [TERM]? | [COURSE]
 PIS | What is the building number for the Computer Science building? | 14
 PIS | What are the two series options to complete the Physical Science Support Electives? | Physics and Chemistry
 PIS | How many units of  free electives are allowed in the Computer Science curriculum? | 0 units
 PIS | What is the Computer Science department’s Instagram page? | @cpcscandse
 PIS | What are the hours for the Computer Science Department? | 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
 PIS | Is [COURSE] being offered in [TERM]? | yes or no
-PIS | What courses in the Computer Science curriculum don’t require any prerequisites | [COURSES]
+PIS | What courses in the Computer Science curriculum don’t require any prerequisites | [COURSE]
 PIS | Is the Computer Science office currently open? | no
 PIS | Is [COURSE] an approved technical elective? | yes or no
 PIS | Is double-counting allowed between Science Support Electives? | no
@@ -831,8 +831,8 @@ PIS | Can I take [COURSE] as a tech elective? |Yes or no
 PIS | Does [COURSE] count as a technical elective for Computer Science major? |Yes or no
 PIS | Does [COURSE] have a lab? |Yes or no
 PIS | Whose office is in [LOCATION]? |[PROF]
-PIS | What stats classes are offered in [TERM]?| [COURSES]
-PIS | Can you tell me all stats classes offered in [TERM]? |[COURSES]
+PIS | What stats classes are offered in [TERM]?| [COURSE]
+PIS | Can you tell me all stats classes offered in [TERM]? |[COURSE]
 PIS | Is [SECTION] waitlisted?|Yes/ no
 PIS | is [PROF] teaching  [COURSE]? |Yes / no
 PIS | Who is teaching [COURSE]? |[PROF]
@@ -848,8 +848,8 @@ PIS | Is [PROF] still the department chair of Computer Science? |Yes
 PIS | What time does [COURSE] section [SECTION] starts? |[TIMES]
 PIS | What’s the earliest section for [COURSE]? |The earliest section is [SECTION] taught by [PROF] that starts at [TIMES]
 PIS | What’s the latest section for [COURSE]? |The latest section is [SECTION] taught by [PROF] that starts at [TIMES]
-PIS | Are there any CSC courses offered before [TIMES]? |[COURSES]
-PIS | Are there any CSC courses offered  after [TIMES]? |[COURSES]
+PIS | Are there any CSC courses offered before [TIMES]? |[COURSE]
+PIS | Are there any CSC courses offered  after [TIMES]? |[COURSE]
 PIS | What time does [COURSE] section  [SECTION] starts? |[TIMES]
 PIS | What time does [COURSE] section  [SECTION] ends? |[TIMES]
 PIS | Where is the computer science building? Building | 14
