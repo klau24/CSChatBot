@@ -39,7 +39,7 @@ class EntityClassifier:
         if match and match[1]:
             return match[1], "COURSE"
 
-        return doc, self.clf.predict([doc])
+        return doc, self.clf.predict([doc])[0]
 
 
 if __name__ == "__main__":
