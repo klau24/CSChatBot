@@ -31,12 +31,12 @@ class ChatBot:
         entities = {}
         for token in tokens:
             if token[1] == "NN":
-                ent = self.entityClf.predict(token[0])
+                noun, ent = self.entityClf.predict(token[0])
                 if ent != "NON-ENTITY":
-                    entities[ent] = token[0]
+                    entities[ent] = noun
                     new_q += " [{}]".format(ent)
                 else:
-                    new_q += " {}".format(token[0])
+                    new_q += " {}".format(noun)
             else:
                 new_q += " {}".format(token[0])
         return entities, new_q

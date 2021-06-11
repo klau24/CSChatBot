@@ -112,7 +112,7 @@ JTCN| Do you know if there is a [TIME] section for [COURSE] |Yes or No
 JTCN| How many units is [COURSE] worth? |Number
 JTCN| How many COURSE does [PROF] teach on [DAY]? |Number
 JTCN| Which COURSE does [PROF] teach on [DAY]? |[COURSE]
-JTCN| What TIME does [PROF] office HOURS end? |[TIMES]
+JTCN| What TIME does [PROF] office HOURS end? |[END]
 JTCN| What TIME does [PROF] office HOURS start? |[TIMES]
 Team Team|Are there any sections of [COURSE]?|There are SUM([SECTIONS]) sections of [COURSE].
 Team Team|Is [COURSE] being taught this quarter?|There are SUM([SECTIONS]) sections of [COURSE].
@@ -604,8 +604,8 @@ AEHJ|Where are the office hours for [PROF]?|[PROF] has office hours in [LOCATION
 AEHJ|Where is [COURSE] located?|[COURSE] is located in [LOCATION] on [DAYS] 
 AEHJ|Where is [COURSE] located on [DAYS]?|[COURSE] is located in [LOCATION]
 AEHJ|When are the office hours for [COURSE]?|[PROF] has office hours in [LOCATION] on [DAYS] 
-AEHJ|When does [COURSE] start?|[DAYS] [TIMES]
-AEHJ|When does [COURSE] end?|[DAYS] [TIMES]
+AEHJ|When does [COURSE] start?|[DAYS] [START]
+AEHJ|When does [COURSE] end?|[DAYS] [END]
 AEHJ|Is [COURSE] lecture or lab?|[COURSE] is a [TYPE] section.
 AEHJ|Is [COURSE] a lecture?|[YES/NO]
 AEHJ|Is [COURSE] a lab?|[YES/NO]
@@ -845,12 +845,12 @@ PIS | How many units do I need to get a Master degree in computer science?| 45 u
 PIS | Can I take [COURSE] as a pre-req to [COURSE]? |Yes or no
 PIS | Is the computer science department open during the weekend? |No, they are available 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
 PIS | Is [PROF] still the department chair of Computer Science? |Yes
-PIS | What time does [COURSE] section [SECTION] starts? |[TIMES]
+PIS | What time does [COURSE] section [SECTION] starts? |[START]
 PIS | What’s the earliest section for [COURSE]? |The earliest section is [SECTION] taught by [PROF] that starts at [TIMES]
 PIS | What’s the latest section for [COURSE]? |The latest section is [SECTION] taught by [PROF] that starts at [TIMES]
 PIS | Are there any CSC courses offered before [TIMES]? |[COURSE]
 PIS | Are there any CSC courses offered  after [TIMES]? |[COURSE]
-PIS | What time does [COURSE] section  [SECTION] starts? |[TIMES]
+PIS | What time does [COURSE] section  [SECTION] starts? |[START]
 PIS | What time does [COURSE] section  [SECTION] ends? |[TIMES]
 PIS | Where is the computer science building? Building | 14
 PIS | Where is the statistics building? | Building 25

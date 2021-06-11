@@ -36,10 +36,10 @@ class EntityClassifier:
         # handles specific course codes
         COURSE_CODE_REGEX = f"((CSC|STAT) \d\d\d)"
         match = re.search(COURSE_CODE_REGEX, doc, re.IGNORECASE)
-        if match[1]:
-            return "COURSE"
+        if match and match[1]:
+            return match[1], "COURSE"
 
-        return self.clf.predict([doc])
+        return doc, self.clf.predict([doc])
 
 
 if __name__ == "__main__":
