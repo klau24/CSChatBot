@@ -548,7 +548,7 @@ AEHJ|When is [COURSE] [SECTION]?|[COURSE] [SECTION] is [DAYS] [TIMES]
 AEHJ|Does [COURSE] have a lab section?|[YES/NO]
 AEHJ|Where is [COURSE] [SECTION]?|[COURSE] [SECTION] is in room [LOCATION]
 AEHJ|What class is [COURSE]?|[COURSE] is [DESCRPTION]
-AEHJ|What class type is [COURSE]?|[COURSE] is a [COURSE TYPE] class
+AEHJ|What class type is [COURSE]?|[COURSE] is a [TYPE] class
 AEHJ|Are there any prerequisites for [COURSE]?|[YES/NO]
 AEHJ|What are the prerequisites for [COURSE]?|[COURSE] requires [PREREQ]
 AEHJ|What’s the enrollment limit of [COURSE]?|The enrollment capacity of [COURSE] is [ECAP]
