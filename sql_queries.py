@@ -8,7 +8,7 @@ class Query:
         self.query = query
         self.entities = entities
         if "PROF" in self.entities.keys():
-            self.entities["PROF"] = self.entities["PROF"].lower().replace("dr.", "").replace("professor", "").strip()
+            self.entities["PROF"] = self.entities["PROF"].lower().replace("dr.", "").replace("dr . ", "").replace("professor", "").strip()
         elif "COURSE" in self.entities.keys():
             self.entities["COURSE"] = self.entities["COURSE"].replace("course", "").strip()
             course = self.entities["COURSE"].split()
@@ -32,11 +32,11 @@ class Query:
     def formatProf(self, i):
         oldLen = len(self.response)
         if '[' in i:   
-            i = i.replace(".", "")
             try:
+                i = i.replace(".", "").replace("'", "'")
                 if i == "[PROF]":
                     self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + " "
-                elif i == "[PROF]’s":
+                elif i == "[PROF]'s":
                     self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + "'s" + " "
                 elif i == "[ALIAS]":
                     self.response += self.entities["ALIAS"] + " "
@@ -58,8 +58,8 @@ class Query:
     def formatCourse(self, i):
         oldLen = len(self.response)
         if '[' in i:   
-            i = i.replace(".", "")
             try:
+                i = i.replace(".", "")
                 if i == "[COURSE]":
                     self.response += self.entities["CODE"] + " "
                 elif i == "[SECTION]":
@@ -101,11 +101,12 @@ class Query:
             elif res == -2:
                 break 
             count += 1
-        if res != -2:
+        if res == -2 or '[' in self.response:
+            print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
+        elif res != -2:
             print(self.response)
             print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
-        else:
-            print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
+
 
     def profAndCourseQuery(self):
         return
@@ -142,7 +143,6 @@ class Query:
 
     def courseQuery(self):
         course = self.entities["COURSE"]
-
         connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
         with connection:
             with connection.cursor() as cursor:

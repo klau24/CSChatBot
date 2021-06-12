@@ -154,7 +154,7 @@ Team Team|Is [COURSE] MTWR?|No, it is [DAYS]
 Team Team|Does [PROF] have office HOURS [DAYS]?|Yes, they are at [TIME] [DAYS]
 Team Team|Does [PROF] have office HOURS today?|No
 Team Team|Does [PROF] have office HOURS tomorrow?|Yes, they are at [TIME] [DAYS]
-Team Team|What TIME is [COURSE][SECTION]?|[TIME] [DAYS]
+Team Team|What TIME is [COURSE][SECTION]?|Starts at [START] and ends at [END]
 Team Team|Who teaches [COURSE][SECTION]?|[PROF]
 Team Team|Who is [ALIAS]?|[PROF]
 Team Team|What is the capacity for [COURSE][SECTION]?|The capacity is [ECAP] students.
@@ -568,7 +568,7 @@ AEHJ|How many distinct students are waitlisted for [DESCRPTION]?|[WAITLIST DISTI
 AEHJ|How many waitlisted students are unaccommodated for [DESCRPTION]?|[WAITLIST UNACCOM] waitlisted students are unaccomodated for [DESCRPTION]
 AEHJ|How many students have dropped [DESCRPTION]?|[DROP COUNT] students have dropped [DESCRPTION]
 AEHJ|How many students have withdrawn from [DESCRPTION]?|[WITHDRAW COUNT] students have withdrawn from [DESCRPTION]
-AEHJ|Where are [PROF] office hours?|[PROF] office hours are located in [LOCATION] on [DAYS] [TIMES].
+AEHJ|Where are [PROF] office hours?|[PROF] office hours are located in [LOCATION] 
 AEHJ|Where is [PROF] office?|[LOCATION]
 AEHJ|Where is [PROF] at [TIMES]?|[PROF] is in [LOCATION] on [DAYS] [TIMES].
 AEHJ|When are [PROF] office hours?|[PROF] office hours are located in [LOCATION] on [DAYS] [TIMES].
