@@ -97,7 +97,7 @@ def addCourseToProf(count, output, courses):
 
 
 def addProfToDB(profCount, output):
-   connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+   connection = pymysql.connect(host='dev2020.chzg5zpujwmo.us-west-2.rds.amazonaws.com', user='iotdev', password='iot985', database='iot_test', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 
    with connection:
       with connection.cursor() as cursor:
@@ -119,7 +119,7 @@ def addProfToDB(profCount, output):
    return profCount
 
 def addCourseToDB(allCourses):
-   connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+   connection = pymysql.connect(host='dev2020.chzg5zpujwmo.us-west-2.rds.amazonaws.com', user='iotdev', password='iot985', database='iot_test', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 
    with connection:
       with connection.cursor() as cursor:
