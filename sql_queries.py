@@ -38,7 +38,7 @@ class Query:
                     self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + " "
                 elif i == "[PROF]'s":
                     self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + "'s" + " "
-                elif i == "[ALIAS]":
+                elif "[ALIAS]" in i:
                     self.response += self.entities["ALIAS"] + " "
                 elif i == "[ALIAS]’s":
                     self.response += self.entities["ALIAS"] + "'s" + " "
@@ -123,8 +123,7 @@ class Query:
             lastName = 1
         else: #first and last
             fullName = 1
-
-        connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+        connection = pymysql.connect(host='dev2020.chzg5zpujwmo.us-west-2.rds.amazonaws.com', user='iotdev', password='iot985', database='iot_test', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
         with connection:
             if lastName == 1:
                 with connection.cursor() as cursor:
@@ -143,7 +142,7 @@ class Query:
 
     def courseQuery(self):
         course = self.entities["COURSE"]
-        connection = pymysql.connect(host='localhost', user='EKK', password='EKK98', database='EKK466S21', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+        connection = pymysql.connect(host='dev2020.chzg5zpujwmo.us-west-2.rds.amazonaws.com', user='iotdev', password='iot985', database='iot_test', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
         with connection:
             with connection.cursor() as cursor:
                 sql = "SELECT * FROM Courses WHERE code=%s"

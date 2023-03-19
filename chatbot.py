@@ -43,6 +43,7 @@ class ChatBot:
                     new_q += " {}".format(noun)
             else:
                 new_q += " {}".format(token[0])
+        #print(entities, new_q)
         return entities, new_q
 
     # Given a query, prints responses from similar questions
