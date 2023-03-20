@@ -4,6 +4,7 @@ import sql_queries
 from query_classifier import QueryClassifier
 from entity_classifier import EntityClassifier
 import spacy
+from nltk.metrics.distance  import edit_distance
 import pandas
 
 nlp = spacy.load("en_core_web_sm")
@@ -71,6 +72,20 @@ class ChatBot:
             return True
         return False
 
+    def spell_check(self, text):
+        names = list(self.professors["FirstName"]) + list(self.professors["LastName"])
+        distances = [(x, edit_distance(text, x)) for x in names]
+        min_val = distances[0][1]
+        min_name = distances[0]
+        for i in range(len(distances)):
+            new_name = distances[i][0]
+            new_val = distances[i][1]
+            if new_val < min_val:
+                min_val = new_val
+                min_name = new_name
+        return min_name, min_val
+        print(min_name, min_val)
+
     # Given tokenized query, substitutes recognized entities with entity tags
     # Returns extracted entities and new query with tags
     def subst_entities(self, tokens):
@@ -80,6 +95,8 @@ class ChatBot:
             # print(token,token.tag_, token.pos_)
             # Proper noun was found
             if token.pos_ == "PROPN" or token.pos_ == "NOUN":
+                name, distance = self.spell_check(token.text.lower())
+                # print(name, distance)
                 # Check for first name
                 if self.prof_check_first(token.text.lower()):
                     new_q += " [PROF]"
@@ -91,17 +108,21 @@ class ChatBot:
                     else:
                         new_q += " [PROF]"
                         entities["PROF"] = {"LastName": token.text}
-                # Check for extra s in first name
-                elif self.prof_check_first_s(token.text.lower()):
-                    new_q += " [PROF]"
-                    entities["PROF"] = {"FirstName": token.text[:-1]}
-                # Check for extra s in last name
-                elif self.prof_check_last_s(token.text.lower()):
-                    if new_q.split()[-1] == "[PROF]":
-                        entities["PROF"]["LastName"] = token.text[:-1]
-                    else:
+                # It was similar to an existing name
+                if distance <= 2:
+                    # Check if it was a first name
+                    if self.prof_check_first(name):
                         new_q += " [PROF]"
-                        entities["PROF"] = {"LastName": token.text[:-1]}
+                        entities["PROF"] = {"FirstName": name}
+                    # Check if it was a last name
+                    elif self.prof_check_last(name):
+                        # First name was also given
+                        if new_q.split()[-1] == "[PROF]":
+                            entities["PROF"]["LastName"] = name
+                        else:
+                            # Only last name was given
+                            new_q += " [PROF]"
+                            entities["PROF"] = {"LastName": name}
                 # Not an entity
                 else:
                     new_q += " " + token.text
