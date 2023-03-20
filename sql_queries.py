@@ -1,5 +1,6 @@
 from __future__ import print_function
 import nltk
+import string
 import pymysql.cursors
 
 
@@ -9,8 +10,9 @@ class Query:
         self.query = query
         self.entities = entities
         self.answer = answer
-        self.answerEntityMap = {}
-        self.response = ""
+        self.answerEntityMap = {'LOCATION': 'OFFICE', 'CP-EMAIL': 'ALIAS', 'FIRSTNAME': 'FIRST', 'LASTNAME': 'LAST'}
+        self.response = []
+        print(self.query, self.entities, self.answer)
 
     def queryDB(self):
         keys = list(self.entities.keys())
@@ -24,111 +26,17 @@ class Query:
 
         self.formatOutput()
 
-    # def formatProf(self, i):
-    #     oldLen = len(self.response)
-    #     if '[' in i:   
-    #         try:
-    #             i = i.replace(".", "").replace("'", "'")
-    #             if i == "[PROF]":
-    #                 self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + " "
-    #             elif i == "[PROF]'s":
-    #                 self.response += self.entities["FIRST"].capitalize() + " " + self.entities["LAST"].capitalize() + "'s" + " "
-    #             elif "[ALIAS]" in i:
-    #                 self.response += self.entities["ALIAS"] + " "
-    #             elif i == "[ALIAS]’s":
-    #                 self.response += self.entities["ALIAS"] + "'s" + " "
-    #             elif i == "[TITLE]":
-    #                 self.response += self.entities["TITLE"] + " "
-    #             elif i == "[PHONE]":
-    #                 self.response += self.entities["PHONE"] + " "
-    #             elif i == "[LOCATION]" and "PROF" in self.entities:
-    #                 self.response += self.entities["OFFICE"] + " "
-    #         except:
-    #             return -2
-
-<<<<<<< HEAD
-    #     if len(self.response) > oldLen:
-    #         return 1
-    #     return -1
-
-    # def formatCourse(self, i):
-    #     oldLen = len(self.response)
-    #     if '[' in i:   
-    #         try:
-    #             i = i.replace(".", "")
-    #             if i == "[COURSE]":
-    #                 self.response += self.entities["CODE"] + " "
-    #             elif i == "[SECTION]":
-    #                 self.response += self.entities["SECTION"] + " "
-    #             elif i == "[TYPE]":
-    #                 self.response += self.entities["TYPE"] + " "
-    #             elif i == "[DAYS]":
-    #                 self.response += self.entities["DAYS"] + " "
-    #             elif i == "[START]":
-    #                 self.response += self.entities["START"] + " "
-    #             elif i == "[END]":
-    #                 self.response += self.entities["END"] + " "
-    #             elif i == "[LOCATION]" and "COURSE" in self.entities:
-    #                 self.response += self.entities["LOCATION"] + " "
-    #         except:
-    #             return -2
-
-    #     if len(self.response) > oldLen:
-    #         return 1
-    #     return -1
-=======
-    def formatOutput(self):
-        self.answer = self.answer.split()
-        # print(self.answer)
-        count = 0
-        for i in self.answer: 
-            res = self.formatProf(i)
-            if res == 1:
-               count += 1
-               continue
-            if res == -2:
-               break
-            res = self.formatCourse(i)
-            if res == -1:
-                if count == 0:
-                    self.response += i.capitalize() + " "
-                else:
-                    self.response += i.lower() + " "
-            elif res == -2:
-                break 
-            count += 1
-        if res == -2 or '[' in self.response:
-            print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
-        elif res != -2:
-            print(self.response)
-            print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
->>>>>>> 9d0ad1d75fd30b8a1117da30d5d9e9fa63e0392d
-
-    # def _OLD_formatOutput(self):
-    #     self.answer = self.answer.split()
-    #     count = 0
-    #     for i in self.answer: 
-    #         res = self.formatProf(i)
-    #         if res == 1:
-    #            count += 1
-    #            continue
-    #         if res == -2:
-    #            break
-    #         res = self.formatCourse(i)
-    #         if res == -1:
-    #             if count == 0:
-    #                 self.response += i.capitalize() + " "
-    #             else:
-    #                 self.response += i.lower() + " "
-    #         elif res == -2:
-    #             break 
-    #         count += 1
-    #     if res == -2 or '[' in self.response:
-    #         print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
-    #     elif res != -2:
-    #         print(self.response)
-    #         print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
-
+    def unpackDict(self, key):
+        res = []
+        if isinstance(self.entities[key], dict):
+            for _, v in self.entities[key].items():
+                res.append(v)
+            if key == "PROF":
+                res[-1] += "'s"
+                return string.capwords(" ".join(res))
+            return " ".join(res)
+        return self.entities[key]
+        
     def formatOutput(self):
         self.answer = self.answer.split()
         for word in self.answer:
@@ -136,16 +44,19 @@ class Query:
             if '[' in word and ']' in word:
                 answerVar = word[word.find("[")+1: word.find("]")]
                 try:
-                    self.response += self.entities[answerVar]
+                    self.response.append(self.unpackDict(answerVar))
                 except:
                     try:
-                        self.response += self.answerEntityMap[answerVar]
+                        self.response.append(self.entities[self.answerEntityMap[answerVar]])
+                        if "EMAIL" in answerVar or "ALIAS" in answerVar:
+                            self.response[-1] += "@calpoly.edu"
                     except:
                         print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
+                        return
             else:
-                self.response += word
+                self.response.append(word)
                 
-        print(self.response)
+        print(" ".join(self.response))
         print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
                 
     def profAndCourseQuery(self):
@@ -157,12 +68,11 @@ class Query:
         conditions = []
 
         with self.connection:
-            if self.entities['first']:
-                conditions.append(f"first={self.entities['first']}")
-            if self.entities['last']:
-                conditions.append(f"last={self.entities['last']}")
+            if "first" in self.entities['PROF']:
+                conditions.append(f"first='{self.entities['PROF']['first']}'")
+            if "last" in self.entities['PROF']:
+                conditions.append(f"last='{self.entities['PROF']['last']}'")
             query += " AND ".join(conditions)
-
             with self.connection.cursor() as cursor:
                 cursor.execute(query)
                 output = cursor.fetchone()

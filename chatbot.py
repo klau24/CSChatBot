@@ -40,20 +40,20 @@ class ChatBot:
     #     return tokenized
 
     def prof_check_first(self, text):
-        first_name = self.professors[self.professors["FirstName"] == text]
+        first_name = self.professors[self.professors["first"] == text]
         if len(first_name) > 0:
             return True
         return False
 
     def prof_check_first_s(self, text):
         if text[-1] == "s":
-            first_name_no_s = self.professors[self.professors["FirstName"] == text[:-1]]
+            first_name_no_s = self.professors[self.professors["first"] == text[:-1]]
             if len(first_name_no_s) > 0:
                 return True
         return False
 
     def prof_check_last(self, text):
-        last_name = self.professors[self.professors["LastName"] == text]
+        last_name = self.professors[self.professors["last"] == text]
         if len(last_name) > 0:
             return True
 
@@ -61,7 +61,7 @@ class ChatBot:
 
     def prof_check_last_s(self, text):
         if text[-1] == "s":
-            last_name_no_s = self.professors[self.professors["FirstName"] == text[:-1]]
+            last_name_no_s = self.professors[self.professors["first"] == text[:-1]]
             if len(last_name_no_s) > 0:
                 return True
         return False
@@ -73,7 +73,7 @@ class ChatBot:
         return False
 
     def spell_check(self, text):
-        names = list(self.professors["FirstName"]) + list(self.professors["LastName"])
+        names = list(self.professors["first"]) + list(self.professors["last"])
         distances = [(x, edit_distance(text, x)) for x in names]
         min_val = distances[0][1]
         min_name = distances[0]
@@ -84,7 +84,6 @@ class ChatBot:
                 min_val = new_val
                 min_name = new_name
         return min_name, min_val
-        print(min_name, min_val)
 
     # Given tokenized query, substitutes recognized entities with entity tags
     # Returns extracted entities and new query with tags
@@ -92,42 +91,10 @@ class ChatBot:
         new_q = ""
         entities = {}
         for token in tokens:
-            # print(token,token.tag_, token.pos_)
+            print(token,token.tag_, token.pos_)
             # Proper noun was found
-            if token.pos_ == "PROPN" or token.pos_ == "NOUN":
-                name, distance = self.spell_check(token.text.lower())
-                # print(name, distance)
-                # Check for first name
-                if self.prof_check_first(token.text.lower()):
-                    new_q += " [PROF]"
-                    entities["PROF"] = {"FirstName": token.text}
-                # Check for last name
-                elif self.prof_check_last(token.text.lower()):
-                    if new_q.split()[-1] == "[PROF]":
-                        entities["PROF"]["LastName"] = token.text
-                    else:
-                        new_q += " [PROF]"
-                        entities["PROF"] = {"LastName": token.text}
-                # It was similar to an existing name
-                if distance <= 2:
-                    # Check if it was a first name
-                    if self.prof_check_first(name):
-                        new_q += " [PROF]"
-                        entities["PROF"] = {"FirstName": name}
-                    # Check if it was a last name
-                    elif self.prof_check_last(name):
-                        # First name was also given
-                        if new_q.split()[-1] == "[PROF]":
-                            entities["PROF"]["LastName"] = name
-                        else:
-                            # Only last name was given
-                            new_q += " [PROF]"
-                            entities["PROF"] = {"LastName": name}
-                # Not an entity
-                else:
-                    new_q += " " + token.text
             # Checking for Class number and section
-            elif token.pos_ == "NUM":
+            if token.pos_ == "NUM":
                 # Check if is a course
                 if self.class_check(token.text):
                     new_q += " [COURSE]"
@@ -140,7 +107,37 @@ class ChatBot:
                     else:
                         entities["COURSE"] = {"section":token.text}
             else:
-                new_q += " " + token.text
+                name, distance = self.spell_check(token.text.lower())
+                print(name, distance)
+                # Check for first name
+                if self.prof_check_first(token.text.lower()):
+                    new_q += " [PROF]"
+                    entities["PROF"] = {"first": token.text}
+                # Check for last name
+                elif self.prof_check_last(token.text.lower()):
+                    if new_q.split()[-1] == "[PROF]":
+                        entities["PROF"]["last"] = token.text
+                    else:
+                        new_q += " [PROF]"
+                        entities["PROF"] = {"last": token.text}
+                # It was similar to an existing name
+                elif distance <= 1:
+                    # Check if it was a first name
+                    if self.prof_check_first(name):
+                        new_q += " [PROF]"
+                        entities["PROF"] = {"first": name}
+                    # Check if it was a last name
+                    elif self.prof_check_last(name):
+                        # First name was also given
+                        if new_q.split()[-1] == "[PROF]":
+                            entities["PROF"]["last"] = name
+                        else:
+                            # Only last name was given
+                            new_q += " [PROF]"
+                            entities["PROF"] = {"last": name}
+                # Not an entity
+                else:
+                    new_q += " " + token.text
         return entities, new_q
 
     # Given a query, prints responses from similar questions

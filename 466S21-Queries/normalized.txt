@@ -167,8 +167,7 @@ Team Team|What day is [COURSE] offered on?|[COURSE] [SECTION] is [DAYS]
 Team Team|Is [COURSE][SECTION] offered on [DAYS]?|Yes, [COURSE] [SECTION] is offered on [DAYS]
 Team Team|Does [COURSE] have a lab?|Yes/No
 Team Team|How long has [PROF] taught?|[INTEGER] YEARs
-Team Team|Are there any teachers with first name [Name]?|Yes [PROF], [PROF], ...
-Team Team|Are there any teachers with last name [Name]?|Yes [PROF], [PROF], ...
+Team Team|What is [PROF] last name?|[PROF]'s last name is [LASTNAME]
 Team Team|Are there are [COURSE] being taught on [DAYS]?|Yes the COURSE are [COURSE], [COURSE], ...
 Team Team|What day does [QUARTER] start?|[Month] [DAYS]
 Team Team|What day does [QUARTER] end?|[Month] [DAYS]
@@ -200,7 +199,7 @@ Team Team|Can I visit [PROF] [TIME]?|No
 Team Team|Who is teaching [COURSE]?|[PROF] is teaching [COURSE]
 Team Team|Can I still enroll [COURSE]?|Yes
 Team Team|What's the enrollment capacity of [COURSE]?|The enrollment capacity of [COURSE] is 40
-Team Team|What [PROF]'s EMAIL address?|[PROF]'s EMAIL address is [EMAIL]
+Team Team|What [PROF]'s email address?|[PROF]'s email address is [EMAIL] @calpoly.edu
 Team Team|What 's the [PHONE number'] of [PROF]?|It is [PHONE number]
 Team Team|When is the [LOCATION hour] of [PROF]?|It is  [TIME]
 Team Team|Where is [PROF]'s [COURSE]?|It's at [LOCATION]
@@ -210,18 +209,18 @@ Team Team|Is [COURSE] virtual or in person?|It's virtual
 Team Team|Is [COURSE] gonna be virtual?|No
 Team Team|Which in person COURSE is available [TIME]?|[COURSE] are available [TIME]
 Team Team|Which virtual COURSE is available [TIME]?|[COURSE] are available [TIME]
-Team Team|How to contact [PROF]?|[PROF] EMAIL is [EMAIL]
+Team Team|How to contact [PROF]?|[PROF] email is [EMAIL] @calpoly.edu
 Team Team|Is [PROF] teaching [COURSE]?|No
 Team Team|Does [PROF] teach 500 level COURSE?|No
 Team Team|Does [PROF] teach 300 level COURSE?|No
 CACORITH|What is [PROF]’s ALIAS?|[PROF]’s ALIAS is [ALIAS].
 CACORITH|What’s [PROF]’s username?|[PROF]’s username is [ALIAS]
-CACORITH|What is [PROF]’s EMAIL?|[PROF]’s EMAIL is [ALIAS]@calpoly.edu
-CACORITH|How can I contact [PROF]?|[PROF]’s EMAIL is [ALIAS]@calpoly.edu
+CACORITH|What is [PROF]’s email?|[PROF]’s email is [ALIAS] @calpoly.edu
+CACORITH|How can I contact [PROF]?|[PROF]’s email is [ALIAS] @calpoly.edu
 CACORITH|What is [PROF]’s title?|[PROF]’s title is [TITLE]
 CACORITH|What’s [PROF]’s phone number?|[PROF]’s phone number is [PHONE]
 CACORITH|Do you have the phone number for [PROF]?|Yes, you can reach [PROF] at [PHONE].
-CACORITH|How can I contact [PROF]?|Here is the contact information for [PROF], phone: [PHONE], EMAIL: [ALIAS]@calpoly.edu office: [LOCATION].
+CACORITH|How can I contact [PROF]?|Here is the contact information for [PROF], phone: [PHONE], email: [ALIAS]@calpoly.edu office: [LOCATION].
 CACORITH|What’s [PROF]'s title?|[PROF]'s title is [TITLE].
 CACORITH|Where is [PROF]’s office?|[PROF]’s office is [LOCATION]
 CACORITH|What is the LOCATION number of [PROF]’s office?|[PROF]’s office is [LOCATION]
@@ -325,7 +324,7 @@ CACORITH|How can I contact [PROF]?|[PROF]'s phone number is [PHONE], and [PROF]'
 CACORITH|How many sections of independent study does [PROF] advise?|[PROF] is the advisor for [SECTIONCOUNT] sections of independent study.
 CACORITH|How can I fulfill GE requirement [GE]?|[COURSE] fulfills GE requirement [GE].
 CACORITH|How busy is [PROF]?|[PROF] is busy on [DAYS] at [TIMES]
-CACORITH|What is [PROF]'s EMAIL address?|You can reach [PROF] at [ALIAS]@calpoly.edu.
+CACORITH|What is [PROF]'s email address?|You can reach [PROF] at [ALIAS]@calpoly.edu.
 CACORITH|Which PROFs teach [COURSENAME]?|[COURSENAME] is taught by [PROFS]
 CACORITH|Who teaches section [SECTION] of [COURSE]?|[PROF] teaches [SECTION] of [COURSE].
 CACORITH|Who are the [DEPT] PROFs?|The [DEPT] PROFs are [PROFS].
@@ -356,9 +355,9 @@ JVJ|How many PROFs are teaching [COURSE]?|[COURSE] will be taught by [NUM-PROF]
 JVJ|Where is [PROF]’s office?|[PROF] is located in [LOCATION]
 JVJ|Where is [PROF] located?|[PROF] is located in [LOCATION]
 JVJ|Where is [PROF]’s office HOURS|[PROF] is located in [LOCATION]
-JVJ|What is [PROF]’s contact?|[PROF] can be reached at [PHONE] or [CP-EMAIL]
+JVJ|What is [PROF]’s contact?|[PROF] can be reached at [PHONE] or [CP-EMAIL]@calpoly.edu
 JVJ|What is [PROF]’s phone number?|[PROF] can be reached at [PHONE]
-JVJ|How do I contact [PROF]?|[PROF] can be reached at [PHONE] or [CP-EMAIL]
+JVJ|How do I contact [PROF]?|[PROF] can be reached at [PHONE] or [CP-EMAIL]@calpoly.edu
 JVJ|What is the name for COURSE [COURSE]?|The name for [COURSE] is [COURSE-NAME]
 JVJ|What is [COURSE]?|The name for [COURSE] is [COURSE-NAME]
 JVJ|Which COURSE fall under GE [GE-REQ]?|COURSE [COURSE-LIST] fall under [GE-REQ]
@@ -395,8 +394,8 @@ JVJ|Which [MAJOR] COURSE are offered between [TIME] and [TIME]?|[COURSE-LIST] ar
 JVJ|Which sections for [COURSE] are offered between [TIME] and [TIME]?|[COURSE-SECT-LIST] are offered between [TIME] and [TIME] for [COURSE]
 JVJ|What is [PROF]’s ALIAS?|[PROF]’s Cal Poly username is [ALIAS]
 JVJ|What is [PROF]’s Cal Poly username?|[PROF]’s Cal Poly username is [CP-USERNAME]
-JVJ|What is [PROF]’s EMAIL?|[PROF]’s Cal Poly EMAIL is [CP-EMAIL]
-JVJ|What is the EMAIL for [PROF]?|[PROF]’s Cal Poly EMAIL is [CP-EMAIL]
+JVJ|What is [PROF]’s email?|[PROF]’s Cal Poly email is [CP-EMAIL]
+JVJ|What is the email for [PROF]?|[PROF]’s Cal Poly email is [CP-EMAIL]
 JVJ|Can I take [COURSE] with [COURSE]?|[Yes or No]
 JVJ|Can I take both [COURSE] and [COURSE] at the same TIME?|[Yes or No]
 JVJ|Can I attend [PROF]’s office HOURS and [PROF]’s office HOURS?|[Yes or No]
