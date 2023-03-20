@@ -20,6 +20,7 @@ class Query:
 
     def queryDB(self):
         keys = list(self.entities.keys())
+        # print("Keys:", keys)
         if "PROF" in keys and "COURSE" in keys:
             self.profAndCourseQuery()
         elif "PROF" in keys and "COURSE" not in keys:
@@ -84,6 +85,7 @@ class Query:
 
     def formatOutput(self):
         self.answer = self.answer.split()
+        # print(self.answer)
         count = 0
         for i in self.answer: 
             res = self.formatProf(i)
@@ -126,6 +128,7 @@ class Query:
         connection = pymysql.connect(host='dev2020.chzg5zpujwmo.us-west-2.rds.amazonaws.com', user='iotdev', password='iot985', database='iot_test', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
         with connection:
             if lastName == 1:
+                print("Last Name")
                 with connection.cursor() as cursor:
                     sql = "SELECT * FROM Professors WHERE `last`=%s"
                     cursor.execute(sql, (prof))
