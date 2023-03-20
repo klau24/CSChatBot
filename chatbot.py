@@ -151,7 +151,6 @@ class ChatBot:
         entities = {}
         answers = []
         queries = q.split("and")
-        print("Queries:", queries)
         for q in queries:
             new_entities, new_answer = self.get_sample_answers(q)
             entities.update(new_entities)

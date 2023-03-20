@@ -45,6 +45,8 @@ class Query:
                 answerVar = word[word.find("[")+1: word.find("]")]
                 try:
                     self.response.append(self.unpackDict(answerVar))
+                    if "EMAIL" in answerVar or "ALIAS" in answerVar:
+                        self.response[-1] += "@calpoly.edu"
                 except:
                     try:
                         self.response.append(self.entities[self.answerEntityMap[answerVar]])
