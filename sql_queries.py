@@ -24,7 +24,7 @@ class Query:
         elif "PROF" not in keys and "COURSE" in keys:
             self.courseQuery()
 
-        self.formatOutput()
+        return self.formatOutput()
 
     def unpackDict(self, key):
         res = []
@@ -32,7 +32,7 @@ class Query:
             for _, v in self.entities[key].items():
                 res.append(v)
             if key == "PROF":
-                res[-1] += "'s"
+            #     res[-1] += "'s"
                 return string.capwords(" ".join(res))
             return " ".join(res)
         return self.entities[key]
@@ -57,9 +57,9 @@ class Query:
                         return
             else:
                 self.response.append(word)
-                
-        print(" ".join(self.response))
-        print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
+
+        #print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
+        return " ".join(self.response)
                 
     def profAndCourseQuery(self):
         return

@@ -164,10 +164,12 @@ def main():
     while q != "exit" and q != "Exit":
         entities, answer = bot.split_queries(q)
         #entities, answer = bot.get_sample_answers(q)
+        responses = []
         for a in answer:
             if a != -1:
                 query = sql_queries.Query(q, entities, a)
-                query.queryDB()
+                responses.append(query.queryDB())
+        print(". ".join(responses)+".")
         q = input("Q> ")
     print("I'm glad I could help you :)")
     print("[Signal: End]")
