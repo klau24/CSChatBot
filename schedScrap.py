@@ -141,7 +141,7 @@ def addCourseToDB(allCourses):
 
 
 if __name__ == "__main__":
-   urls = ["https://schedules.calpoly.edu/depts_52-CENG_curr.htm", "https://schedules.calpoly.edu/depts_76-CSM_curr.htm"]
+   urls = ["https://schedules.calpoly.edu/depts_52-CENG_next.htm"]
    count = 0
    profCount = 0
    for i in range(len(urls)):

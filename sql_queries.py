@@ -14,6 +14,7 @@ class Query:
 
     def queryDB(self):
         keys = list(self.entities.keys())
+        # print("Keys:", keys)
         if "PROF" in keys and "COURSE" in keys:
             self.profAndCourseQuery()
         elif "PROF" in keys and "COURSE" not in keys:
@@ -45,6 +46,7 @@ class Query:
     #         except:
     #             return -2
 
+<<<<<<< HEAD
     #     if len(self.response) > oldLen:
     #         return 1
     #     return -1
@@ -74,6 +76,33 @@ class Query:
     #     if len(self.response) > oldLen:
     #         return 1
     #     return -1
+=======
+    def formatOutput(self):
+        self.answer = self.answer.split()
+        # print(self.answer)
+        count = 0
+        for i in self.answer: 
+            res = self.formatProf(i)
+            if res == 1:
+               count += 1
+               continue
+            if res == -2:
+               break
+            res = self.formatCourse(i)
+            if res == -1:
+                if count == 0:
+                    self.response += i.capitalize() + " "
+                else:
+                    self.response += i.lower() + " "
+            elif res == -2:
+                break 
+            count += 1
+        if res == -2 or '[' in self.response:
+            print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
+        elif res != -2:
+            print(self.response)
+            print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
+>>>>>>> 9d0ad1d75fd30b8a1117da30d5d9e9fa63e0392d
 
     # def _OLD_formatOutput(self):
     #     self.answer = self.answer.split()

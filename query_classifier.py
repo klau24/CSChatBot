@@ -13,16 +13,16 @@ class QueryClassifier:
     test = self.vectorizer.transform([q])
     cosine = cosine_similarity(test, self.tfidf)
     answers = pd.Series(cosine[0]).sort_values(ascending=False)
-    print("Index\t\tScore\t\tResponses")
-    print("----------------------------")
-    for i in range(5):
-        print(
-            "{}\t\t{}\t\t{}".format(
-                answers.index[i],
-                answers.values[i],
-                self.data["responses"].iloc[answers.index[i]],
-            )
-        )
+    # print("Index\t\tScore\t\tResponses")
+    # print("----------------------------")
+    # for i in range(5):
+    #     print(
+    #         "{}\t\t{}\t\t{}".format(
+    #             answers.index[i],
+    #             answers.values[i],
+    #             self.data["responses"].iloc[answers.index[i]],
+    #         )
+    #     )
     if answers.values[0] < .50:
        print("[Signal: Unknown Query][Query: '{0}']".format(q.strip()))
        return -1
