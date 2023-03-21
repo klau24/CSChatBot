@@ -6,6 +6,7 @@ from entity_classifier import EntityClassifier
 import spacy
 from nltk.metrics.distance  import edit_distance
 import pandas
+import requests
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -17,6 +18,21 @@ class ChatBot:
         self.professors = pd.read_csv("prof_name.csv")
         self.courses = pd.read_csv("courses.csv")
 
+    # Given an name Entity, if it is misspelled, return the correction, otherwise return the original text
+    def spellCheck(self, text):
+        api_key = "c4479fb57ebf4c9c9e872cf972e943f8"
+        endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
+        data = {'text': text}
+        params = {'mkt':'en-us', 'mode':'spell'}
+        headers = {'Ocp-Apim-Subscription-Key': api_key}
+        response = requests.post(endpoint, headers=headers, params=params, data=data)
+        json_response = response.json()
+        if json_response["flaggedTokens"]:
+            correction = json_response["flaggedTokens"][0]["suggestions"][0]["suggestion"]
+            return correction[0].upper() + correction[1:]
+        else:
+            return text
+    
     def prof_check_first(self, text):
         first_name = self.professors[self.professors["first"] == text]
         if len(first_name) > 0:

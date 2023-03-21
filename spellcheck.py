@@ -1,5 +1,19 @@
 import requests
 
+def check(text):
+    api_key = "c4479fb57ebf4c9c9e872cf972e943f8"
+    endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
+    data = {'text': text}
+    params = {'mkt':'en-us', 'mode':'spell'}
+    headers = {'Ocp-Apim-Subscription-Key': api_key}
+    response = requests.post(endpoint, headers=headers, params=params, data=data)
+    json_response = response.json()
+    if json_response["flaggedTokens"]:
+        correction = json_response["flaggedTokens"][0]["suggestions"][0]["suggestion"]
+        return correction[0].upper() + correction[1:]
+    else:
+        return text
+
 def correctSpell(text):
     api_key = "c4479fb57ebf4c9c9e872cf972e943f8"
     endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
@@ -33,5 +47,5 @@ def correctSpell(text):
     return text
 
 if __name__ == '__main__':
-    example_text = "What is Dr.Clemant's emeil"
-    print(correctSpell(example_text))
+    example_text = "What is Dr.Clemant's email"
+    print(check("Peterrrsan"))
