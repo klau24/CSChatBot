@@ -16,11 +16,13 @@ export default class App extends Component {
 
   sendGet = async (message) => {
     const response = await axios.get("http://localhost:5000/" + message.text);
+    
     if (response.status === 200) { 
+      console.log(response.data)
       console.log(Array(response.data.slice(-1)[0]))
 
-      if(response.data.slice(-1)[0].includes("Successful Query")){
-        const newMessage = { text: response.data.slice(-2)[0] };
+      if(response.data.length > 1){
+        const newMessage = { text: response.data };
         let updatedMessages = [...this.state.messages,newMessage];
         this.setState({
           messages: updatedMessages

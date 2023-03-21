@@ -8,15 +8,16 @@ app = Flask(__name__)
 
 bot = ChatBot()
 
+
 @app.route("/<request>",methods=['GET']) # ‘https://www.google.com/‘
 
 def home(request):
 	print(request)
-	entities, answer = bot.split_queries(q)
+	entities, answer = bot.split_queries(request)
 	responses = []
 	for a in answer:
 		if a != -1:
-			query = sql_queries.Query(q, entities, a)
+			query = sql_queries.Query(request, entities, a)
 			responses.append(query.queryDB())
 	print(". ".join(responses)+".")
 
@@ -24,5 +25,7 @@ def home(request):
 	output.headers.add('Access-Control-Allow-Origin', '*')
     
 	return output
+
+
 
 app.run(port=5000)
