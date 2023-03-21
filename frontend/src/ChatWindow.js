@@ -1,20 +1,27 @@
 import React, { Component } from "react";
 
-// we are using class component here bcoz functional components cant use react life cycle hooks such as componentDidUpdate
+
+
+
+function Message(message,index){
+    if(index%2==0){
+        return (
+            <p key={index} className="message" style={{background:'white',margin:"0px",padding:"10px"}}>{message.text}</p>
+        )
+    }
+    return (
+        <p key={index} className="message" style={{background:'#d9dadb',height:"100%",margin:"0px",padding:"10px"}}>{message.text} </p>
+    )
+}
+
 export default class ChatWindow extends Component {
-  // if this component received new props, move scroll chat window
-  // to view latest message
   componentDidUpdate = (prevProps, prevState) => {
-    // if component received new props
     if (this.props.messagesList !== prevProps.messagesList) {
-      // call ref and scroll
       this.messageListEnd.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   render() {
-    // messagesList the got the messages stored in state
-    // destructuring
     const { messagesList } = this.props;
     return (
       <div className="chat-window">
@@ -22,11 +29,9 @@ export default class ChatWindow extends Component {
           <div className="inner">
             {Array.isArray(messagesList) &&
               messagesList.map((oneMessage, index) => (
-                <p key={index} className="message">
-                  {oneMessage.text}
-                </p>
+                Message(oneMessage,index)
+
               ))}
-            {/* define ref and call it if component is updated */}
             <div
               className="reference"
               ref={node => (this.messageListEnd = node)}

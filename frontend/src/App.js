@@ -13,50 +13,36 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      messages: [
-
-      ]
-    };
+    this.state = { messages: [ ] };
   }
 
+  sendGet = async (message) => {
+    const response = await axios.get("http://localhost:5000/" + message.text);
+    if (response.status === 200) { // response - object, eg { status: 200, message: 'OK' }
+      console.log("Hello")
+      
+      console.log(Array(response.data.slice(-1)[0]))
+      const newMessage = { text: response.data.slice(-2)[0] };
+      
+      let updatedMessages = [...this.state.messages,newMessage];
+      this.setState({
+        messages: updatedMessages
+      });
+      return response.data[0];
+    }
 
-  //async function sendGet(message){
- sendGet = async (message) => {
-  const response = await axios.get("http://localhost:5000/" + message.text);
-  if (response.status === 200) { // response - object, eg { status: 200, message: 'OK' }
-    console.log('success stuff');
-    console.log(response.data)
-    console.log(response.data.slice(-2)[0])
-    const newMessage = { text: response.data.slice(-2)[0] };
-    let updatedMessages = [...this.state.messages,newMessage];
-    console.log(updatedMessages)
-    this.setState({
-      messages: updatedMessages
-    });
-    return response.data[0];
   }
-
-}
-
-
 
   submitted = getNewMessage => {
     if (getNewMessage != "") {
-      // match the state format
       const newMessage = { text: getNewMessage };
-      // merge new message in copy of state stored messages
       let updatedMessages = [...this.state.messages, newMessage];
-
       this.sendGet(newMessage)
-      
-      // update state
       this.setState({
         messages: updatedMessages
       });
     }
   };
-
 
   state = {
     new: ""
