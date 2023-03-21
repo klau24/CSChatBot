@@ -22,12 +22,18 @@ export default class App extends Component {
       console.log("Hello")
       
       console.log(Array(response.data.slice(-1)[0]))
-      const newMessage = { text: response.data.slice(-2)[0] };
-      
-      let updatedMessages = [...this.state.messages,newMessage];
-      this.setState({
-        messages: updatedMessages
-      });
+      if(response.data.slice(-1)[0].includes("Successful Query")){
+        const newMessage = { text: response.data.slice(-2)[0] };
+        let updatedMessages = [...this.state.messages,newMessage];
+        this.setState({
+          messages: updatedMessages
+        });
+      }
+      else{
+        this.setState({
+          messages: [...this.state.messages,{text: "Sorry I could not understand your question"}]
+        });
+      }
       return response.data[0];
     }
 
