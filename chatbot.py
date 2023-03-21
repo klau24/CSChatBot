@@ -39,7 +39,7 @@ class ChatBot:
 
     def prof_check_last_s(self, text):
         if text[-1] == "s":
-            last_name_no_s = self.professors[self.professors["first"] == text[:-1]]
+            last_name_no_s = self.professors[self.professors["last"] == text[:-1]]
             if len(last_name_no_s) > 0:
                 return True
         return False
@@ -70,8 +70,7 @@ class ChatBot:
         new_q = ""
         entities = {}
         for token in tokens:
-            # print(token,token.tag_, token.pos_)
-            # Proper noun was found
+            #print(token,token.tag_, token.pos_)
             # Checking for Class number and section
             if token.pos_ == "NUM":
                 # Check if is a course
@@ -105,6 +104,7 @@ class ChatBot:
                     entities["PROF"] = {"first": token.text[:-1]}
                 # Check if an extra s was added to the last name
                 elif self.prof_check_last_s(token.text.lower()):
+                    #print("Entered last s ")
                     if new_q.split()[-1] == "[PROF]":
                         entities["PROF"]["last"] = token.text[:-1]
                     else:
@@ -129,31 +129,39 @@ class ChatBot:
             new_entities, new_answer = self.get_sample_answers(q)
             entities.update(new_entities)
             answers += [new_answer]
-        print(answers)
+        # print("Entities:",entities)
+        # print("Answers:", answers)
         return entities, answers
 
 def getQueries(q, entities, answer):
     responses = []
     for a in answer:
         if a != -1:
+            # print("Before SQL QUERY")
             query = sql_queries.Query(q, entities, a)
+            # print("After SQL QUERY")
             query_res = query.queryDB()
             if query_res != -1:
                 responses.append(query_res)
             else:
                 return
     if len(responses) > 1:
-        print(". ".join(responses)+".")
+        return ". ".join(responses)+"."
     else:
-        print(responses[0] + ".")
+        return responses[0] + "."
 
+def get_response(q, bot):
+    entities, answer = bot.split_queries(q)
+    # print("After split queries")
+    response = getQueries(q, entities, answer)
+    return response
 def main():
     bot = ChatBot()
     print("Hello I am EKK, your Cal Poly Virtual Assistant. How can I help you today?")
     q = input("Q> ")
     while q != "exit" and q != "Exit":
-        entities, answer = bot.split_queries(q)
-        getQueries(q, entities, answer)
+        response = get_response(q, bot)
+        print(response)
         q = input("Q> ")
     print("I'm glad I could help you :)")
     print("[Signal: End]")
