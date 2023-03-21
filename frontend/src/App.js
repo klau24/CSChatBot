@@ -8,8 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-
-
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -18,10 +16,9 @@ export default class App extends Component {
 
   sendGet = async (message) => {
     const response = await axios.get("http://localhost:5000/" + message.text);
-    if (response.status === 200) { // response - object, eg { status: 200, message: 'OK' }
-      console.log("Hello")
-      
+    if (response.status === 200) { 
       console.log(Array(response.data.slice(-1)[0]))
+
       if(response.data.slice(-1)[0].includes("Successful Query")){
         const newMessage = { text: response.data.slice(-2)[0] };
         let updatedMessages = [...this.state.messages,newMessage];
@@ -29,6 +26,7 @@ export default class App extends Component {
           messages: updatedMessages
         });
       }
+
       else{
         this.setState({
           messages: [...this.state.messages,{text: "Sorry I could not understand your question"}]
@@ -36,7 +34,6 @@ export default class App extends Component {
       }
       return response.data[0];
     }
-
   }
 
   submitted = getNewMessage => {
@@ -64,21 +61,32 @@ export default class App extends Component {
 
   handleCompose = event => {
     let typedValue = event.target.value;
-    if (typedValue != "" && typedValue != " ") {
+    if ( typedValue != " ") {
       this.setState({
         new: event.target.value
       });
     }
   };
 
+  clearChat = event => {
+    this.setState({messages:[]})
+  };
+  
   render() {
     return (
       <div className="App" style={{height:"100vh"}}>
         <h1 style={{background:"#154734",color:"white",height:"10%", margin:"0px",lineHeight:'200%', paddingTop:""}}>Cal Poly Virtual Assistant</h1>
         <div className='row' style={{background:"", height:"90%", margin:"0px"}}>
-          <div className='col-2' style={{background:"#BD8813"}}></div>
+          <div className='col-2' style={{background:"#BD8813"}}>
+            <div role="button"  style={{width:"75%", lineHeight:'300%',height:"50px", borderRadius: "0.8rem", background:"#A4D65E", fontWeight:"bold",margin:"50px auto 50px auto"}}
+              onClick={this.clearChat}> 
+              Clear Chat
+            </div>
+
+          </div>
           <div className='col-10' style={{background:""}}> 
-            <div style={{border:"0px solid red", marginTop:"20px", height:"85%"}}>
+
+            <div style={{border:"0px solid red", marginTop:"20px", height:"75vh",display:"block", overflowY:'auto'}}>
               <ChatWindow messagesList={this.state.messages} />
             </div>
 
