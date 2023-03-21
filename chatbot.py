@@ -6,6 +6,7 @@ from entity_classifier import EntityClassifier
 import spacy
 from nltk.metrics.distance  import edit_distance
 import pandas
+import requests
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -17,6 +18,22 @@ class ChatBot:
         self.professors = pd.read_csv("prof_name.csv")
         self.courses = pd.read_csv("courses.csv")
 
+    # Given a name Entity, if it is misspelled, return the correction, otherwise return the original text
+    def spellCheck(self, text):
+        api_key = "c4479fb57ebf4c9c9e872cf972e943f8"
+        endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
+        data = {'text': text}
+        params = {'mkt':'en-us', 'mode':'spell'}
+        headers = {'Ocp-Apim-Subscription-Key': api_key}
+        response = requests.post(endpoint, headers=headers, params=params, data=data)
+        json_response = response.json()
+        print(json_response)
+        if json_response["flaggedTokens"]:
+            correction = json_response["flaggedTokens"][0]["suggestions"][0]["suggestion"]
+            return correction[0].upper() + correction[1:]
+        else:
+            return text
+    
     def prof_check_first(self, text):
         first_name = self.professors[self.professors["first"] == text]
         if len(first_name) > 0:
@@ -50,19 +67,6 @@ class ChatBot:
             return True
         return False
 
-    def spell_check(self, text):
-        names = list(self.professors["first"]) + list(self.professors["last"])
-        distances = [(x, edit_distance(text, x)) for x in names]
-        min_val = distances[0][1]
-        min_name = distances[0]
-        for i in range(len(distances)):
-            new_name = distances[i][0]
-            new_val = distances[i][1]
-            if new_val < min_val:
-                min_val = new_val
-                min_name = new_name
-        return min_name, min_val
-
 
     # Given tokenized query, substitutes recognized entities with entity tags
     # Returns extracted entities and new query with tags
@@ -85,8 +89,8 @@ class ChatBot:
                     else:
                         entities["COURSE"] = {"section":token.text}
             else:
-                name, distance = self.spell_check(token.text.lower())
-                # print(name, distance)
+                if token.pos_ == "PROPN":
+                    spell_check_word = self.spellCheck(token.text.capitalize())
                 # Check for first name
                 if self.prof_check_first(token.text.lower()):
                     new_q += " [PROF]"
@@ -110,6 +114,17 @@ class ChatBot:
                     else:
                         new_q += " [PROF]"
                         entities["PROF"] = {"last": token.text[:-1]}
+                # Check if it was a misspelled first name
+                elif token.pos_ == "PROPN" and self.prof_check_first(spell_check_word):
+                    new_q += " [PROF]"
+                    entities["PROF"] = {"first": spell_check_word}
+                # Check if it was a misspelled last name
+                elif token.pos_ == "PROPN" and self.prof_check_last(spell_check_word):
+                    if new_q.split()[-1] == "[PROF]":
+                        entities["PROF"]["last"] = spell_check_word
+                    else:
+                        new_q += " [PROF]"
+                        entities["PROF"] = {"last": spell_check_word}
                 # Token is not an entity
                 else:
                     new_q += " " + token.text
@@ -155,6 +170,7 @@ def get_response(q, bot):
     # print("After split queries")
     response = getQueries(q, entities, answer)
     return response
+
 def main():
     bot = ChatBot()
     print("Hello I am EKK, your Cal Poly Virtual Assistant. How can I help you today?")
