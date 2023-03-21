@@ -1,4 +1,4 @@
 #!/bin/sh
-python server.py &
+python3 server.py &
 cd frontend
 npm start
