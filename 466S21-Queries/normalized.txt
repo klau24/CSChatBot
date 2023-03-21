@@ -588,10 +588,10 @@ AEHJ|Who has office hours on [DAYS] at [TIMES]?|[list_of(PROF)].
 AEHJ|Which office hours are in [LOCATION]?|[list_of(COURSE)]
 AEHJ|What is the alias for [PROF]?|[ALIAS]
 AEHJ|What is the username for [PROF]?|[ALIAS]
-AEHJ|What is the email for [PROF]?|[ALIAS]@calpoly.edu
-AEHJ|What is [PROF] email?|[ALIAS]@calpoly.edu
-AEHJ|Which professor has email [ALIAS]?|[PROF]
-AEHJ|Give me [PROF] email.|[ALIAS]@calpoly.edu
+AEHJ|What is the email for [PROF]?|The email for [PROF] is [ALIAS]@calpoly.edu
+AEHJ|What is [PROF] email?|The email for [PROF] is [ALIAS]@calpoly.edu
+AEHJ|Which professor has email [ALIAS]?|[PROF] has the email address described
+AEHJ|Give me [PROF] email.|The email for [PROF] is [ALIAS]@calpoly.edu
 AEHJ|Give me [PROF] phone number.|[phone_number]
 AEHJ|Which classes are in [LOCATION]?|[list_of(COURSE)]
 AEHJ|Which classes are located in [LOCATION]?|[list_of(COURSE)]
@@ -661,7 +661,7 @@ EKK|What is [PROF]’s number?|[PHONE]
 EKK|What is the number of [PROF]?|[PHONE]
 EKK|How can I call [PROF]?|[PHONE]
 EKK|How can I talk to [PROF]?|[PHONE]
-EKK|What is the email of [PROF]?|[EMAIL]
+EKK|What is the email of [PROF]?|The email for [PROF] is [EMAIL]@calpoly.edu
 EKK|How can I email [PROF]?|You can email [PROF] at [EMAIL]
 EKK|How can I message [PROF]?|You can email [PROF] at [EMAIL]
 EKK|How do I contact [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
@@ -771,7 +771,7 @@ PIS | What requirements does a student need to meet to be qualified for the Comp
 PIS | How many total students are currently in the Computer Science program? | 550 students
 PIS | Approximately how many undergrad students are in the Computer Science program? | 450 undergrad students
 PIS | Approximately how many graduate students are in the Computer Science program? | More than 75 graduate students
-PIS | What is the Computer Science department’s email? | computer-science@calpoly.edu
+PIS | What is the Computer Science department’s email? | The computer science department's email is: computer-science@calpoly.edu
 PIS | What is the Computer Science department’s phone number? | (805)756-282
 PIS | How many faculty members are in the Computer Science department? | 49
 PIS | How many affiliate faculty members are in the Computer Science department? | 2
@@ -782,7 +782,7 @@ PIS | What classes is [PROF] teaching [TERM]? | [COURSE]
 PIS | What is the building number for the Computer Science building? | 14
 PIS | What are the two series options to complete the Physical Science Support Electives? | Physics and Chemistry
 PIS | How many units of  free electives are allowed in the Computer Science curriculum? | 0 units
-PIS | What is the Computer Science department’s Instagram page? | @cpcscandse
+PIS | What is the Computer Science department’s Instagram page? | The instagram page handle is @cpcscandse
 PIS | What are the hours for the Computer Science Department? | 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
 PIS | Is [COURSE] being offered in [TERM]? | yes or no
 PIS | What courses in the Computer Science curriculum don’t require any prerequisites | [COURSE]

@@ -85,13 +85,14 @@ class ChatBot:
                 min_name = new_name
         return min_name, min_val
 
+
     # Given tokenized query, substitutes recognized entities with entity tags
     # Returns extracted entities and new query with tags
     def subst_entities(self, tokens):
         new_q = ""
         entities = {}
         for token in tokens:
-            print(token,token.tag_, token.pos_)
+            # print(token,token.tag_, token.pos_)
             # Proper noun was found
             # Checking for Class number and section
             if token.pos_ == "NUM":
@@ -108,7 +109,7 @@ class ChatBot:
                         entities["COURSE"] = {"section":token.text}
             else:
                 name, distance = self.spell_check(token.text.lower())
-                print(name, distance)
+                # print(name, distance)
                 # Check for first name
                 if self.prof_check_first(token.text.lower()):
                     new_q += " [PROF]"
@@ -146,17 +147,29 @@ class ChatBot:
         answer = self.queryClf.get_answer(new_q)
         return entities, answer
 
+    def split_queries(self, q):
+        entities = {}
+        answers = []
+        queries = q.split("and")
+        for q in queries:
+            new_entities, new_answer = self.get_sample_answers(q)
+            entities.update(new_entities)
+            answers += [new_answer]
+        return entities, answers
+
 def main():
     bot = ChatBot()
     print("Hello I am EKK, your Cal Poly Virtual Assistant. How can I help you today?")
     q = input("Q> ")
     while q != "exit" and q != "Exit":
-        entities, answer = bot.get_sample_answers(q)
-        # print("Entities:", entities)
-        # print("Answer:", answer)
-        if answer != -1:
-            query = sql_queries.Query(q, entities, answer)
-            query.queryDB()
+        entities, answer = bot.split_queries(q)
+        #entities, answer = bot.get_sample_answers(q)
+        responses = []
+        for a in answer:
+            if a != -1:
+                query = sql_queries.Query(q, entities, a)
+                responses.append(query.queryDB())
+        print(". ".join(responses)+".")
         q = input("Q> ")
     print("I'm glad I could help you :)")
     print("[Signal: End]")
