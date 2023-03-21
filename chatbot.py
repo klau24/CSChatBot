@@ -150,12 +150,28 @@ class ChatBot:
     def split_queries(self, q):
         entities = {}
         answers = []
-        queries = q.split("and")
+        queries = q.split(" and ")
         for q in queries:
             new_entities, new_answer = self.get_sample_answers(q)
             entities.update(new_entities)
             answers += [new_answer]
+        print(answers)
         return entities, answers
+
+def getQueries(q, entities, answer):
+    responses = []
+    for a in answer:
+        if a != -1:
+            query = sql_queries.Query(q, entities, a)
+            query_res = query.queryDB()
+            if query_res != -1:
+                responses.append(query_res)
+            else:
+                return
+    if len(responses) > 1:
+        print(". ".join(responses)+".")
+    else:
+        print(responses[0] + ".")
 
 def main():
     bot = ChatBot()
@@ -164,12 +180,7 @@ def main():
     while q != "exit" and q != "Exit":
         entities, answer = bot.split_queries(q)
         #entities, answer = bot.get_sample_answers(q)
-        responses = []
-        for a in answer:
-            if a != -1:
-                query = sql_queries.Query(q, entities, a)
-                responses.append(query.queryDB())
-        print(". ".join(responses)+".")
+        getQueries(q, entities, answer)
         q = input("Q> ")
     print("I'm glad I could help you :)")
     print("[Signal: End]")
