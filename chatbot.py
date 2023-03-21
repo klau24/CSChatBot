@@ -17,28 +17,6 @@ class ChatBot:
         self.professors = pd.read_csv("prof_name.csv")
         self.courses = pd.read_csv("courses.csv")
 
-    # # Given a query, returns tokenized query with adjacent nouns grouped together
-    # def group_tokens(self, q):
-    #     doc = nlp(q)
-    #     tokenized = []
-    #     for token in doc:
-    #         print(token,token.tag_, token.pos_)
-    #         if token.pos_ == "PROPN" and len(tokenized) > 0  and tokenized[-1][1] == "PROPN":
-    #             tokenized[-1][0] += " " + token.text
-    #         else:
-    #             tokenized.append([token.text, token.pos_])
-    #         # try:
-    #         #     if token.tag_[:2] in ["NN", "CD", "HY"] and tokenized[-1][1] == "NN":
-    #         #         tokenized[-1][0] += " " + token.text
-    #         #     elif token.tag_[:2] == "NN":
-    #         #         tokenized.append([token.text, "NN"])
-    #         #     else :
-    #         #         tokenized.append([token.text, token.tag_])
-    #         # except:
-    #         #     print("[Signal: Error][Issue with query][Query: '{0}']".format(q))
-    #         #     return -1
-    #     return tokenized
-
     def prof_check_first(self, text):
         first_name = self.professors[self.professors["first"] == text]
         if len(first_name) > 0:
@@ -121,22 +99,18 @@ class ChatBot:
                     else:
                         new_q += " [PROF]"
                         entities["PROF"] = {"last": token.text}
-                # It was similar to an existing name
-                elif distance <= 1:
-                    # Check if it was a first name
-                    if self.prof_check_first(name):
+                # Check if an extra s was added to the first name
+                elif self.prof_check_first_s(token.text.lower()):
+                    new_q += " [PROF]"
+                    entities["PROF"] = {"first": token.text[:-1]}
+                # Check if an extra s was added to the last name
+                elif self.prof_check_last_s(token.text.lower()):
+                    if new_q.split()[-1] == "[PROF]":
+                        entities["PROF"]["last"] = token.text[:-1]
+                    else:
                         new_q += " [PROF]"
-                        entities["PROF"] = {"first": name}
-                    # Check if it was a last name
-                    elif self.prof_check_last(name):
-                        # First name was also given
-                        if new_q.split()[-1] == "[PROF]":
-                            entities["PROF"]["last"] = name
-                        else:
-                            # Only last name was given
-                            new_q += " [PROF]"
-                            entities["PROF"] = {"last": name}
-                # Not an entity
+                        entities["PROF"] = {"last": token.text[:-1]}
+                # Token is not an entity
                 else:
                     new_q += " " + token.text
         return entities, new_q
@@ -179,7 +153,6 @@ def main():
     q = input("Q> ")
     while q != "exit" and q != "Exit":
         entities, answer = bot.split_queries(q)
-        #entities, answer = bot.get_sample_answers(q)
         getQueries(q, entities, answer)
         q = input("Q> ")
     print("I'm glad I could help you :)")
