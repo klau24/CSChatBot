@@ -1,7 +1,7 @@
 JTCN| When is [PROF] teaching [COURSE]? |List of [DAYS]
 JTCN| When is [PROF] teaching [COURSE]? |List of [DAYS]
-JTCN| What TIMEs is the course [COURSE] being offered on [DAY]? |[TIMES] for [COURSE]
-JTCN| What is [PROF]'s phone? |[PHONE]
+JTCN| What time is the course [COURSE] being offered on [DAY]? |[TIMES] for [COURSE]
+JTCN| What is [PROF]'s phone? | [PROF] number is [PHONE]
 JTCN| Where is [COURSE] being taught? |[COURSE] is taught in [LOCATION]
 JTCN| What day(s) of the week is [PROF] not teaching on? |List of [DAYS]
 JTCN| What day(s) of the week is [PROF] not teaching on? |List of [DAYS]
@@ -831,23 +831,23 @@ PIS | Whose office is in [LOCATION]? |[PROF]
 PIS | What stats classes are offered in [TERM]?| [COURSE]
 PIS | Can you tell me all stats classes offered in [TERM]? |[COURSE]
 PIS | Is [SECTION] waitlisted?|Yes/ no
-PIS | is [PROF] teaching  [COURSE]? |Yes / no
-PIS | Who is teaching [COURSE]? |[PROF]
-PIS | What do I need to get into Computer Science blended program? |Complete 20 units of CSC courses past CPE 203 and have a minimum  GPA of 3.0
-PIS | How many units do I need to take to get my Bachelors degree in CS? |180 units
-PIS | Does the computer science department have an instagram page? |Yes, it’s @cpcscandse
-PIS | Can I take any free electives as a computer science major? |No
-PIS | Can a computer science major have any free electives?| No
-PIS | How many units do I need to get a Master degree in computer science?| 45 units
+PIS | Is [PROF] teaching  [COURSE]? |Yes / no
+PIS | Who is teaching [COURSE]? |[PROF] is teaching [COURSE]
+PIS | What do I need to get into Computer Science blended program? |Complete 20 units of CSC courses past CPE 203 and have a minimum GPA of 3.0
+PIS | How many units do I need to take to get my Bachelors degree in CS? |You need 180 units to complete the computer science Bachelors degree
+PIS | Does the computer science department have an instagram page? |Yes, the instagram account is @cpcscandse
+PIS | Can I take any free electives as a computer science major? |No, you cannot take free electives as a computer science major
+PIS | Can a computer science major have any free electives?| No, computer science majors do not have free electives
+PIS | How many units do I need to get a Master degree in computer science?| You need 45 units for the Master degree in computer science
 PIS | Can I take [COURSE] as a pre-req to [COURSE]? |Yes or no
 PIS | Is the computer science department open during the weekend? |No, they are available 9:00am-12:00pm and 1:00pm-4:00pm, Monday to Friday
-PIS | Is [PROF] still the department chair of Computer Science? |Yes
-PIS | What time does [COURSE] section [SECTION] starts? |[START]
+PIS | Is [PROF] still the department chair of Computer Science? |Yes, [PROF] is still the department chair
+PIS | What time does [COURSE] section [SECTION] starts? |[COURSE] [SECTION] starts at [START]
 PIS | What’s the earliest section for [COURSE]? |The earliest section is [SECTION] taught by [PROF] that starts at [TIMES]
 PIS | What’s the latest section for [COURSE]? |The latest section is [SECTION] taught by [PROF] that starts at [TIMES]
 PIS | Are there any CSC courses offered before [TIMES]? |[COURSE]
 PIS | Are there any CSC courses offered  after [TIMES]? |[COURSE]
-PIS | What time does [COURSE] section  [SECTION] starts? |[START]
-PIS | What time does [COURSE] section  [SECTION] ends? |[TIMES]
-PIS | Where is the computer science building? Building | 14
-PIS | Where is the statistics building? | Building 25
+PIS | What time does [COURSE] section  [SECTION] starts? |[COURSE] section [SECTION] starts at [START]
+PIS | What time does [COURSE] section  [SECTION] ends? |[COURSE] section [SECTION] ends at [START]
+PIS | Where is the computer science building? Building | The computer science building is in building 14
+PIS | Where is the statistics building? | The statistics building is in building 25
