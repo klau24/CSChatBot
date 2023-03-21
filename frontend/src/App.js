@@ -14,27 +14,33 @@ export default class App extends Component {
     this.state = { messages: [ ] };
   }
 
+  addErrorMessage = error => {
+    this.setState({
+      messages: [...this.state.messages,{text: "Sorry I could not understand your question"}]
+    });
+  }
   sendGet = async (message) => {
-    const response = await axios.get("http://localhost:5000/" + message.text);
-    
-    if (response.status === 200) { 
-      console.log(response.data)
-      console.log(Array(response.data.slice(-1)[0]))
+    try{
+      const response = await axios.get("http://localhost:5000/" + message.text);
+      if (response.status === 200) { 
+        console.log(response.data)
+        console.log(Array(response.data.slice(-1)[0]))
 
-      if(response.data.length > 1){
-        const newMessage = { text: response.data };
-        let updatedMessages = [...this.state.messages,newMessage];
-        this.setState({
-          messages: updatedMessages
-        });
+        if(response.data.length > 1){
+          const newMessage = { text: response.data };
+          let updatedMessages = [...this.state.messages,newMessage];
+          this.setState({
+            messages: updatedMessages
+          });
+        }
+        
+        else{
+          this.addErrorMessage()
+        }
+        return response.data[0];
       }
-
-      else{
-        this.setState({
-          messages: [...this.state.messages,{text: "Sorry I could not understand your question"}]
-        });
-      }
-      return response.data[0];
+    } catch(e){
+      this.addErrorMessage()
     }
   }
 

@@ -20,7 +20,7 @@ def home(request):
 			query = sql_queries.Query(request, entities, a)
 			responses.append(query.queryDB())
 	print(". ".join(responses)+".")
-
+	
 	output = jsonify(". ".join(responses)+".")
 	output.headers.add('Access-Control-Allow-Origin', '*')
     
