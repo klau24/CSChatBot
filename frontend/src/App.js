@@ -1,33 +1,108 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Button } from 'bootstrap';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import axios from "axios";
+import ChatWindow from "./ChatWindow";
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
-function sendGet(){
-  axios.get("http://localhost:5000/" + "Where are Lups office Hours").then((response) => console.log(response.data))
-  
+
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      messages: [
+
+      ]
+    };
+  }
+
+
+  //async function sendGet(message){
+ sendGet = async (message) => {
+  const response = await axios.get("http://localhost:5000/" + message.text);
+  if (response.status === 200) { // response - object, eg { status: 200, message: 'OK' }
+    console.log('success stuff');
+    console.log(response.data)
+    console.log(response.data.slice(-2)[0])
+    const newMessage = { text: response.data.slice(-2)[0] };
+    let updatedMessages = [...this.state.messages,newMessage];
+    console.log(updatedMessages)
+    this.setState({
+      messages: updatedMessages
+    });
+    return response.data[0];
+  }
+
 }
 
-function App() {
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={sendGet}> Hello
 
-        </button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  submitted = getNewMessage => {
+    if (getNewMessage != "") {
+      // match the state format
+      const newMessage = { text: getNewMessage };
+      // merge new message in copy of state stored messages
+      let updatedMessages = [...this.state.messages, newMessage];
+
+      this.sendGet(newMessage)
+      
+      // update state
+      this.setState({
+        messages: updatedMessages
+      });
+    }
+  };
+
+
+  state = {
+    new: ""
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.submitted(this.state.new);
+    this.setState({
+      new: ""
+    });
+  };
+
+  handleCompose = event => {
+    let typedValue = event.target.value;
+    if (typedValue != "" && typedValue != " ") {
+      this.setState({
+        new: event.target.value
+      });
+    }
+  };
+
+  render() {
+    return (
+      <div className="App" style={{height:"100vh"}}>
+        <h1 style={{background:"#154734",color:"white",height:"10%", margin:"0px",lineHeight:'200%', paddingTop:""}}>Cal Poly Virtual Assistant</h1>
+        <div className='row' style={{background:"", height:"90%", margin:"0px"}}>
+          <div className='col-2' style={{background:"#BD8813"}}></div>
+          <div className='col-10' style={{background:""}}> 
+            <div style={{border:"0px solid red", marginTop:"20px", height:"85%"}}>
+              <ChatWindow messagesList={this.state.messages} />
+            </div>
+
+            <form onSubmit={this.handleSubmit}>
+              <input
+                style={{margin:"30px auto auto auto",width:"65%", height:"45px",position:"relative",borderRadius: "0.375rem"}}
+                className="form-control"
+                placeholder="Ask a Question"
+                onChange={this.handleCompose}
+                value={this.state.new}
+              />
+            </form>
+
+         </div>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default App;
