@@ -90,7 +90,7 @@ class ChatBot:
                         entities["COURSE"] = {"section":token.text}
             else:
                 if token.pos_ == "PROPN":
-                    spell_check_word = self.spellCheck(token.text.capitalize())
+                    spell_check_word = self.spellCheck(token.text.capitalize()).lower()
                 # Check for first name
                 if self.prof_check_first(token.text.lower()):
                     new_q += " [PROF]"
