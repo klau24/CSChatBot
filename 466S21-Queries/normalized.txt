@@ -25,8 +25,8 @@ JTCN| How long is the average COURSE in the Statistics department? |AVG([TIMES])
 JTCN| How long is the average COURSE in the CSSE department? |AVG([TIMES])
 JTCN| What [COURSE] has the least amount of HOURS per week in the CSSE department? |MIN([TIMES])
 JTCN| What [COURSE] has the most amount of HOURS per week in the CSSE department? |MAX([TIMES])
-JTCN| What is the title of [PROF] in the CSSE department? |[TITLE]
-JTCN| What is the title of [PROF] in the Statistics department? |[TITLE]
+JTCN| What is the title of [PROF] in the CSSE department? |[PROF]'s title is [TITLE]
+JTCN| What is the title of [PROF] in the Statistics department? |[PROF]'s title is [TITLE]
 JTCN| How many upper division COURSE is [PROF] teaching? |Number of [COURSE]
 JTCN| How many upper division COURSE is [PRPF] teaching? |Number of [COURSE]
 JTCN| How many lower division COURSE is [PROF] teaching? |Number of [COURSE]
@@ -135,10 +135,10 @@ Team Team|What COURSE does [PROF] teach?|[PROF] teaches [COURSE].
 Team Team|Does [PROF] teach [COURSE]?|[PROF] teaches [COURSE].
 Team Team|What sections does [PROF] teach?|[PROF] teaches [SECTIONS].
 Team Team|Does [PROF] teach [COURSE]-[SECTION]?|[PROF] teaches [SECTIONS].
-Team Team|Where is [PROF]'s office?|[PROF]'s office is at BUILDING [BUILDING], ROOM [ROOM].
+Team Team|Where is [PROF]'s office?|[PROF]'s office is at [OFFICE].
 Team Team|What is [PROF]'s phone number?|[PROF]'s phone number is [PHONE].
 Team Team|What type of COURSE is [COURSE]-[SECTION]?|[COURSE]-[SECTION] is a [TYPE].
-Team Team|What is [PROF]'s ALIAS?|[PROF]'s ALIAS is [ALIAS].
+Team Team|What is [PROF]'s ALIAS?|[PROF]'s alias is [ALIAS].
 Team Team|What TIME is [PROF] office HOURS?|They are at [TIME] [DAYS].
 Team Team|When are [PROF] office HOURS?|They are at [TIME] [DAYS].
 Team Team|Does [PROF] have afternoon office HOURS?|Yes
@@ -213,14 +213,14 @@ Team Team|How to contact [PROF]?|[PROF] email is [EMAIL] @calpoly.edu
 Team Team|Is [PROF] teaching [COURSE]?|No
 Team Team|Does [PROF] teach 500 level COURSE?|No
 Team Team|Does [PROF] teach 300 level COURSE?|No
-CACORITH|What is [PROF]’s ALIAS?|[PROF]’s ALIAS is [ALIAS].
+CACORITH|What is [PROF]’s ALIAS?|[PROF]’s alias is [ALIAS].
 CACORITH|What’s [PROF]’s username?|[PROF]’s username is [ALIAS]
-CACORITH|What is [PROF]’s email?|[PROF]’s email is [ALIAS] @calpoly.edu
-CACORITH|How can I contact [PROF]?|[PROF]’s email is [ALIAS] @calpoly.edu
+CACORITH|What is [PROF]’s email?|[PROF]’s email is [ALIAS] AT calpoly.edu
+CACORITH|How can I contact [PROF]?|[PROF]’s email is [ALIAS] AT calpoly.edu
 CACORITH|What is [PROF]’s title?|[PROF]’s title is [TITLE]
 CACORITH|What’s [PROF]’s phone number?|[PROF]’s phone number is [PHONE]
 CACORITH|Do you have the phone number for [PROF]?|Yes, you can reach [PROF] at [PHONE].
-CACORITH|How can I contact [PROF]?|Here is the contact information for [PROF], phone: [PHONE], email: [ALIAS]@calpoly.edu office: [LOCATION].
+CACORITH|How can I contact [PROF]?|Here is the contact information for [PROF], phone: [PHONE], email: [ALIAS] AT calpoly.edu office: [LOCATION].
 CACORITH|What’s [PROF]'s title?|[PROF]'s title is [TITLE].
 CACORITH|Where is [PROF]’s office?|[PROF]’s office is [LOCATION]
 CACORITH|What is the LOCATION number of [PROF]’s office?|[PROF]’s office is [LOCATION]
@@ -324,7 +324,7 @@ CACORITH|How can I contact [PROF]?|[PROF]'s phone number is [PHONE], and [PROF]'
 CACORITH|How many sections of independent study does [PROF] advise?|[PROF] is the advisor for [SECTIONCOUNT] sections of independent study.
 CACORITH|How can I fulfill GE requirement [GE]?|[COURSE] fulfills GE requirement [GE].
 CACORITH|How busy is [PROF]?|[PROF] is busy on [DAYS] at [TIMES]
-CACORITH|What is [PROF]'s email address?|You can reach [PROF] at [ALIAS]@calpoly.edu.
+CACORITH|What is [PROF]'s email address?|You can reach [PROF] at [ALIAS] AT calpoly.edu.
 CACORITH|Which PROFs teach [COURSENAME]?|[COURSENAME] is taught by [PROFS]
 CACORITH|Who teaches section [SECTION] of [COURSE]?|[PROF] teaches [SECTION] of [COURSE].
 CACORITH|Who are the [DEPT] PROFs?|The [DEPT] PROFs are [PROFS].
@@ -394,8 +394,8 @@ JVJ|Which [MAJOR] COURSE are offered between [TIME] and [TIME]?|[COURSE-LIST] ar
 JVJ|Which sections for [COURSE] are offered between [TIME] and [TIME]?|[COURSE-SECT-LIST] are offered between [TIME] and [TIME] for [COURSE]
 JVJ|What is [PROF]’s ALIAS?|[PROF]’s Cal Poly username is [ALIAS]
 JVJ|What is [PROF]’s Cal Poly username?|[PROF]’s Cal Poly username is [CP-USERNAME]
-JVJ|What is [PROF]’s email?|[PROF]’s Cal Poly email is [CP-EMAIL]
-JVJ|What is the email for [PROF]?|[PROF]’s Cal Poly email is [CP-EMAIL]
+JVJ|What is [PROF]’s email?|[PROF]’s Cal Poly email is [CP-EMAIL] AT calpoly.edu
+JVJ|What is the email for [PROF]?|[PROF]’s Cal Poly email is [CP-EMAIL] AT calpoly.edu
 JVJ|Can I take [COURSE] with [COURSE]?|[Yes or No]
 JVJ|Can I take both [COURSE] and [COURSE] at the same TIME?|[Yes or No]
 JVJ|Can I attend [PROF]’s office HOURS and [PROF]’s office HOURS?|[Yes or No]
@@ -586,12 +586,12 @@ AEHJ|Who has office hours in [LOCATION] at [TIMES]?|[list_of(PROF)].
 AEHJ|Who has office hours in [LOCATION] on [DAYS] at [TIMES]?|[list_of(PROF)].
 AEHJ|Who has office hours on [DAYS] at [TIMES]?|[list_of(PROF)].
 AEHJ|Which office hours are in [LOCATION]?|[list_of(COURSE)]
-AEHJ|What is the alias for [PROF]?|[ALIAS]
-AEHJ|What is the username for [PROF]?|[ALIAS]
-AEHJ|What is the email for [PROF]?|The email for [PROF] is [ALIAS]@calpoly.edu
-AEHJ|What is [PROF] email?|The email for [PROF] is [ALIAS]@calpoly.edu
-AEHJ|Which professor has email [ALIAS]?|[PROF] has the email address described
-AEHJ|Give me [PROF] email.|The email for [PROF] is [ALIAS]@calpoly.edu
+AEHJ|What is the alias for [PROF]?|[PROF]'s alias is [ALIAS]
+AEHJ|What is the username for [PROF]?|[PROF]'s alias is [ALIAS]
+AEHJ|What is the email for [PROF]?|The email for [PROF] is [ALIAS] AT calpoly.edu
+AEHJ|What is [PROF] email?|The email for [PROF] is [ALIAS] AT calpoly.edu
+AEHJ|Which professor has email [ALIAS]?|[PROF] has the alias described
+AEHJ|Give me [PROF] email.|The email for [PROF] is [ALIAS] AT calpoly.edu
 AEHJ|Give me [PROF] phone number.|[phone_number]
 AEHJ|Which classes are in [LOCATION]?|[list_of(COURSE)]
 AEHJ|Which classes are located in [LOCATION]?|[list_of(COURSE)]
@@ -668,8 +668,8 @@ EKK|How do I contact [PROF]?|You can call [PROF] at [PHONE] or email them at [EM
 EKK|How can I reach [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
 EKK|How can I get in touch [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
 EKK|What is the best way to reach [PROF]?|You can call [PROF] at [PHONE] or email them at [EMAIL]
-EKK|What is the alias of [PROF]?|[ALIAS]
-EKK|What is [PROF]’s alias?|[ALIAS]
+EKK|What is the alias of [PROF]?|[PROF]'s alias is [ALIAS]
+EKK|What is [PROF]’s alias?|[PROF]'s alias is [ALIAS]
 EKK|Is [ALIAS] [PROF]?|Yes or No
 EKK|What courses does [PROF] teach?|[PROF] is teaching [COURSE]
 EKK|What is [PROF] teaching this [TERM]?|[PROF] is teaching [COURSE]
@@ -750,9 +750,9 @@ EKK|Do I need to take a lab for [COURSE]?|Yes or No
 EKK|What days is [COURSE] [SECTION] on?|[DAYS]
 EKK|What type of class is [COURSE] [SECTION]?|[TYPE]
 EKK|Is [COURSE] a [TYPE]?|Yes or No
-EKK|What is the title of [PROF]?|[TITLE]
-EKK|Who is [PROF]?|[TITLE]
-EKK|What does [PROF] do?|[TITLE]
+EKK|What is the title of [PROF]?|[PROF]'s title is [TITLE]
+EKK|Who is [PROF]?|[PROF]'s title is [TITLE]
+EKK|What does [PROF] do?|[PROF]'s title is [TITLE]
 EKK|Who is using [LOCATION] in [TERM]?|[PROF]
 EKK|Is [LOCATION] used in [TERM]?|Yes or No
 PIS | Who is the current Computer Science department chair? | [PROF]
@@ -793,7 +793,7 @@ PIS | How do I contact [PROF] ? |  [PHONE]
 PIS | What is [PROF] ‘s phone number?  | [PHONE]
 PIS | Where is [PROF]’s office? | [LOCATION]
 PIS | How many sections do you offer the STAT 302 course this quarter? 3
-PIS | What is [PROF] ‘s title? | [TITLE]
+PIS | What is [PROF] ‘s title? | [PROF]'s title is [TITLE]
 PIS | Does [COURSE] have a lab? | yes or no
 PIS | What classes are [PROF] teaching this quarter? | [COURSE] [SECTION]
 PIS | Who is in [LOCATION]? | [PROF]

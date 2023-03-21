@@ -32,33 +32,32 @@ class Query:
             for _, v in self.entities[key].items():
                 res.append(v)
             if key == "PROF":
-            #     res[-1] += "'s"
                 return string.capwords(" ".join(res))
             return " ".join(res)
         return self.entities[key]
         
     def formatOutput(self):
         self.answer = self.answer.split()
+        print(self.entities)
         for word in self.answer:
             # its a variable
             if '[' in word and ']' in word:
                 answerVar = word[word.find("[")+1: word.find("]")]
                 try:
                     self.response.append(self.unpackDict(answerVar))
-                    if "EMAIL" in answerVar or "ALIAS" in answerVar:
-                        self.response[-1] += "@calpoly.edu"
                 except:
                     try:
                         self.response.append(self.entities[self.answerEntityMap[answerVar]])
-                        if "EMAIL" in answerVar or "ALIAS" in answerVar:
-                            self.response[-1] += "@calpoly.edu"
                     except:
                         print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
-                        return
+                        return -1
             else:
                 self.response.append(word)
 
         #print("[Signal: Successful Query][Query: '{0}'][Response: '{1}']".format(self.query, self.response))
+        if "NULL" in self.response:
+            print("I do not have that information in the database.")
+            return -1
         return " ".join(self.response)
                 
     def profAndCourseQuery(self):
@@ -83,6 +82,12 @@ class Query:
             for i in output:
                 key = i.upper()
                 self.entities[key] = output[i]
+            self.entities['PROF']['last'] = self.entities['LAST']
+            self.entities['PROF']['first'] = self.entities['FIRST']
+            profKeys = list(self.entities['PROF'].keys())
+            profKeys.sort()
+            self.entities['PROF'] = {i: self.entities['PROF'][i] for i in profKeys}
+
 
     def courseQuery(self):
         query = "SELECT * FROM Courses WHERE "
