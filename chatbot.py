@@ -18,7 +18,7 @@ class ChatBot:
         self.professors = pd.read_csv("prof_name.csv")
         self.courses = pd.read_csv("courses.csv")
 
-    # Given an name Entity, if it is misspelled, return the correction, otherwise return the original text
+    # Given a name Entity, if it is misspelled, return the correction, otherwise return the original text
     def spellCheck(self, text):
         api_key = "c4479fb57ebf4c9c9e872cf972e943f8"
         endpoint = "https://api.bing.microsoft.com/v7.0/spellcheck"
