@@ -33,5 +33,5 @@ def correctSpell(text):
     return text
 
 if __name__ == '__main__':
-    example_text = "What is Dr.Clemant's emeil"
+    example_text = "Clemants"
     print(correctSpell(example_text))
