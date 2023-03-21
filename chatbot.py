@@ -173,7 +173,7 @@ def get_response(q, bot):
 
 def main():
     bot = ChatBot()
-    print("Hello I am EKK, your Cal Poly Virtual Assistant. How can I help you today?")
+    print("Hello I am PolyChat, your Cal Poly Virtual Assistant. How can I help you today?")
     q = input("Q> ")
     while q != "exit" and q != "Exit":
         response = get_response(q, bot)

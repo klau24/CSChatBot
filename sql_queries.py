@@ -49,6 +49,7 @@ class Query:
                     try:
                         self.response.append(self.entities[self.answerEntityMap[answerVar]])
                     except:
+                        print("Issue with query or I do not have this information.")
                         print("[Signal: Error][Issue with query][Query: '{0}'][Response: '{1}']".format(self.query, self.answer))
                         return -1
             else:
