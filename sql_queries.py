@@ -12,7 +12,6 @@ class Query:
         self.answer = answer
         self.answerEntityMap = {'LOCATION': 'OFFICE', 'CP-EMAIL': 'ALIAS', 'FIRSTNAME': 'FIRST', 'LASTNAME': 'LAST'}
         self.response = []
-        print(self.query, self.entities, self.answer)
 
     def queryDB(self):
         keys = list(self.entities.keys())
@@ -32,8 +31,9 @@ class Query:
             for _, v in self.entities[key].items():
                 res.append(v)
             if key == "PROF":
-                return string.capwords(" ".join(res))
-            return " ".join(res)
+                return string.capwords(self.entities[key]['first'] + " " + self.entities[key]['last'])
+            elif key == "COURSE":
+                return self.entities[key]['code']
         return self.entities[key]
         
     def formatOutput(self):
@@ -93,27 +93,26 @@ class Query:
     def courseQuery(self):
         query = "SELECT * FROM Courses WHERE "
         conditions = []
-
         with self.connection:
-            if self.entities["COURSE"]["code"]:
+            if "code" in self.entities["COURSE"]:
                 code = self.entities["COURSE"]["code"]
-                conditions.append(f"code={code}")
-            if self.entities["COURSE"]["section"]:
+                conditions.append(f"code LIKE '%{code}%'")
+            if "section" in self.entities["COURSE"]:
                 section = self.entities["COURSE"]["section"]
                 conditions.append(f"section={section}")
-            if self.entities["COURSE"]["type"]:
+            if "type" in self.entities["COURSE"]:
                 type = self.entities["COURSE"]["type"]
                 conditions.append(f"type={type}")
-            if self.entities["COURSE"]["days"]:
+            if "days" in self.entities["COURSE"]:
                 days = self.entities["COURSE"]["days"]
                 conditions.append(f"days={days}")
-            if self.entities["COURSE"]["start"]:
+            if "start" in self.entities["COURSE"]:
                 start = self.entities["COURSE"]["start"]
                 conditions.append(f"start={start}")
-            if self.entities["COURSE"]["end"]:
+            if "end" in self.entities["COURSE"]:
                 end = self.entities["COURSE"]["end"]
                 conditions.append(f"end={end}")
-            if self.entities["COURSE"]["location"]:
+            if "location" in self.entities["COURSE"]:
                 location = self.entities["COURSE"]["location"]
                 conditions.append(f"location={location}")
             query += " AND ".join(conditions)
@@ -121,8 +120,8 @@ class Query:
             with self.connection.cursor() as cursor:
                 cursor.execute(query)
                 output = cursor.fetchone()
-
         if output is not None:
             for i in output:
                 key = i.upper()
                 self.entities[key] = output[i]
+            self.entities["COURSE"]['code'] = self.entities['CODE']

@@ -62,10 +62,11 @@ class ChatBot:
         return False
 
     def class_check(self, text):
-        class_num = self.courses[self.courses["CourseNumber"] == float(text)]
-        if len(class_num) > 0:
-            return True
-        return False
+        try:
+            class_num = self.courses[self.courses["CourseNumber"] == float(text)]
+        except:
+            return False
+        return len(class_num) > 0
 
 
     # Given tokenized query, substitutes recognized entities with entity tags
@@ -160,16 +161,22 @@ def getQueries(q, entities, answer):
                 responses.append(query_res)
             else:
                 return
+        else:
+            return "Sorry, I do not understand this query."
+
     if len(responses) > 1:
         return ". ".join(responses)+"."
-    else:
+    elif responses:
         return responses[0] + "."
 
 def get_response(q, bot):
     entities, answer = bot.split_queries(q)
     # print("After split queries")
+    print("generic answers")
+    print(answer)
     response = getQueries(q, entities, answer)
-    return response
+    if response:
+        return response
 
 def main():
     bot = ChatBot()
