@@ -6,11 +6,15 @@ import React, { Component } from "react";
 function Message(message,index){
     if(index%2==0){
         return (
-            <p key={index} className="message" style={{background:'white',margin:"0px",padding:"10px"}}>{message.text}</p>
+          <div style={{textAlign:"left", margin:"10px", marginLeft:"15%", marginRight:"auto", background:'#5fc9f8', position: "relative",width:"auto", maxWidth:"300px", height: "auto" , borderRadius: "30px", padding:"10px"}}>
+            <p key={index} className="message" style={{margin:"0px",padding:"10px"}}>{message.text} </p>
+          </div>
         )
     }
     return (
-        <p key={index} className="message" style={{background:'#d9dadb',height:"100%",margin:"0px",padding:"10px"}}>{message.text} </p>
+      <div style={{textAlign:"left", margin:"10px", marginLeft:"auto", marginRight:"15%",background:'#d9dadb',  position: "relative",width: "300px", height: "auto" , borderRadius: "30px", padding:"10px"}}>
+        <p key={index} className="message" style={{margin:"0px",padding:"10px"}}>{message.text} </p>
+      </div>
     )
 }
 
