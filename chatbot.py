@@ -27,7 +27,7 @@ class ChatBot:
         headers = {'Ocp-Apim-Subscription-Key': api_key}
         response = requests.post(endpoint, headers=headers, params=params, data=data)
         json_response = response.json()
-        print(json_response)
+        #print(json_response)
         if json_response["flaggedTokens"]:
             correction = json_response["flaggedTokens"][0]["suggestions"][0]["suggestion"]
             return correction[0].upper() + correction[1:]
@@ -172,8 +172,8 @@ def getQueries(q, entities, answer):
 def get_response(q, bot):
     entities, answer = bot.split_queries(q)
     # print("After split queries")
-    print("generic answers")
-    print(answer)
+    #print("generic answers")
+    #print(answer)
     response = getQueries(q, entities, answer)
     if response:
         return response
@@ -184,7 +184,8 @@ def main():
     q = input("Q> ")
     while q != "exit" and q != "Exit":
         response = get_response(q, bot)
-        print(response)
+        if response:
+            print(response)
         q = input("Q> ")
     print("I'm glad I could help you :)")
     print("[Signal: End]")
