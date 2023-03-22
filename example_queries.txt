@@ -1,14 +1,14 @@
-Professor Queries
+PROFESSOR QUERIES
 
 Where is Foaad's office?
 
 what is Dr. Keen's alias?
 
-what is Foaad's email and what is his phone number?
+what is Foaad's email and phone number?
 
 where is Kenny's office?
 
-Course Queries
+COURSE QUERIES
 
 what days are CSC 101-09 on?
 
@@ -16,12 +16,26 @@ what time does CSC 202-13 start?
 
 where is CSC 203-08 and what time does it start?
 
-Professor + Course Queries
+PROFESSORS + COURSES QUERIES
 
-Who teaches CSC 248?
+Who teaches CSC 248-04?
 
 what section of CSC 248 does Mugizi Rwebangira teach?
 
 what time does CSC 430 with Stephen Beard start?
 
 Where is CSC 365 with Dr. Dekhtyar?
+
+SPELL CHECK
+
+where is Peterrson's office?
+
+DOES NOT WORK 
+
+Where is Foaad's office and where is Dekhtyar's office?
+
+where is Fooad's office?
+
+Where is 202 and 203?
+
+Does Foaad teach CSC 101?

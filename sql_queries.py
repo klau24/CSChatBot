@@ -16,7 +16,7 @@ class Query:
     def queryDB(self):
         keys = list(self.entities.keys())
         #print(self.query)
-        print(self.query, self.entities, self.answer)
+        #print(self.query, self.entities, self.answer)
         if ("PROF" in keys and "COURSE" in keys) or ("who" in self.query and "COURSE" in keys):
             self.profAndCourseQuery()
         elif "PROF" in keys and "COURSE" not in keys:
@@ -39,7 +39,7 @@ class Query:
         
     def formatOutput(self):
         self.answer = self.answer.split()
-        #print(self.entities)
+        print(self.entities)
         for word in self.answer:
             # its a variable
             if '[' in word and ']' in word:
@@ -84,7 +84,7 @@ class Query:
             with self.connection.cursor() as cursor:
                 cursor.execute(query)
                 output = cursor.fetchone()
-        print(query)
+        #print(query)
         if output is not None:
             for i in output:
                 key = i.upper()
